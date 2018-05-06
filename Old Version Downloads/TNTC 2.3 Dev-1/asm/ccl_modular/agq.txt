@@ -1,0 +1,1293 @@
+// class version 50.0 (50)
+// access flags 0x421
+public abstract class agq {
+
+  // compiled from: SourceFile
+
+  // access flags 0x1
+  public I b
+
+  // access flags 0x2
+  private Ljava/lang/String; a
+
+  // access flags 0x2
+  private Ljava/util/List; e
+
+  // access flags 0x2
+  private Lagr; f
+
+  // access flags 0x1
+  public D c
+
+  // access flags 0x1
+  public D d
+
+  // access flags 0x2
+  private I g
+
+  // access flags 0x2
+  private I h
+
+  // access flags 0x2
+  private I i
+
+  // access flags 0x2
+  private Lsa; j
+
+  // access flags 0x2
+  private I k
+
+  // access flags 0x2
+  private I l
+
+  // access flags 0x2
+  private I m
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    LINENUMBER 13 L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+   L1
+    LINENUMBER 16 L1
+    ALOAD 0
+    BIPUSH 20
+    PUTFIELD agq.b : I
+   L2
+    LINENUMBER 17 L2
+    ALOAD 0
+    LDC "Pig"
+    PUTFIELD agq.a : Ljava/lang/String;
+   L3
+    LINENUMBER 21 L3
+    ALOAD 0
+    SIPUSH 200
+    PUTFIELD agq.g : I
+   L4
+    LINENUMBER 22 L4
+    ALOAD 0
+    SIPUSH 800
+    PUTFIELD agq.h : I
+   L5
+    LINENUMBER 23 L5
+    ALOAD 0
+    ICONST_4
+    PUTFIELD agq.i : I
+   L6
+    LINENUMBER 25 L6
+    ALOAD 0
+    BIPUSH 6
+    PUTFIELD agq.k : I
+   L7
+    LINENUMBER 26 L7
+    ALOAD 0
+    BIPUSH 16
+    PUTFIELD agq.l : I
+   L8
+    LINENUMBER 27 L8
+    ALOAD 0
+    ICONST_4
+    PUTFIELD agq.m : I
+   L9
+    LINENUMBER 269 L9
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public e()Ljava/lang/String;
+   L0
+    LINENUMBER 30 L0
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    IFNONNULL L1
+   L2
+    LINENUMBER 31 L2
+    ALOAD 0
+    GETFIELD agq.a : Ljava/lang/String;
+    LDC "Minecart"
+    INVOKEVIRTUAL java/lang/String.equals (Ljava/lang/Object;)Z
+    IFEQ L3
+   L4
+    LINENUMBER 32 L4
+    ALOAD 0
+    LDC "MinecartRideable"
+    PUTFIELD agq.a : Ljava/lang/String;
+   L3
+    LINENUMBER 34 L3
+   FRAME FULL [agq] []
+    ALOAD 0
+    GETFIELD agq.a : Ljava/lang/String;
+    ARETURN
+   L1
+    LINENUMBER 36 L1
+   FRAME FULL [agq] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    GETFIELD agr.c : Ljava/lang/String;
+    ARETURN
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public a(Ljava/lang/String;)V
+   L0
+    LINENUMBER 41 L0
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD agq.a : Ljava/lang/String;
+   L1
+    LINENUMBER 42 L1
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public f()Z
+   L0
+    LINENUMBER 45 L0
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    I2D
+    LDC 0.5
+    DADD
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    I2D
+    LDC 0.5
+    DADD
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    I2D
+    LDC 0.5
+    DADD
+    ALOAD 0
+    GETFIELD agq.l : I
+    I2D
+    INVOKEVIRTUAL ahb.a (DDDD)Lyz;
+    IFNULL L1
+    ICONST_1
+    GOTO L2
+   L1
+   FRAME FULL [agq] []
+    ICONST_0
+   L2
+   FRAME FULL [agq] [I]
+    IRETURN
+    MAXSTACK = 9
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public g()V
+   L0
+    LINENUMBER 49 L0
+    ALOAD 0
+    INVOKEVIRTUAL agq.f ()Z
+    IFNE L1
+   L2
+    LINENUMBER 50 L2
+    RETURN
+   L1
+    LINENUMBER 53 L1
+   FRAME FULL [agq] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.E : Z
+    IFEQ L3
+   L4
+    LINENUMBER 54 L4
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    I2F
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FADD
+    F2D
+    DSTORE 1
+   L5
+    LINENUMBER 55 L5
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    I2F
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FADD
+    F2D
+    DSTORE 3
+   L6
+    LINENUMBER 56 L6
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    I2F
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FADD
+    F2D
+    DSTORE 5
+   L7
+    LINENUMBER 57 L7
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    LDC "smoke"
+    DLOAD 1
+    DLOAD 3
+    DLOAD 5
+    DCONST_0
+    DCONST_0
+    DCONST_0
+    INVOKEVIRTUAL ahb.a (Ljava/lang/String;DDDDDD)V
+   L8
+    LINENUMBER 58 L8
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    LDC "flame"
+    DLOAD 1
+    DLOAD 3
+    DLOAD 5
+    DCONST_0
+    DCONST_0
+    DCONST_0
+    INVOKEVIRTUAL ahb.a (Ljava/lang/String;DDDDDD)V
+   L9
+    LINENUMBER 60 L9
+    ALOAD 0
+    GETFIELD agq.b : I
+    IFLE L10
+    ALOAD 0
+    DUP
+    GETFIELD agq.b : I
+    ICONST_1
+    ISUB
+    PUTFIELD agq.b : I
+   L10
+    LINENUMBER 61 L10
+   FRAME FULL [agq D D D] []
+    ALOAD 0
+    ALOAD 0
+    GETFIELD agq.c : D
+    PUTFIELD agq.d : D
+   L11
+    LINENUMBER 62 L11
+    ALOAD 0
+    ALOAD 0
+    GETFIELD agq.c : D
+    LDC 1000.0
+    ALOAD 0
+    GETFIELD agq.b : I
+    I2F
+    LDC 200.0
+    FADD
+    FDIV
+    F2D
+    DADD
+    LDC 360.0
+    DREM
+    PUTFIELD agq.c : D
+   L12
+    LINENUMBER 63 L12
+    GOTO L13
+   L3
+    LINENUMBER 64 L3
+   FRAME FULL [agq] []
+    ALOAD 0
+    GETFIELD agq.b : I
+    ICONST_M1
+    IF_ICMPNE L14
+    ALOAD 0
+    INVOKESPECIAL agq.j ()V
+   L14
+    LINENUMBER 66 L14
+   FRAME FULL [agq] []
+    ALOAD 0
+    GETFIELD agq.b : I
+    IFLE L15
+   L16
+    LINENUMBER 67 L16
+    ALOAD 0
+    DUP
+    GETFIELD agq.b : I
+    ICONST_1
+    ISUB
+    PUTFIELD agq.b : I
+   L17
+    LINENUMBER 68 L17
+    RETURN
+   L15
+    LINENUMBER 71 L15
+   FRAME FULL [agq] []
+    ICONST_0
+    ISTORE 1
+   L18
+    LINENUMBER 73 L18
+    ICONST_0
+    ISTORE 2
+   L19
+   FRAME FULL [agq I I] []
+    ILOAD 2
+    ALOAD 0
+    GETFIELD agq.i : I
+    IF_ICMPGE L20
+   L21
+    LINENUMBER 74 L21
+    ALOAD 0
+    INVOKEVIRTUAL agq.e ()Ljava/lang/String;
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    INVOKESTATIC sg.a (Ljava/lang/String;Lahb;)Lsa;
+    ASTORE 3
+   L22
+    LINENUMBER 75 L22
+    ALOAD 3
+    IFNONNULL L23
+    RETURN
+   L23
+    LINENUMBER 77 L23
+   FRAME FULL [agq I I sa] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    ALOAD 3
+    INVOKEVIRTUAL java/lang/Object.getClass ()Ljava/lang/Class;
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    ICONST_1
+    IADD
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    ICONST_1
+    IADD
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    ICONST_1
+    IADD
+    I2D
+    INVOKESTATIC azt.a (DDDDDD)Lazt;
+    ALOAD 0
+    GETFIELD agq.m : I
+    ICONST_2
+    IMUL
+    I2D
+    LDC 4.0
+    ALOAD 0
+    GETFIELD agq.m : I
+    ICONST_2
+    IMUL
+    I2D
+    INVOKEVIRTUAL azt.b (DDD)Lazt;
+    INVOKEVIRTUAL ahb.a (Ljava/lang/Class;Lazt;)Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    ISTORE 4
+   L24
+    LINENUMBER 79 L24
+    ILOAD 4
+    ALOAD 0
+    GETFIELD agq.k : I
+    IF_ICMPLT L25
+   L26
+    LINENUMBER 80 L26
+    ALOAD 0
+    INVOKESPECIAL agq.j ()V
+   L27
+    LINENUMBER 81 L27
+    RETURN
+   L25
+    LINENUMBER 84 L25
+   FRAME FULL [agq I I sa I] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextDouble ()D
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextDouble ()D
+    DSUB
+    ALOAD 0
+    GETFIELD agq.m : I
+    I2D
+    DMUL
+    DADD
+    DSTORE 5
+   L28
+    LINENUMBER 85 L28
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    ICONST_3
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ICONST_1
+    ISUB
+    I2D
+    DSTORE 7
+   L29
+    LINENUMBER 86 L29
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    I2D
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextDouble ()D
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextDouble ()D
+    DSUB
+    ALOAD 0
+    GETFIELD agq.m : I
+    I2D
+    DMUL
+    DADD
+    DSTORE 9
+   L30
+    LINENUMBER 87 L30
+    ALOAD 3
+    INSTANCEOF sw
+    IFEQ L31
+    ALOAD 3
+    CHECKCAST sw
+    GOTO L32
+   L31
+   FRAME FULL [agq I I sa I D D D] []
+    ACONST_NULL
+   L32
+   FRAME FULL [agq I I sa I D D D] [sw]
+    ASTORE 11
+   L33
+    LINENUMBER 89 L33
+    ALOAD 3
+    DLOAD 5
+    DLOAD 7
+    DLOAD 9
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    LDC 360.0
+    FMUL
+    FCONST_0
+    INVOKEVIRTUAL sa.b (DDDFF)V
+   L34
+    LINENUMBER 91 L34
+    ALOAD 11
+    IFNULL L35
+    ALOAD 11
+    INVOKEVIRTUAL sw.by ()Z
+    IFEQ L36
+   L35
+    LINENUMBER 92 L35
+   FRAME FULL [agq I I sa I D D D sw] []
+    ALOAD 0
+    ALOAD 3
+    INVOKEVIRTUAL agq.a (Lsa;)Lsa;
+    POP
+   L37
+    LINENUMBER 93 L37
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    SIPUSH 2004
+    ALOAD 0
+    INVOKEVIRTUAL agq.b ()I
+    ALOAD 0
+    INVOKEVIRTUAL agq.c ()I
+    ALOAD 0
+    INVOKEVIRTUAL agq.d ()I
+    ICONST_0
+    INVOKEVIRTUAL ahb.c (IIIII)V
+   L38
+    LINENUMBER 95 L38
+    ALOAD 11
+    IFNULL L39
+   L40
+    LINENUMBER 96 L40
+    ALOAD 11
+    INVOKEVIRTUAL sw.s ()V
+   L39
+    LINENUMBER 99 L39
+   FRAME FULL [agq I I sa I D D D sw] []
+    ICONST_1
+    ISTORE 1
+   L36
+    LINENUMBER 73 L36
+   FRAME FULL [agq I I sa I D D D sw] []
+    IINC 2 1
+    GOTO L19
+   L20
+    LINENUMBER 103 L20
+   FRAME FULL [agq I I] []
+    ILOAD 1
+    IFEQ L13
+    ALOAD 0
+    INVOKESPECIAL agq.j ()V
+   L13
+    LINENUMBER 105 L13
+   FRAME FULL [agq] []
+    RETURN
+    MAXSTACK = 14
+    MAXLOCALS = 12
+
+  // access flags 0x1
+  public a(Lsa;)Lsa;
+   L0
+    LINENUMBER 108 L0
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    IFNULL L1
+   L2
+    LINENUMBER 109 L2
+    NEW dh
+    DUP
+    INVOKESPECIAL dh.<init> ()V
+    ASTORE 2
+   L3
+    LINENUMBER 110 L3
+    ALOAD 1
+    ALOAD 2
+    INVOKEVIRTUAL sa.d (Ldh;)Z
+    POP
+   L4
+    LINENUMBER 112 L4
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    GETFIELD agr.b : Ldh;
+    INVOKEVIRTUAL dh.c ()Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
+    ASTORE 3
+   L5
+   FRAME FULL [agq sa dh java/util/Iterator] []
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L6
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST java/lang/String
+    ASTORE 4
+   L7
+    LINENUMBER 113 L7
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    GETFIELD agr.b : Ldh;
+    ALOAD 4
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;)Ldy;
+    ASTORE 5
+   L8
+    LINENUMBER 114 L8
+    ALOAD 2
+    ALOAD 4
+    ALOAD 5
+    INVOKEVIRTUAL dy.b ()Ldy;
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;Ldy;)V
+   L9
+    LINENUMBER 115 L9
+    GOTO L5
+   L6
+    LINENUMBER 117 L6
+   FRAME FULL [agq sa dh java/util/Iterator] []
+    ALOAD 1
+    ALOAD 2
+    INVOKEVIRTUAL sa.f (Ldh;)V
+   L10
+    LINENUMBER 118 L10
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    IFNULL L11
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    ALOAD 1
+    INVOKEVIRTUAL ahb.d (Lsa;)Z
+    POP
+   L11
+    LINENUMBER 121 L11
+   FRAME FULL [agq sa dh java/util/Iterator] []
+    ALOAD 1
+    ASTORE 3
+   L12
+    LINENUMBER 122 L12
+   FRAME FULL [agq sa dh sa] []
+    ALOAD 2
+    LDC "Riding"
+    BIPUSH 10
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L13
+   L14
+    LINENUMBER 123 L14
+    ALOAD 2
+    LDC "Riding"
+    INVOKEVIRTUAL dh.m (Ljava/lang/String;)Ldh;
+    ASTORE 4
+   L15
+    LINENUMBER 124 L15
+    ALOAD 4
+    LDC "id"
+    INVOKEVIRTUAL dh.j (Ljava/lang/String;)Ljava/lang/String;
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    INVOKESTATIC sg.a (Ljava/lang/String;Lahb;)Lsa;
+    ASTORE 5
+   L16
+    LINENUMBER 125 L16
+    ALOAD 5
+    IFNULL L17
+   L18
+    LINENUMBER 126 L18
+    NEW dh
+    DUP
+    INVOKESPECIAL dh.<init> ()V
+    ASTORE 6
+   L19
+    LINENUMBER 127 L19
+    ALOAD 5
+    ALOAD 6
+    INVOKEVIRTUAL sa.d (Ldh;)Z
+    POP
+   L20
+    LINENUMBER 129 L20
+    ALOAD 4
+    INVOKEVIRTUAL dh.c ()Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
+    ASTORE 7
+   L21
+   FRAME FULL [agq sa dh sa dh sa dh java/util/Iterator] []
+    ALOAD 7
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L22
+    ALOAD 7
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST java/lang/String
+    ASTORE 8
+   L23
+    LINENUMBER 130 L23
+    ALOAD 4
+    ALOAD 8
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;)Ldy;
+    ASTORE 9
+   L24
+    LINENUMBER 131 L24
+    ALOAD 6
+    ALOAD 8
+    ALOAD 9
+    INVOKEVIRTUAL dy.b ()Ldy;
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;Ldy;)V
+   L25
+    LINENUMBER 132 L25
+    GOTO L21
+   L22
+    LINENUMBER 133 L22
+   FRAME FULL [agq sa dh sa dh sa dh java/util/Iterator] []
+    ALOAD 5
+    ALOAD 6
+    INVOKEVIRTUAL sa.f (Ldh;)V
+   L26
+    LINENUMBER 134 L26
+    ALOAD 5
+    ALOAD 3
+    GETFIELD sa.s : D
+    ALOAD 3
+    GETFIELD sa.t : D
+    ALOAD 3
+    GETFIELD sa.u : D
+    ALOAD 3
+    GETFIELD sa.y : F
+    ALOAD 3
+    GETFIELD sa.z : F
+    INVOKEVIRTUAL sa.b (DDDFF)V
+   L27
+    LINENUMBER 136 L27
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    IFNULL L28
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    ALOAD 5
+    INVOKEVIRTUAL ahb.d (Lsa;)Z
+    POP
+   L28
+    LINENUMBER 137 L28
+   FRAME FULL [agq sa dh sa dh sa dh java/util/Iterator] []
+    ALOAD 3
+    ALOAD 5
+    INVOKEVIRTUAL sa.a (Lsa;)V
+   L17
+    LINENUMBER 139 L17
+   FRAME FULL [agq sa dh sa dh sa] []
+    ALOAD 5
+    ASTORE 3
+   L29
+    LINENUMBER 140 L29
+    ALOAD 4
+    ASTORE 2
+   L30
+    LINENUMBER 141 L30
+    GOTO L12
+   L13
+    LINENUMBER 143 L13
+   FRAME FULL [agq sa dh sa] []
+    GOTO L31
+   L1
+   FRAME FULL [agq sa] []
+    ALOAD 1
+    INSTANCEOF sv
+    IFEQ L31
+    ALOAD 1
+    GETFIELD sa.o : Lahb;
+    IFNULL L31
+   L32
+    LINENUMBER 144 L32
+    ALOAD 1
+    CHECKCAST sw
+    ACONST_NULL
+    INVOKEVIRTUAL sw.a (Lsy;)Lsy;
+    POP
+   L33
+    LINENUMBER 145 L33
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    ALOAD 1
+    INVOKEVIRTUAL ahb.d (Lsa;)Z
+    POP
+   L31
+    LINENUMBER 148 L31
+   FRAME FULL [agq sa] []
+    ALOAD 1
+    ARETURN
+    MAXSTACK = 9
+    MAXLOCALS = 10
+
+  // access flags 0x2
+  private j()V
+   L0
+    LINENUMBER 152 L0
+    ALOAD 0
+    GETFIELD agq.h : I
+    ALOAD 0
+    GETFIELD agq.g : I
+    IF_ICMPGT L1
+   L2
+    LINENUMBER 153 L2
+    ALOAD 0
+    ALOAD 0
+    GETFIELD agq.g : I
+    PUTFIELD agq.b : I
+    GOTO L3
+   L1
+    LINENUMBER 155 L1
+   FRAME FULL [agq] []
+    ALOAD 0
+    ALOAD 0
+    GETFIELD agq.g : I
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    ALOAD 0
+    GETFIELD agq.h : I
+    ALOAD 0
+    GETFIELD agq.g : I
+    ISUB
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    PUTFIELD agq.b : I
+   L3
+    LINENUMBER 158 L3
+   FRAME FULL [agq] []
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    IFNULL L4
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IFLE L4
+   L5
+    LINENUMBER 159 L5
+    ALOAD 0
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.s : Ljava/util/Random;
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    INVOKESTATIC qv.a (Ljava/util/Random;Ljava/util/Collection;)Lqw;
+    CHECKCAST agr
+    INVOKEVIRTUAL agq.a (Lagr;)V
+   L4
+    LINENUMBER 162 L4
+   FRAME FULL [agq] []
+    ALOAD 0
+    ICONST_1
+    INVOKEVIRTUAL agq.a (I)V
+   L6
+    LINENUMBER 163 L6
+    RETURN
+    MAXSTACK = 5
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public a(Ldh;)V
+   L0
+    LINENUMBER 166 L0
+    ALOAD 0
+    ALOAD 1
+    LDC "EntityId"
+    INVOKEVIRTUAL dh.j (Ljava/lang/String;)Ljava/lang/String;
+    PUTFIELD agq.a : Ljava/lang/String;
+   L1
+    LINENUMBER 167 L1
+    ALOAD 0
+    ALOAD 1
+    LDC "Delay"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.b : I
+   L2
+    LINENUMBER 169 L2
+    ALOAD 1
+    LDC "SpawnPotentials"
+    BIPUSH 9
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L3
+   L4
+    LINENUMBER 170 L4
+    ALOAD 0
+    NEW java/util/ArrayList
+    DUP
+    INVOKESPECIAL java/util/ArrayList.<init> ()V
+    PUTFIELD agq.e : Ljava/util/List;
+   L5
+    LINENUMBER 171 L5
+    ALOAD 1
+    LDC "SpawnPotentials"
+    BIPUSH 10
+    INVOKEVIRTUAL dh.c (Ljava/lang/String;I)Ldq;
+    ASTORE 2
+   L6
+    LINENUMBER 173 L6
+    ICONST_0
+    ISTORE 3
+   L7
+   FRAME FULL [agq dh dq I] []
+    ILOAD 3
+    ALOAD 2
+    INVOKEVIRTUAL dq.c ()I
+    IF_ICMPGE L8
+   L9
+    LINENUMBER 174 L9
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    NEW agr
+    DUP
+    ALOAD 0
+    ALOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL dq.b (I)Ldh;
+    INVOKESPECIAL agr.<init> (Lagq;Ldh;)V
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L10
+    LINENUMBER 173 L10
+    IINC 3 1
+    GOTO L7
+   L8
+    LINENUMBER 176 L8
+   FRAME FULL [agq dh dq I] []
+    GOTO L11
+   L3
+    LINENUMBER 177 L3
+   FRAME FULL [agq dh] []
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD agq.e : Ljava/util/List;
+   L11
+    LINENUMBER 180 L11
+   FRAME FULL [agq dh] []
+    ALOAD 1
+    LDC "SpawnData"
+    BIPUSH 10
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L12
+   L13
+    LINENUMBER 181 L13
+    ALOAD 0
+    NEW agr
+    DUP
+    ALOAD 0
+    ALOAD 1
+    LDC "SpawnData"
+    INVOKEVIRTUAL dh.m (Ljava/lang/String;)Ldh;
+    ALOAD 0
+    GETFIELD agq.a : Ljava/lang/String;
+    INVOKESPECIAL agr.<init> (Lagq;Ldh;Ljava/lang/String;)V
+    INVOKEVIRTUAL agq.a (Lagr;)V
+    GOTO L14
+   L12
+    LINENUMBER 183 L12
+   FRAME FULL [agq dh] []
+    ALOAD 0
+    ACONST_NULL
+    INVOKEVIRTUAL agq.a (Lagr;)V
+   L14
+    LINENUMBER 186 L14
+   FRAME FULL [agq dh] []
+    ALOAD 1
+    LDC "MinSpawnDelay"
+    BIPUSH 99
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L15
+   L16
+    LINENUMBER 187 L16
+    ALOAD 0
+    ALOAD 1
+    LDC "MinSpawnDelay"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.g : I
+   L17
+    LINENUMBER 188 L17
+    ALOAD 0
+    ALOAD 1
+    LDC "MaxSpawnDelay"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.h : I
+   L18
+    LINENUMBER 189 L18
+    ALOAD 0
+    ALOAD 1
+    LDC "SpawnCount"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.i : I
+   L15
+    LINENUMBER 192 L15
+   FRAME FULL [agq dh] []
+    ALOAD 1
+    LDC "MaxNearbyEntities"
+    BIPUSH 99
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L19
+   L20
+    LINENUMBER 193 L20
+    ALOAD 0
+    ALOAD 1
+    LDC "MaxNearbyEntities"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.k : I
+   L21
+    LINENUMBER 194 L21
+    ALOAD 0
+    ALOAD 1
+    LDC "RequiredPlayerRange"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.l : I
+   L19
+    LINENUMBER 197 L19
+   FRAME FULL [agq dh] []
+    ALOAD 1
+    LDC "SpawnRange"
+    BIPUSH 99
+    INVOKEVIRTUAL dh.b (Ljava/lang/String;I)Z
+    IFEQ L22
+    ALOAD 0
+    ALOAD 1
+    LDC "SpawnRange"
+    INVOKEVIRTUAL dh.e (Ljava/lang/String;)S
+    PUTFIELD agq.m : I
+   L22
+    LINENUMBER 199 L22
+   FRAME FULL [agq dh] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    IFNULL L23
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.E : Z
+    IFEQ L23
+   L24
+    LINENUMBER 200 L24
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD agq.j : Lsa;
+   L23
+    LINENUMBER 202 L23
+   FRAME FULL [agq dh] []
+    RETURN
+    MAXSTACK = 6
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public b(Ldh;)V
+   L0
+    LINENUMBER 205 L0
+    ALOAD 1
+    LDC "EntityId"
+    ALOAD 0
+    INVOKEVIRTUAL agq.e ()Ljava/lang/String;
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;Ljava/lang/String;)V
+   L1
+    LINENUMBER 206 L1
+    ALOAD 1
+    LDC "Delay"
+    ALOAD 0
+    GETFIELD agq.b : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L2
+    LINENUMBER 207 L2
+    ALOAD 1
+    LDC "MinSpawnDelay"
+    ALOAD 0
+    GETFIELD agq.g : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L3
+    LINENUMBER 208 L3
+    ALOAD 1
+    LDC "MaxSpawnDelay"
+    ALOAD 0
+    GETFIELD agq.h : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L4
+    LINENUMBER 209 L4
+    ALOAD 1
+    LDC "SpawnCount"
+    ALOAD 0
+    GETFIELD agq.i : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L5
+    LINENUMBER 210 L5
+    ALOAD 1
+    LDC "MaxNearbyEntities"
+    ALOAD 0
+    GETFIELD agq.k : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L6
+    LINENUMBER 211 L6
+    ALOAD 1
+    LDC "RequiredPlayerRange"
+    ALOAD 0
+    GETFIELD agq.l : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L7
+    LINENUMBER 212 L7
+    ALOAD 1
+    LDC "SpawnRange"
+    ALOAD 0
+    GETFIELD agq.m : I
+    I2S
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;S)V
+   L8
+    LINENUMBER 214 L8
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    IFNULL L9
+   L10
+    LINENUMBER 215 L10
+    ALOAD 1
+    LDC "SpawnData"
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    GETFIELD agr.b : Ldh;
+    INVOKEVIRTUAL dh.b ()Ldy;
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;Ldy;)V
+   L9
+    LINENUMBER 218 L9
+   FRAME FULL [agq dh] []
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    IFNONNULL L11
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    IFNULL L12
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IFLE L12
+   L11
+    LINENUMBER 219 L11
+   FRAME FULL [agq dh] []
+    NEW dq
+    DUP
+    INVOKESPECIAL dq.<init> ()V
+    ASTORE 2
+   L13
+    LINENUMBER 221 L13
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    IFNULL L14
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IFLE L14
+   L15
+    LINENUMBER 222 L15
+    ALOAD 0
+    GETFIELD agq.e : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 3
+   L16
+   FRAME FULL [agq dh dq java/util/Iterator] []
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L17
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST agr
+    ASTORE 4
+   L18
+    LINENUMBER 223 L18
+    ALOAD 2
+    ALOAD 4
+    INVOKEVIRTUAL agr.a ()Ldh;
+    INVOKEVIRTUAL dq.a (Ldy;)V
+   L19
+    LINENUMBER 224 L19
+    GOTO L16
+   L17
+   FRAME FULL [agq dh dq java/util/Iterator] []
+    GOTO L20
+   L14
+    LINENUMBER 226 L14
+   FRAME FULL [agq dh dq] []
+    ALOAD 2
+    ALOAD 0
+    INVOKEVIRTUAL agq.i ()Lagr;
+    INVOKEVIRTUAL agr.a ()Ldh;
+    INVOKEVIRTUAL dq.a (Ldy;)V
+   L20
+    LINENUMBER 229 L20
+   FRAME FULL [agq dh dq] []
+    ALOAD 1
+    LDC "SpawnPotentials"
+    ALOAD 2
+    INVOKEVIRTUAL dh.a (Ljava/lang/String;Ldy;)V
+   L12
+    LINENUMBER 231 L12
+   FRAME FULL [agq dh] []
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public h()Lsa;
+   L0
+    LINENUMBER 234 L0
+    ALOAD 0
+    GETFIELD agq.j : Lsa;
+    IFNONNULL L1
+   L2
+    LINENUMBER 235 L2
+    ALOAD 0
+    INVOKEVIRTUAL agq.e ()Ljava/lang/String;
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    INVOKESTATIC sg.a (Ljava/lang/String;Lahb;)Lsa;
+    ASTORE 1
+   L3
+    LINENUMBER 236 L3
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL agq.a (Lsa;)Lsa;
+    ASTORE 1
+   L4
+    LINENUMBER 237 L4
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD agq.j : Lsa;
+   L1
+    LINENUMBER 240 L1
+   FRAME FULL [agq] []
+    ALOAD 0
+    GETFIELD agq.j : Lsa;
+    ARETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public b(I)Z
+   L0
+    LINENUMBER 244 L0
+    ILOAD 1
+    ICONST_1
+    IF_ICMPNE L1
+    ALOAD 0
+    INVOKEVIRTUAL agq.a ()Lahb;
+    GETFIELD ahb.E : Z
+    IFEQ L1
+   L2
+    LINENUMBER 245 L2
+    ALOAD 0
+    ALOAD 0
+    GETFIELD agq.g : I
+    PUTFIELD agq.b : I
+   L3
+    LINENUMBER 246 L3
+    ICONST_1
+    IRETURN
+   L1
+    LINENUMBER 248 L1
+   FRAME FULL [agq I] []
+    ICONST_0
+    IRETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public i()Lagr;
+   L0
+    LINENUMBER 252 L0
+    ALOAD 0
+    GETFIELD agq.f : Lagr;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public a(Lagr;)V
+   L0
+    LINENUMBER 256 L0
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD agq.f : Lagr;
+   L1
+    LINENUMBER 257 L1
+    RETURN
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x401
+  public abstract a(I)V
+
+  // access flags 0x401
+  public abstract a()Lahb;
+
+  // access flags 0x401
+  public abstract b()I
+
+  // access flags 0x401
+  public abstract c()I
+
+  // access flags 0x401
+  public abstract d()I
+}

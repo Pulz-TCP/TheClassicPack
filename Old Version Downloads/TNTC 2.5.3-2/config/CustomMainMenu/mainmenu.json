@@ -1,0 +1,155 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "tntcstuff:tntc/TNTC_Logo.png",
+            "posX" : -37,
+            "posY" : 60,
+            "width" : 209,
+            "height" : 124,
+            "alignment" : "top_center"
+        }
+    ,
+        
+        "black":
+        {
+            "image" : "tntcstuff:tntc/longblock.png",
+            "posX" : 50,
+            "posY" : 0,
+            "width" : 100,
+            "height" : 2000,
+            "alignment" : "top_left"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 55,
+            "posY" : -65,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 55,
+            "posY" : -40,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods (#modsloaded#)",
+            "posX" : 55,
+            "posY" : -15,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 55,
+            "posY" : 10,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		
+		"patreon":
+        {
+            "text" : "- Patreon -",
+            "posX" : 55,
+            "posY" : 75,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.patreon.com/Pulz"
+            }
+        },
+		
+		"discord":
+        {
+            "text" : "- Discord -",
+            "posX" : 55,
+            "posY" : 53,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/FgVtf4b"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : 88,
+            "posY" : -25,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "changelog":
+        {
+            "text" : "V: 2.5.3-2  F: #forgeversion#",
+            "posX" : 350,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "blur" : true,
+            "gradient" : false
+        }
+    }
+}

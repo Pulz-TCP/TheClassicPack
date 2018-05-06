@@ -1,0 +1,15 @@
+function wrap(side)
+	if peripheral.getType(side) == "sensor" then
+		return peripheral.wrap(side)
+	else
+		return nil, "not a sensor"
+	end
+end
+
+function call(side, ...)
+	if peripheral.getType(side) == "sensor" then
+		return peripheral.call(side, ...)
+	else
+		return nil, "not a sensor"
+	end
+end

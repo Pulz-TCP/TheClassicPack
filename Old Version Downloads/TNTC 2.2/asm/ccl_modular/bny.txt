@@ -1,0 +1,3287 @@
+// class version 50.0 (50)
+// access flags 0x21
+public class bny extends bno  {
+
+  // compiled from: RenderItem.java
+
+  @Lcpw/mods/fml/relauncher/SideOnly;(value=Lcpw/mods/fml/relauncher/Side;.CLIENT)
+  // access flags 0x0
+  INNERCLASS boc null null
+  // access flags 0x0
+  INNERCLASS bob null null
+  // access flags 0x0
+  INNERCLASS boa null null
+  // access flags 0x0
+  INNERCLASS bnz null null
+
+  // access flags 0x1A
+  private final static Lbqx; h
+
+  // access flags 0x2
+  private Lblm; i
+
+  // access flags 0x2
+  private Ljava/util/Random; j
+
+  // access flags 0x1
+  public Z a
+
+  // access flags 0x1
+  public F f
+
+  // access flags 0x9
+  public static Z g
+
+  // access flags 0x1A
+  private final static Ljava/lang/String; __OBFID = "CL_00001003"
+
+  // access flags 0xA
+  private static Lbny; instance
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    LINENUMBER 46 L0
+    ALOAD 0
+    INVOKESPECIAL bno.<init> ()V
+   L1
+    LINENUMBER 38 L1
+    ALOAD 0
+    NEW blm
+    DUP
+    INVOKESPECIAL blm.<init> ()V
+    PUTFIELD bny.i : Lblm;
+   L2
+    LINENUMBER 39 L2
+    ALOAD 0
+    NEW java/util/Random
+    DUP
+    INVOKESPECIAL java/util/Random.<init> ()V
+    PUTFIELD bny.j : Ljava/util/Random;
+   L3
+    LINENUMBER 40 L3
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bny.a : Z
+   L4
+    LINENUMBER 47 L4
+    ALOAD 0
+    LDC 0.15
+    PUTFIELD bny.d : F
+   L5
+    LINENUMBER 48 L5
+    ALOAD 0
+    LDC 0.75
+    PUTFIELD bny.e : F
+   L6
+    LINENUMBER 49 L6
+    RETURN
+   L7
+    LOCALVARIABLE this Lbny; L0 L7 0
+    MAXSTACK = 3
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public a(Lxk;DDDFF)V
+   L0
+    LINENUMBER 53 L0
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    ASTORE 10
+   L1
+    LINENUMBER 55 L1
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    IFNULL L2
+   L3
+    LINENUMBER 57 L3
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL bny.b (Lsa;)V
+   L4
+    LINENUMBER 58 L4
+    ICONST_0
+    ICONST_0
+    FCONST_1
+    INVOKESTATIC bqi.a (ZZF)V
+   L5
+    LINENUMBER 59 L5
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    LDC 187
+    INVOKEVIRTUAL java/util/Random.setSeed (J)V
+   L6
+    LINENUMBER 60 L6
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L7
+    LINENUMBER 61 L7
+    ALOAD 0
+    INVOKEVIRTUAL bny.shouldBob ()Z
+    IFEQ L8
+    ALOAD 1
+    GETFIELD xk.a : I
+    I2F
+    FLOAD 9
+    FADD
+    LDC 10.0
+    FDIV
+    ALOAD 1
+    GETFIELD xk.c : F
+    FADD
+    INVOKESTATIC qh.a (F)F
+    LDC 0.1
+    FMUL
+    LDC 0.1
+    FADD
+    GOTO L9
+   L8
+   FRAME FULL [bny xk D D D F F add] []
+    FCONST_0
+   L9
+   FRAME FULL [bny xk D D D F F add] [F]
+    FSTORE 11
+   L10
+    LINENUMBER 62 L10
+    ALOAD 1
+    GETFIELD xk.a : I
+    I2F
+    FLOAD 9
+    FADD
+    LDC 20.0
+    FDIV
+    ALOAD 1
+    GETFIELD xk.c : F
+    FADD
+    LDC 57.295776
+    FMUL
+    FSTORE 12
+   L11
+    LINENUMBER 63 L11
+    ICONST_1
+    ISTORE 13
+   L12
+    LINENUMBER 65 L12
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    GETFIELD add.b : I
+    ICONST_1
+    IF_ICMPLE L13
+   L14
+    LINENUMBER 67 L14
+    ICONST_2
+    ISTORE 13
+   L13
+    LINENUMBER 70 L13
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    GETFIELD add.b : I
+    ICONST_5
+    IF_ICMPLE L15
+   L16
+    LINENUMBER 72 L16
+    ICONST_3
+    ISTORE 13
+   L15
+    LINENUMBER 75 L15
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    GETFIELD add.b : I
+    BIPUSH 20
+    IF_ICMPLE L17
+   L18
+    LINENUMBER 77 L18
+    ICONST_4
+    ISTORE 13
+   L17
+    LINENUMBER 80 L17
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    GETFIELD add.b : I
+    BIPUSH 40
+    IF_ICMPLE L19
+   L20
+    LINENUMBER 82 L20
+    ICONST_5
+    ISTORE 13
+   L19
+    LINENUMBER 85 L19
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 0
+    ALOAD 10
+    ILOAD 13
+    INVOKEVIRTUAL bny.getMiniBlockCount (Ladd;B)B
+    ISTORE 13
+   L21
+    LINENUMBER 87 L21
+    DLOAD 2
+    D2F
+    DLOAD 4
+    D2F
+    FLOAD 11
+    FADD
+    DLOAD 6
+    D2F
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L22
+    LINENUMBER 88 L22
+    LDC 32826
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L23
+    LINENUMBER 93 L23
+    ALOAD 1
+    ALOAD 10
+    FLOAD 11
+    FLOAD 12
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    ALOAD 0
+    GETFIELD bny.b : Lbnn;
+    GETFIELD bnn.e : Lbqf;
+    ALOAD 0
+    GETFIELD bny.c : Lblm;
+    ILOAD 13
+    INVOKESTATIC net/minecraftforge/client/ForgeHooksClient.renderEntityItem (Lxk;Ladd;FFLjava/util/Random;Lbqf;Lblm;I)Z
+    IFEQ L24
+    GOTO L25
+   L24
+    LINENUMBER 98 L24
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 10
+    INVOKEVIRTUAL add.d ()I
+    IFNE L26
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INSTANCEOF abh
+    IFEQ L26
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKESTATIC aji.a (Ladb;)Laji;
+    INVOKEVIRTUAL aji.b ()I
+    INVOKESTATIC blm.a (I)Z
+    IFEQ L26
+   L27
+    LINENUMBER 100 L27
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKESTATIC aji.a (Ladb;)Laji;
+    ASTORE 17
+   L28
+    LINENUMBER 101 L28
+    FLOAD 12
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L29
+    LINENUMBER 103 L29
+    GETSTATIC bny.g : Z
+    IFEQ L30
+   L31
+    LINENUMBER 105 L31
+    LDC 1.25
+    LDC 1.25
+    LDC 1.25
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L32
+    LINENUMBER 106 L32
+    FCONST_0
+    LDC 0.05
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L33
+    LINENUMBER 107 L33
+    LDC -90.0
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L30
+    LINENUMBER 110 L30
+   FRAME FULL [bny xk D D D F F add F F I T T T aji] []
+    LDC 0.25
+    FSTORE 18
+   L34
+    LINENUMBER 111 L34
+    ALOAD 17
+    INVOKEVIRTUAL aji.b ()I
+    ISTORE 16
+   L35
+    LINENUMBER 113 L35
+    ILOAD 16
+    ICONST_1
+    IF_ICMPEQ L36
+    ILOAD 16
+    BIPUSH 19
+    IF_ICMPEQ L36
+    ILOAD 16
+    BIPUSH 12
+    IF_ICMPEQ L36
+    ILOAD 16
+    ICONST_2
+    IF_ICMPNE L37
+   L36
+    LINENUMBER 115 L36
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F] []
+    LDC 0.5
+    FSTORE 18
+   L37
+    LINENUMBER 118 L37
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F] []
+    ALOAD 17
+    INVOKEVIRTUAL aji.w ()I
+    IFLE L38
+   L39
+    LINENUMBER 120 L39
+    SIPUSH 516
+    LDC 0.1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glAlphaFunc (IF)V
+   L40
+    LINENUMBER 121 L40
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L41
+    LINENUMBER 122 L41
+    SIPUSH 770
+    SIPUSH 771
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+   L38
+    LINENUMBER 125 L38
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F] []
+    FLOAD 18
+    FLOAD 18
+    FLOAD 18
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L42
+    LINENUMBER 127 L42
+    ICONST_0
+    ISTORE 19
+   L43
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F I] []
+    ILOAD 19
+    ILOAD 13
+    IF_ICMPGE L44
+   L45
+    LINENUMBER 129 L45
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L46
+    LINENUMBER 131 L46
+    ILOAD 19
+    IFLE L47
+   L48
+    LINENUMBER 133 L48
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.2
+    FMUL
+    FLOAD 18
+    FDIV
+    FSTORE 14
+   L49
+    LINENUMBER 134 L49
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.2
+    FMUL
+    FLOAD 18
+    FDIV
+    FSTORE 15
+   L50
+    LINENUMBER 135 L50
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.2
+    FMUL
+    FLOAD 18
+    FDIV
+    FSTORE 20
+   L51
+    LINENUMBER 136 L51
+    FLOAD 14
+    FLOAD 15
+    FLOAD 20
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L47
+    LINENUMBER 139 L47
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F I] []
+    ALOAD 0
+    GETFIELD bny.i : Lblm;
+    ALOAD 17
+    ALOAD 10
+    INVOKEVIRTUAL add.k ()I
+    FCONST_1
+    INVOKEVIRTUAL blm.a (Laji;IF)V
+   L52
+    LINENUMBER 140 L52
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L53
+    LINENUMBER 127 L53
+    IINC 19 1
+    GOTO L43
+   L44
+    LINENUMBER 143 L44
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F I] []
+    ALOAD 17
+    INVOKEVIRTUAL aji.w ()I
+    IFLE L54
+   L55
+    LINENUMBER 145 L55
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L54
+    LINENUMBER 147 L54
+   FRAME FULL [bny xk D D D F F add F F I T T I aji F I] []
+    GOTO L25
+   L26
+    LINENUMBER 152 L26
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKEVIRTUAL adb.b ()Z
+    IFEQ L56
+   L57
+    LINENUMBER 154 L57
+    GETSTATIC bny.g : Z
+    IFEQ L58
+   L59
+    LINENUMBER 156 L59
+    LDC 0.5128205
+    LDC 0.5128205
+    LDC 0.5128205
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L60
+    LINENUMBER 157 L60
+    FCONST_0
+    LDC -0.05
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+    GOTO L61
+   L58
+    LINENUMBER 161 L58
+   FRAME FULL [bny xk D D D F F add F F I] []
+    LDC 0.5
+    LDC 0.5
+    LDC 0.5
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L61
+    LINENUMBER 164 L61
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ICONST_0
+    ISTORE 18
+   L62
+   FRAME FULL [bny xk D D D F F add F F I T T T T I] []
+    ILOAD 18
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 10
+    INVOKEVIRTUAL add.k ()I
+    INVOKEVIRTUAL adb.getRenderPasses (I)I
+    IF_ICMPGE L63
+   L64
+    LINENUMBER 166 L64
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    LDC 187
+    INVOKEVIRTUAL java/util/Random.setSeed (J)V
+   L65
+    LINENUMBER 167 L65
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 10
+    ILOAD 18
+    INVOKEVIRTUAL adb.getIcon (Ladd;I)Lrf;
+    ASTORE 19
+   L66
+    LINENUMBER 169 L66
+    ALOAD 0
+    GETFIELD bny.a : Z
+    IFEQ L67
+   L68
+    LINENUMBER 171 L68
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 10
+    ILOAD 18
+    INVOKEVIRTUAL adb.a (Ladd;I)I
+    ISTORE 16
+   L69
+    LINENUMBER 172 L69
+    ILOAD 16
+    BIPUSH 16
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 17
+   L70
+    LINENUMBER 173 L70
+    ILOAD 16
+    BIPUSH 8
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 14
+   L71
+    LINENUMBER 174 L71
+    ILOAD 16
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 15
+   L72
+    LINENUMBER 175 L72
+    FLOAD 17
+    FLOAD 14
+    FLOAD 15
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L73
+    LINENUMBER 176 L73
+    ALOAD 0
+    ALOAD 1
+    ALOAD 19
+    ILOAD 13
+    FLOAD 9
+    FLOAD 17
+    FLOAD 14
+    FLOAD 15
+    ILOAD 18
+    INVOKESPECIAL bny.renderDroppedItem (Lxk;Lrf;IFFFFI)V
+    GOTO L74
+   L67
+    LINENUMBER 180 L67
+   FRAME FULL [bny xk D D D F F add F F I T T T T I rf] []
+    ALOAD 0
+    ALOAD 1
+    ALOAD 19
+    ILOAD 13
+    FLOAD 9
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    ILOAD 18
+    INVOKESPECIAL bny.renderDroppedItem (Lxk;Lrf;IFFFFI)V
+   L74
+    LINENUMBER 164 L74
+   FRAME FULL [bny xk D D D F F add F F I T T T T I rf] []
+    IINC 18 1
+    GOTO L62
+   L63
+   FRAME FULL [bny xk D D D F F add F F I T T T T I] []
+    GOTO L25
+   L56
+    LINENUMBER 186 L56
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 10
+    IFNULL L75
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INSTANCEOF aek
+    IFEQ L75
+   L76
+    LINENUMBER 188 L76
+    SIPUSH 516
+    LDC 0.1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glAlphaFunc (IF)V
+   L77
+    LINENUMBER 189 L77
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L78
+    LINENUMBER 190 L78
+    SIPUSH 770
+    SIPUSH 771
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+   L75
+    LINENUMBER 193 L75
+   FRAME FULL [bny xk D D D F F add F F I] []
+    GETSTATIC bny.g : Z
+    IFEQ L79
+   L80
+    LINENUMBER 195 L80
+    LDC 0.5128205
+    LDC 0.5128205
+    LDC 0.5128205
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L81
+    LINENUMBER 196 L81
+    FCONST_0
+    LDC -0.05
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+    GOTO L82
+   L79
+    LINENUMBER 200 L79
+   FRAME FULL [bny xk D D D F F add F F I] []
+    LDC 0.5
+    LDC 0.5
+    LDC 0.5
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L82
+    LINENUMBER 203 L82
+   FRAME FULL [bny xk D D D F F add F F I] []
+    ALOAD 10
+    INVOKEVIRTUAL add.c ()Lrf;
+    ASTORE 18
+   L83
+    LINENUMBER 205 L83
+    ALOAD 0
+    GETFIELD bny.a : Z
+    IFEQ L84
+   L85
+    LINENUMBER 207 L85
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 10
+    ICONST_0
+    INVOKEVIRTUAL adb.a (Ladd;I)I
+    ISTORE 19
+   L86
+    LINENUMBER 208 L86
+    ILOAD 19
+    BIPUSH 16
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 20
+   L87
+    LINENUMBER 209 L87
+    ILOAD 19
+    BIPUSH 8
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 17
+   L88
+    LINENUMBER 210 L88
+    ILOAD 19
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 14
+   L89
+    LINENUMBER 211 L89
+    ALOAD 0
+    ALOAD 1
+    ALOAD 18
+    ILOAD 13
+    FLOAD 9
+    FLOAD 20
+    FLOAD 17
+    FLOAD 14
+    INVOKESPECIAL bny.a (Lxk;Lrf;IFFFF)V
+   L90
+    LINENUMBER 212 L90
+    GOTO L91
+   L84
+    LINENUMBER 215 L84
+   FRAME FULL [bny xk D D D F F add F F I T T T T rf] []
+    ALOAD 0
+    ALOAD 1
+    ALOAD 18
+    ILOAD 13
+    FLOAD 9
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESPECIAL bny.a (Lxk;Lrf;IFFFF)V
+   L91
+    LINENUMBER 218 L91
+   FRAME FULL [bny xk D D D F F add F F I T T T T rf] []
+    ALOAD 10
+    IFNULL L25
+    ALOAD 10
+    INVOKEVIRTUAL add.b ()Ladb;
+    INSTANCEOF aek
+    IFEQ L25
+   L92
+    LINENUMBER 220 L92
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L25
+    LINENUMBER 225 L25
+   FRAME FULL [bny xk D D D F F add F F I] []
+    LDC 32826
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L93
+    LINENUMBER 226 L93
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L94
+    LINENUMBER 227 L94
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL bny.b (Lsa;)V
+   L95
+    LINENUMBER 228 L95
+    INVOKESTATIC bqi.b ()V
+   L2
+    LINENUMBER 230 L2
+   FRAME FULL [bny xk D D D F F add] []
+    RETURN
+   L96
+    LOCALVARIABLE f8 F L51 L47 20
+    LOCALVARIABLE f6 F L49 L47 14
+    LOCALVARIABLE f7 F L50 L47 15
+    LOCALVARIABLE l I L43 L44 19
+    LOCALVARIABLE block Laji; L28 L54 17
+    LOCALVARIABLE f9 F L34 L54 18
+    LOCALVARIABLE k I L35 L26 16
+    LOCALVARIABLE f6 F L71 L67 14
+    LOCALVARIABLE f7 F L72 L67 15
+    LOCALVARIABLE k I L69 L67 16
+    LOCALVARIABLE f5 F L70 L67 17
+    LOCALVARIABLE iicon1 Lrf; L66 L74 19
+    LOCALVARIABLE j I L62 L63 18
+    LOCALVARIABLE i I L86 L90 19
+    LOCALVARIABLE f4 F L87 L90 20
+    LOCALVARIABLE f6 F L89 L84 14
+    LOCALVARIABLE f5 F L88 L84 17
+    LOCALVARIABLE iicon Lrf; L83 L25 18
+    LOCALVARIABLE f2 F L10 L2 11
+    LOCALVARIABLE f3 F L11 L2 12
+    LOCALVARIABLE b0 B L12 L2 13
+    LOCALVARIABLE this Lbny; L0 L96 0
+    LOCALVARIABLE p_76986_1_ Lxk; L0 L96 1
+    LOCALVARIABLE p_76986_2_ D L0 L96 2
+    LOCALVARIABLE p_76986_4_ D L0 L96 4
+    LOCALVARIABLE p_76986_6_ D L0 L96 6
+    LOCALVARIABLE p_76986_8_ F L0 L96 8
+    LOCALVARIABLE p_76986_9_ F L0 L96 9
+    LOCALVARIABLE itemstack Ladd; L1 L96 10
+    MAXSTACK = 9
+    MAXLOCALS = 21
+
+  // access flags 0x4
+  protected a(Lxk;)Lbqx;
+   L0
+    LINENUMBER 234 L0
+    ALOAD 0
+    GETFIELD bny.b : Lbnn;
+    GETFIELD bnn.e : Lbqf;
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    INVOKEVIRTUAL add.d ()I
+    INVOKEVIRTUAL bqf.a (I)Lbqx;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    LOCALVARIABLE p_110775_1_ Lxk; L0 L1 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x2
+  private a(Lxk;Lrf;IFFFF)V
+   L0
+    LINENUMBER 239 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ILOAD 3
+    FLOAD 4
+    FLOAD 5
+    FLOAD 6
+    FLOAD 7
+    ICONST_0
+    INVOKESPECIAL bny.renderDroppedItem (Lxk;Lrf;IFFFFI)V
+   L1
+    LINENUMBER 240 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lbny; L0 L2 0
+    LOCALVARIABLE p_77020_1_ Lxk; L0 L2 1
+    LOCALVARIABLE p_77020_2_ Lrf; L0 L2 2
+    LOCALVARIABLE p_77020_3_ I L0 L2 3
+    LOCALVARIABLE p_77020_4_ F L0 L2 4
+    LOCALVARIABLE p_77020_5_ F L0 L2 5
+    LOCALVARIABLE p_77020_6_ F L0 L2 6
+    LOCALVARIABLE p_77020_7_ F L0 L2 7
+    MAXSTACK = 9
+    MAXLOCALS = 8
+
+  // access flags 0x2
+  private renderDroppedItem(Lxk;Lrf;IFFFFI)V
+   L0
+    LINENUMBER 244 L0
+    GETSTATIC bmh.a : Lbmh;
+    ASTORE 9
+   L1
+    LINENUMBER 246 L1
+    ALOAD 2
+    IFNONNULL L2
+   L3
+    LINENUMBER 248 L3
+    INVOKESTATIC bao.B ()Lbao;
+    INVOKEVIRTUAL bao.P ()Lbqf;
+    ASTORE 10
+   L4
+    LINENUMBER 249 L4
+    ALOAD 10
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    INVOKEVIRTUAL add.d ()I
+    INVOKEVIRTUAL bqf.a (I)Lbqx;
+    ASTORE 11
+   L5
+    LINENUMBER 250 L5
+    ALOAD 10
+    ALOAD 11
+    INVOKEVIRTUAL bqf.b (Lbqx;)Lbqh;
+    CHECKCAST bpz
+    LDC "missingno"
+    INVOKEVIRTUAL bpz.b (Ljava/lang/String;)Lbqd;
+    ASTORE 2
+   L2
+    LINENUMBER 253 L2
+   FRAME FULL [bny xk rf I F F F F I bmh] []
+    ALOAD 2
+    INVOKEINTERFACE rf.c ()F
+    FSTORE 10
+   L6
+    LINENUMBER 254 L6
+    ALOAD 2
+    INVOKEINTERFACE rf.d ()F
+    FSTORE 11
+   L7
+    LINENUMBER 255 L7
+    ALOAD 2
+    INVOKEINTERFACE rf.e ()F
+    FSTORE 12
+   L8
+    LINENUMBER 256 L8
+    ALOAD 2
+    INVOKEINTERFACE rf.f ()F
+    FSTORE 13
+   L9
+    LINENUMBER 257 L9
+    FCONST_1
+    FSTORE 14
+   L10
+    LINENUMBER 258 L10
+    LDC 0.5
+    FSTORE 15
+   L11
+    LINENUMBER 259 L11
+    LDC 0.25
+    FSTORE 16
+   L12
+    LINENUMBER 262 L12
+    ALOAD 0
+    GETFIELD bny.b : Lbnn;
+    GETFIELD bnn.l : Lbbj;
+    GETFIELD bbj.i : Z
+    IFEQ L13
+   L14
+    LINENUMBER 264 L14
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L15
+    LINENUMBER 266 L15
+    GETSTATIC bny.g : Z
+    IFEQ L16
+   L17
+    LINENUMBER 268 L17
+    LDC 180.0
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+    GOTO L18
+   L16
+    LINENUMBER 272 L16
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F] []
+    ALOAD 1
+    GETFIELD xk.a : I
+    I2F
+    FLOAD 4
+    FADD
+    LDC 20.0
+    FDIV
+    ALOAD 1
+    GETFIELD xk.c : F
+    FADD
+    LDC 57.295776
+    FMUL
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L18
+    LINENUMBER 275 L18
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F] []
+    LDC 0.0625
+    FSTORE 18
+   L19
+    LINENUMBER 276 L19
+    LDC 0.021875
+    FSTORE 17
+   L20
+    LINENUMBER 277 L20
+    ALOAD 1
+    INVOKEVIRTUAL xk.f ()Ladd;
+    ASTORE 19
+   L21
+    LINENUMBER 278 L21
+    ALOAD 19
+    GETFIELD add.b : I
+    ISTORE 20
+   L22
+    LINENUMBER 281 L22
+    ILOAD 20
+    ICONST_2
+    IF_ICMPGE L23
+   L24
+    LINENUMBER 283 L24
+    ICONST_1
+    ISTORE 21
+   L25
+    GOTO L26
+   L23
+    LINENUMBER 285 L23
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I] []
+    ILOAD 20
+    BIPUSH 16
+    IF_ICMPGE L27
+   L28
+    LINENUMBER 287 L28
+    ICONST_2
+    ISTORE 21
+   L29
+    GOTO L26
+   L27
+    LINENUMBER 289 L27
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I] []
+    ILOAD 20
+    BIPUSH 32
+    IF_ICMPGE L30
+   L31
+    LINENUMBER 291 L31
+    ICONST_3
+    ISTORE 21
+   L32
+    GOTO L26
+   L30
+    LINENUMBER 295 L30
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I] []
+    ICONST_4
+    ISTORE 21
+   L26
+    LINENUMBER 298 L26
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I] []
+    ALOAD 0
+    ALOAD 19
+    ILOAD 21
+    INVOKEVIRTUAL bny.getMiniItemCount (Ladd;B)B
+    ISTORE 21
+   L33
+    LINENUMBER 300 L33
+    FLOAD 15
+    FNEG
+    FLOAD 16
+    FNEG
+    FLOAD 18
+    FLOAD 17
+    FADD
+    ILOAD 21
+    I2F
+    FMUL
+    FCONST_2
+    FDIV
+    FNEG
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L34
+    LINENUMBER 302 L34
+    ICONST_0
+    ISTORE 22
+   L35
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    ILOAD 22
+    ILOAD 21
+    IF_ICMPGE L36
+   L37
+    LINENUMBER 305 L37
+    ILOAD 22
+    IFLE L38
+    ALOAD 0
+    INVOKEVIRTUAL bny.shouldSpreadItems ()Z
+    IFEQ L38
+   L39
+    LINENUMBER 307 L39
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    LDC 0.5
+    FDIV
+    FSTORE 23
+   L40
+    LINENUMBER 308 L40
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    LDC 0.5
+    FDIV
+    FSTORE 24
+   L41
+    LINENUMBER 309 L41
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    LDC 0.5
+    FDIV
+    FSTORE 25
+   L42
+    LINENUMBER 310 L42
+    FLOAD 23
+    FLOAD 24
+    FLOAD 18
+    FLOAD 17
+    FADD
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L43
+    LINENUMBER 311 L43
+    GOTO L44
+   L38
+    LINENUMBER 314 L38
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    FCONST_0
+    FCONST_0
+    FLOAD 18
+    FLOAD 17
+    FADD
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L44
+    LINENUMBER 317 L44
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    ALOAD 19
+    INVOKEVIRTUAL add.d ()I
+    IFNE L45
+   L46
+    LINENUMBER 319 L46
+    ALOAD 0
+    GETSTATIC bpz.b : Lbqx;
+    INVOKEVIRTUAL bny.a (Lbqx;)V
+    GOTO L47
+   L45
+    LINENUMBER 323 L45
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    ALOAD 0
+    GETSTATIC bpz.c : Lbqx;
+    INVOKEVIRTUAL bny.a (Lbqx;)V
+   L47
+    LINENUMBER 326 L47
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    FLOAD 5
+    FLOAD 6
+    FLOAD 7
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L48
+    LINENUMBER 327 L48
+    ALOAD 9
+    FLOAD 11
+    FLOAD 12
+    FLOAD 10
+    FLOAD 13
+    ALOAD 2
+    INVOKEINTERFACE rf.a ()I
+    ALOAD 2
+    INVOKEINTERFACE rf.b ()I
+    FLOAD 18
+    INVOKESTATIC bly.a (Lbmh;FFFFIIF)V
+   L49
+    LINENUMBER 329 L49
+    ALOAD 19
+    ILOAD 8
+    INVOKEVIRTUAL add.hasEffect (I)Z
+    IFEQ L50
+   L51
+    LINENUMBER 331 L51
+    SIPUSH 514
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthFunc (I)V
+   L52
+    LINENUMBER 332 L52
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L53
+    LINENUMBER 333 L53
+    ALOAD 0
+    GETFIELD bny.b : Lbnn;
+    GETFIELD bnn.e : Lbqf;
+    GETSTATIC bny.h : Lbqx;
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L54
+    LINENUMBER 334 L54
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L55
+    LINENUMBER 335 L55
+    SIPUSH 768
+    ICONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glBlendFunc (II)V
+   L56
+    LINENUMBER 336 L56
+    LDC 0.76
+    FSTORE 23
+   L57
+    LINENUMBER 337 L57
+    LDC 0.5
+    FLOAD 23
+    FMUL
+    LDC 0.25
+    FLOAD 23
+    FMUL
+    LDC 0.8
+    FLOAD 23
+    FMUL
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L58
+    LINENUMBER 338 L58
+    SIPUSH 5890
+    INVOKESTATIC org/lwjgl/opengl/GL11.glMatrixMode (I)V
+   L59
+    LINENUMBER 339 L59
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L60
+    LINENUMBER 340 L60
+    LDC 0.125
+    FSTORE 24
+   L61
+    LINENUMBER 341 L61
+    FLOAD 24
+    FLOAD 24
+    FLOAD 24
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L62
+    LINENUMBER 342 L62
+    INVOKESTATIC bao.K ()J
+    LDC 3000
+    LREM
+    L2F
+    LDC 3000.0
+    FDIV
+    LDC 8.0
+    FMUL
+    FSTORE 25
+   L63
+    LINENUMBER 343 L63
+    FLOAD 25
+    FCONST_0
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L64
+    LINENUMBER 344 L64
+    LDC -50.0
+    FCONST_0
+    FCONST_0
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L65
+    LINENUMBER 345 L65
+    ALOAD 9
+    FCONST_0
+    FCONST_0
+    FCONST_1
+    FCONST_1
+    SIPUSH 255
+    SIPUSH 255
+    FLOAD 18
+    INVOKESTATIC bly.a (Lbmh;FFFFIIF)V
+   L66
+    LINENUMBER 346 L66
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L67
+    LINENUMBER 347 L67
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L68
+    LINENUMBER 348 L68
+    FLOAD 24
+    FLOAD 24
+    FLOAD 24
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L69
+    LINENUMBER 349 L69
+    INVOKESTATIC bao.K ()J
+    LDC 4873
+    LREM
+    L2F
+    LDC 4873.0
+    FDIV
+    LDC 8.0
+    FMUL
+    FSTORE 25
+   L70
+    LINENUMBER 350 L70
+    FLOAD 25
+    FNEG
+    FCONST_0
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L71
+    LINENUMBER 351 L71
+    LDC 10.0
+    FCONST_0
+    FCONST_0
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L72
+    LINENUMBER 352 L72
+    ALOAD 9
+    FCONST_0
+    FCONST_0
+    FCONST_1
+    FCONST_1
+    SIPUSH 255
+    SIPUSH 255
+    FLOAD 18
+    INVOKESTATIC bly.a (Lbmh;FFFFIIF)V
+   L73
+    LINENUMBER 353 L73
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L74
+    LINENUMBER 354 L74
+    SIPUSH 5888
+    INVOKESTATIC org/lwjgl/opengl/GL11.glMatrixMode (I)V
+   L75
+    LINENUMBER 355 L75
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L76
+    LINENUMBER 356 L76
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L77
+    LINENUMBER 357 L77
+    SIPUSH 515
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthFunc (I)V
+   L50
+    LINENUMBER 302 L50
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    IINC 22 1
+    GOTO L35
+   L36
+    LINENUMBER 361 L36
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F F F add I I I] []
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L78
+    LINENUMBER 362 L78
+    GOTO L79
+   L13
+    LINENUMBER 365 L13
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F] []
+    ICONST_0
+    ISTORE 18
+   L80
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F T I] []
+    ILOAD 18
+    ILOAD 3
+    IF_ICMPGE L79
+   L81
+    LINENUMBER 367 L81
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L82
+    LINENUMBER 369 L82
+    ILOAD 18
+    IFLE L83
+   L84
+    LINENUMBER 371 L84
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    FSTORE 17
+   L85
+    LINENUMBER 372 L85
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    FSTORE 19
+   L86
+    LINENUMBER 373 L86
+    ALOAD 0
+    GETFIELD bny.j : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextFloat ()F
+    FCONST_2
+    FMUL
+    FCONST_1
+    FSUB
+    LDC 0.3
+    FMUL
+    FSTORE 20
+   L87
+    LINENUMBER 374 L87
+    FLOAD 17
+    FLOAD 19
+    FLOAD 20
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L83
+    LINENUMBER 377 L83
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F T I] []
+    GETSTATIC bny.g : Z
+    IFNE L88
+   L89
+    LINENUMBER 379 L89
+    LDC 180.0
+    ALOAD 0
+    GETFIELD bny.b : Lbnn;
+    GETFIELD bnn.j : F
+    FSUB
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L88
+    LINENUMBER 382 L88
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F T I] []
+    FLOAD 5
+    FLOAD 6
+    FLOAD 7
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L90
+    LINENUMBER 383 L90
+    ALOAD 9
+    INVOKEVIRTUAL bmh.b ()V
+   L91
+    LINENUMBER 384 L91
+    ALOAD 9
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKEVIRTUAL bmh.c (FFF)V
+   L92
+    LINENUMBER 385 L92
+    ALOAD 9
+    FCONST_0
+    FLOAD 15
+    FSUB
+    F2D
+    FCONST_0
+    FLOAD 16
+    FSUB
+    F2D
+    DCONST_0
+    FLOAD 10
+    F2D
+    FLOAD 13
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L93
+    LINENUMBER 386 L93
+    ALOAD 9
+    FLOAD 14
+    FLOAD 15
+    FSUB
+    F2D
+    FCONST_0
+    FLOAD 16
+    FSUB
+    F2D
+    DCONST_0
+    FLOAD 11
+    F2D
+    FLOAD 13
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L94
+    LINENUMBER 387 L94
+    ALOAD 9
+    FLOAD 14
+    FLOAD 15
+    FSUB
+    F2D
+    FCONST_1
+    FLOAD 16
+    FSUB
+    F2D
+    DCONST_0
+    FLOAD 11
+    F2D
+    FLOAD 12
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L95
+    LINENUMBER 388 L95
+    ALOAD 9
+    FCONST_0
+    FLOAD 15
+    FSUB
+    F2D
+    FCONST_1
+    FLOAD 16
+    FSUB
+    F2D
+    DCONST_0
+    FLOAD 10
+    F2D
+    FLOAD 12
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L96
+    LINENUMBER 389 L96
+    ALOAD 9
+    INVOKEVIRTUAL bmh.a ()I
+    POP
+   L97
+    LINENUMBER 390 L97
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L98
+    LINENUMBER 365 L98
+    IINC 18 1
+    GOTO L80
+   L79
+    LINENUMBER 393 L79
+   FRAME FULL [bny xk rf I F F F F I bmh F F F F F F F] []
+    RETURN
+   L99
+    LOCALVARIABLE texturemanager Lbqf; L4 L2 10
+    LOCALVARIABLE resourcelocation Lbqx; L5 L2 11
+    LOCALVARIABLE b0 B L25 L23 21
+    LOCALVARIABLE b0 B L29 L27 21
+    LOCALVARIABLE b0 B L32 L30 21
+    LOCALVARIABLE x F L40 L43 23
+    LOCALVARIABLE y F L41 L43 24
+    LOCALVARIABLE z F L42 L43 25
+    LOCALVARIABLE f11 F L57 L50 23
+    LOCALVARIABLE f12 F L61 L50 24
+    LOCALVARIABLE f13 F L63 L50 25
+    LOCALVARIABLE k I L35 L36 22
+    LOCALVARIABLE f9 F L19 L78 18
+    LOCALVARIABLE itemstack Ladd; L21 L78 19
+    LOCALVARIABLE j I L22 L78 20
+    LOCALVARIABLE b0 B L26 L78 21
+    LOCALVARIABLE f10 F L20 L13 17
+    LOCALVARIABLE f16 F L86 L83 19
+    LOCALVARIABLE f17 F L87 L83 20
+    LOCALVARIABLE f10 F L85 L83 17
+    LOCALVARIABLE l I L80 L79 18
+    LOCALVARIABLE this Lbny; L0 L99 0
+    LOCALVARIABLE p_77020_1_ Lxk; L0 L99 1
+    LOCALVARIABLE p_77020_2_ Lrf; L0 L99 2
+    LOCALVARIABLE p_77020_3_ I L0 L99 3
+    LOCALVARIABLE p_77020_4_ F L0 L99 4
+    LOCALVARIABLE p_77020_5_ F L0 L99 5
+    LOCALVARIABLE p_77020_6_ F L0 L99 6
+    LOCALVARIABLE p_77020_7_ F L0 L99 7
+    LOCALVARIABLE pass I L0 L99 8
+    LOCALVARIABLE tessellator Lbmh; L1 L99 9
+    LOCALVARIABLE f14 F L6 L99 10
+    LOCALVARIABLE f15 F L7 L99 11
+    LOCALVARIABLE f4 F L8 L99 12
+    LOCALVARIABLE f5 F L9 L99 13
+    LOCALVARIABLE f6 F L10 L99 14
+    LOCALVARIABLE f7 F L11 L99 15
+    LOCALVARIABLE f8 F L12 L99 16
+    MAXSTACK = 11
+    MAXLOCALS = 26
+
+  // access flags 0x1
+  public a(Lbbu;Lbqf;Ladd;II)V
+   L0
+    LINENUMBER 397 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ALOAD 3
+    ILOAD 4
+    ILOAD 5
+    ICONST_0
+    INVOKEVIRTUAL bny.renderItemIntoGUI (Lbbu;Lbqf;Ladd;IIZ)V
+   L1
+    LINENUMBER 398 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lbny; L0 L2 0
+    LOCALVARIABLE p_77015_1_ Lbbu; L0 L2 1
+    LOCALVARIABLE p_77015_2_ Lbqf; L0 L2 2
+    LOCALVARIABLE p_77015_3_ Ladd; L0 L2 3
+    LOCALVARIABLE p_77015_4_ I L0 L2 4
+    LOCALVARIABLE p_77015_5_ I L0 L2 5
+    MAXSTACK = 7
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public renderItemIntoGUI(Lbbu;Lbqf;Ladd;IIZ)V
+   L0
+    LINENUMBER 402 L0
+    ALOAD 3
+    INVOKEVIRTUAL add.k ()I
+    ISTORE 7
+   L1
+    LINENUMBER 403 L1
+    ALOAD 3
+    INVOKEVIRTUAL add.c ()Lrf;
+    ASTORE 8
+   L2
+    LINENUMBER 409 L2
+    ALOAD 3
+    INVOKEVIRTUAL add.d ()I
+    IFNE L3
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKESTATIC aji.a (Ladb;)Laji;
+    INVOKEVIRTUAL aji.b ()I
+    INVOKESTATIC blm.a (I)Z
+    IFEQ L3
+   L4
+    LINENUMBER 411 L4
+    ALOAD 2
+    GETSTATIC bpz.b : Lbqx;
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L5
+    LINENUMBER 412 L5
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKESTATIC aji.a (Ladb;)Laji;
+    ASTORE 13
+   L6
+    LINENUMBER 413 L6
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L7
+    LINENUMBER 415 L7
+    ALOAD 13
+    INVOKEVIRTUAL aji.w ()I
+    IFEQ L8
+   L9
+    LINENUMBER 417 L9
+    SIPUSH 516
+    LDC 0.1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glAlphaFunc (IF)V
+   L10
+    LINENUMBER 418 L10
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L11
+    LINENUMBER 419 L11
+    SIPUSH 770
+    SIPUSH 771
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+    GOTO L12
+   L8
+    LINENUMBER 423 L8
+   FRAME FULL [bny bbu bqf add I I I I rf T T T T aji] []
+    SIPUSH 516
+    LDC 0.5
+    INVOKESTATIC org/lwjgl/opengl/GL11.glAlphaFunc (IF)V
+   L13
+    LINENUMBER 424 L13
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L12
+    LINENUMBER 427 L12
+   FRAME FULL [bny bbu bqf add I I I I rf T T T T aji] []
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L14
+    LINENUMBER 428 L14
+    ILOAD 4
+    ICONST_2
+    ISUB
+    I2F
+    ILOAD 5
+    ICONST_3
+    IADD
+    I2F
+    LDC -3.0
+    ALOAD 0
+    GETFIELD bny.f : F
+    FADD
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L15
+    LINENUMBER 429 L15
+    LDC 10.0
+    LDC 10.0
+    LDC 10.0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L16
+    LINENUMBER 430 L16
+    FCONST_1
+    LDC 0.5
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L17
+    LINENUMBER 431 L17
+    FCONST_1
+    FCONST_1
+    LDC -1.0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glScalef (FFF)V
+   L18
+    LINENUMBER 432 L18
+    LDC 210.0
+    FCONST_1
+    FCONST_0
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L19
+    LINENUMBER 433 L19
+    LDC 45.0
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L20
+    LINENUMBER 434 L20
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 3
+    ICONST_0
+    INVOKEVIRTUAL adb.a (Ladd;I)I
+    ISTORE 9
+   L21
+    LINENUMBER 435 L21
+    ILOAD 9
+    BIPUSH 16
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 11
+   L22
+    LINENUMBER 436 L22
+    ILOAD 9
+    BIPUSH 8
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 12
+   L23
+    LINENUMBER 437 L23
+    ILOAD 9
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 10
+   L24
+    LINENUMBER 439 L24
+    ALOAD 0
+    GETFIELD bny.a : Z
+    IFEQ L25
+   L26
+    LINENUMBER 441 L26
+    FLOAD 11
+    FLOAD 12
+    FLOAD 10
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L25
+    LINENUMBER 444 L25
+   FRAME FULL [bny bbu bqf add I I I I rf I F F F aji] []
+    LDC -90.0
+    FCONST_0
+    FCONST_1
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glRotatef (FFFF)V
+   L27
+    LINENUMBER 445 L27
+    ALOAD 0
+    GETFIELD bny.i : Lblm;
+    ALOAD 0
+    GETFIELD bny.a : Z
+    PUTFIELD blm.c : Z
+   L28
+    LINENUMBER 446 L28
+    ALOAD 0
+    GETFIELD bny.i : Lblm;
+    ALOAD 13
+    ILOAD 7
+    FCONST_1
+    INVOKEVIRTUAL blm.a (Laji;IF)V
+   L29
+    LINENUMBER 447 L29
+    ALOAD 0
+    GETFIELD bny.i : Lblm;
+    ICONST_1
+    PUTFIELD blm.c : Z
+   L30
+    LINENUMBER 449 L30
+    ALOAD 13
+    INVOKEVIRTUAL aji.w ()I
+    IFNE L31
+   L32
+    LINENUMBER 451 L32
+    SIPUSH 516
+    LDC 0.1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glAlphaFunc (IF)V
+   L31
+    LINENUMBER 454 L31
+   FRAME FULL [bny bbu bqf add I I I I rf I F F F aji] []
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+   L33
+    LINENUMBER 455 L33
+    GOTO L34
+   L3
+    LINENUMBER 456 L3
+   FRAME FULL [bny bbu bqf add I I I I rf] []
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    INVOKEVIRTUAL adb.b ()Z
+    IFEQ L35
+   L36
+    LINENUMBER 458 L36
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L37
+    LINENUMBER 459 L37
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L38
+    LINENUMBER 460 L38
+    ALOAD 2
+    GETSTATIC bpz.c : Lbqx;
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L39
+    LINENUMBER 461 L39
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L40
+    LINENUMBER 462 L40
+    SIPUSH 3553
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L41
+    LINENUMBER 463 L41
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L42
+    LINENUMBER 464 L42
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+   L43
+    LINENUMBER 465 L43
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    ICONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColorMask (ZZZZ)V
+   L44
+    LINENUMBER 466 L44
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L45
+    LINENUMBER 467 L45
+    GETSTATIC bmh.a : Lbmh;
+    ASTORE 13
+   L46
+    LINENUMBER 468 L46
+    ALOAD 13
+    INVOKEVIRTUAL bmh.b ()V
+   L47
+    LINENUMBER 469 L47
+    ALOAD 13
+    ICONST_M1
+    INVOKEVIRTUAL bmh.c (I)V
+   L48
+    LINENUMBER 470 L48
+    ALOAD 13
+    ILOAD 4
+    ICONST_2
+    ISUB
+    I2D
+    ILOAD 5
+    BIPUSH 18
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L49
+    LINENUMBER 471 L49
+    ALOAD 13
+    ILOAD 4
+    BIPUSH 18
+    IADD
+    I2D
+    ILOAD 5
+    BIPUSH 18
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L50
+    LINENUMBER 472 L50
+    ALOAD 13
+    ILOAD 4
+    BIPUSH 18
+    IADD
+    I2D
+    ILOAD 5
+    ICONST_2
+    ISUB
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L51
+    LINENUMBER 473 L51
+    ALOAD 13
+    ILOAD 4
+    ICONST_2
+    ISUB
+    I2D
+    ILOAD 5
+    ICONST_2
+    ISUB
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L52
+    LINENUMBER 474 L52
+    ALOAD 13
+    INVOKEVIRTUAL bmh.a ()I
+    POP
+   L53
+    LINENUMBER 475 L53
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColorMask (ZZZZ)V
+   L54
+    LINENUMBER 476 L54
+    SIPUSH 3553
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L55
+    LINENUMBER 477 L55
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L56
+    LINENUMBER 479 L56
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ASTORE 14
+   L57
+    LINENUMBER 480 L57
+    ICONST_0
+    ISTORE 9
+   L58
+   FRAME FULL [bny bbu bqf add I I I I rf I T T T bmh adb] []
+    ILOAD 9
+    ALOAD 14
+    ILOAD 7
+    INVOKEVIRTUAL adb.getRenderPasses (I)I
+    IF_ICMPGE L59
+   L60
+    LINENUMBER 482 L60
+    SIPUSH 770
+    SIPUSH 771
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+   L61
+    LINENUMBER 483 L61
+    ALOAD 2
+    ALOAD 14
+    INVOKEVIRTUAL adb.d ()I
+    IFNE L62
+    GETSTATIC bpz.b : Lbqx;
+    GOTO L63
+   L62
+   FRAME FULL [bny bbu bqf add I I I I rf I T T T bmh adb] [bqf]
+    GETSTATIC bpz.c : Lbqx;
+   L63
+   FRAME FULL [bny bbu bqf add I I I I rf I T T T bmh adb] [bqf bqx]
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L64
+    LINENUMBER 484 L64
+    ALOAD 14
+    ALOAD 3
+    ILOAD 9
+    INVOKEVIRTUAL adb.getIcon (Ladd;I)Lrf;
+    ASTORE 15
+   L65
+    LINENUMBER 485 L65
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 3
+    ILOAD 9
+    INVOKEVIRTUAL adb.a (Ladd;I)I
+    ISTORE 16
+   L66
+    LINENUMBER 486 L66
+    ILOAD 16
+    BIPUSH 16
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 10
+   L67
+    LINENUMBER 487 L67
+    ILOAD 16
+    BIPUSH 8
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 17
+   L68
+    LINENUMBER 488 L68
+    ILOAD 16
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 18
+   L69
+    LINENUMBER 490 L69
+    ALOAD 0
+    GETFIELD bny.a : Z
+    IFEQ L70
+   L71
+    LINENUMBER 492 L71
+    FLOAD 10
+    FLOAD 17
+    FLOAD 18
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L70
+    LINENUMBER 495 L70
+   FRAME FULL [bny bbu bqf add I I I I rf I F T T bmh adb rf I F F] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L72
+    LINENUMBER 496 L72
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L73
+    LINENUMBER 498 L73
+    ALOAD 0
+    ILOAD 4
+    ILOAD 5
+    ALOAD 15
+    BIPUSH 16
+    BIPUSH 16
+    INVOKEVIRTUAL bny.a (IILrf;II)V
+   L74
+    LINENUMBER 500 L74
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L75
+    LINENUMBER 501 L75
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L76
+    LINENUMBER 503 L76
+    ILOAD 6
+    IFEQ L77
+    ALOAD 3
+    ILOAD 9
+    INVOKEVIRTUAL add.hasEffect (I)Z
+    IFEQ L77
+   L78
+    LINENUMBER 505 L78
+    ALOAD 0
+    ALOAD 2
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL bny.renderEffect (Lbqf;II)V
+   L77
+    LINENUMBER 480 L77
+   FRAME FULL [bny bbu bqf add I I I I rf I F T T bmh adb rf I F F] []
+    IINC 9 1
+    GOTO L58
+   L59
+    LINENUMBER 509 L59
+   FRAME FULL [bny bbu bqf add I I I I rf I T T T bmh adb] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L79
+    LINENUMBER 510 L79
+    GOTO L34
+   L35
+    LINENUMBER 513 L35
+   FRAME FULL [bny bbu bqf add I I I I rf] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L80
+    LINENUMBER 514 L80
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L81
+    LINENUMBER 515 L81
+    SIPUSH 770
+    SIPUSH 771
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC buu.c (IIII)V
+   L82
+    LINENUMBER 516 L82
+    ALOAD 2
+    ALOAD 3
+    INVOKEVIRTUAL add.d ()I
+    INVOKEVIRTUAL bqf.a (I)Lbqx;
+    ASTORE 13
+   L83
+    LINENUMBER 517 L83
+    ALOAD 2
+    ALOAD 13
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L84
+    LINENUMBER 519 L84
+    ALOAD 8
+    IFNONNULL L85
+   L86
+    LINENUMBER 521 L86
+    INVOKESTATIC bao.B ()Lbao;
+    INVOKEVIRTUAL bao.P ()Lbqf;
+    ALOAD 13
+    INVOKEVIRTUAL bqf.b (Lbqx;)Lbqh;
+    CHECKCAST bpz
+    LDC "missingno"
+    INVOKEVIRTUAL bpz.b (Ljava/lang/String;)Lbqd;
+    ASTORE 8
+   L85
+    LINENUMBER 524 L85
+   FRAME FULL [bny bbu bqf add I I I I rf T T T T bqx] []
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 3
+    ICONST_0
+    INVOKEVIRTUAL adb.a (Ladd;I)I
+    ISTORE 9
+   L87
+    LINENUMBER 525 L87
+    ILOAD 9
+    BIPUSH 16
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 11
+   L88
+    LINENUMBER 526 L88
+    ILOAD 9
+    BIPUSH 8
+    ISHR
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 12
+   L89
+    LINENUMBER 527 L89
+    ILOAD 9
+    SIPUSH 255
+    IAND
+    I2F
+    LDC 255.0
+    FDIV
+    FSTORE 10
+   L90
+    LINENUMBER 529 L90
+    ALOAD 0
+    GETFIELD bny.a : Z
+    IFEQ L91
+   L92
+    LINENUMBER 531 L92
+    FLOAD 11
+    FLOAD 12
+    FLOAD 10
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L91
+    LINENUMBER 534 L91
+   FRAME FULL [bny bbu bqf add I I I I rf I F F F bqx] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L93
+    LINENUMBER 535 L93
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L94
+    LINENUMBER 536 L94
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L95
+    LINENUMBER 538 L95
+    ALOAD 0
+    ILOAD 4
+    ILOAD 5
+    ALOAD 8
+    CHECKCAST rf
+    BIPUSH 16
+    BIPUSH 16
+    INVOKEVIRTUAL bny.a (IILrf;II)V
+   L96
+    LINENUMBER 540 L96
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L97
+    LINENUMBER 541 L97
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L98
+    LINENUMBER 542 L98
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L99
+    LINENUMBER 544 L99
+    ILOAD 6
+    IFEQ L100
+    ALOAD 3
+    ICONST_0
+    INVOKEVIRTUAL add.hasEffect (I)Z
+    IFEQ L100
+   L101
+    LINENUMBER 546 L101
+    ALOAD 0
+    ALOAD 2
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL bny.renderEffect (Lbqf;II)V
+   L100
+    LINENUMBER 548 L100
+   FRAME FULL [bny bbu bqf add I I I I rf I F F F bqx] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L34
+    LINENUMBER 551 L34
+   FRAME FULL [bny bbu bqf add I I I I rf I T T T java/lang/Object] []
+    SIPUSH 2884
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L102
+    LINENUMBER 552 L102
+    RETURN
+   L103
+    LOCALVARIABLE block Laji; L6 L33 13
+    LOCALVARIABLE l I L21 L3 9
+    LOCALVARIABLE f F L24 L3 10
+    LOCALVARIABLE f3 F L22 L3 11
+    LOCALVARIABLE f4 F L23 L3 12
+    LOCALVARIABLE iicon Lrf; L65 L77 15
+    LOCALVARIABLE i1 I L66 L77 16
+    LOCALVARIABLE f1 F L68 L77 17
+    LOCALVARIABLE f2 F L69 L77 18
+    LOCALVARIABLE f F L67 L59 10
+    LOCALVARIABLE tessellator Lbmh; L46 L79 13
+    LOCALVARIABLE item Ladb; L57 L79 14
+    LOCALVARIABLE l I L58 L35 9
+    LOCALVARIABLE resourcelocation Lbqx; L83 L34 13
+    LOCALVARIABLE f F L90 L34 10
+    LOCALVARIABLE f3 F L88 L34 11
+    LOCALVARIABLE f4 F L89 L34 12
+    LOCALVARIABLE this Lbny; L0 L103 0
+    LOCALVARIABLE p_77015_1_ Lbbu; L0 L103 1
+    LOCALVARIABLE p_77015_2_ Lbqf; L0 L103 2
+    LOCALVARIABLE p_77015_3_ Ladd; L0 L103 3
+    LOCALVARIABLE p_77015_4_ I L0 L103 4
+    LOCALVARIABLE p_77015_5_ I L0 L103 5
+    LOCALVARIABLE renderEffect Z L0 L103 6
+    LOCALVARIABLE k I L1 L103 7
+    LOCALVARIABLE object Ljava/lang/Object; L2 L103 8
+    LOCALVARIABLE l I L87 L103 9
+    MAXSTACK = 7
+    MAXLOCALS = 19
+
+  // access flags 0x1
+  public b(Lbbu;Lbqf;Ladd;II)V
+    TRYCATCHBLOCK L0 L1 L2 java/lang/Throwable
+   L3
+    LINENUMBER 557 L3
+    ALOAD 3
+    IFNULL L4
+   L5
+    LINENUMBER 559 L5
+    ALOAD 0
+    DUP
+    GETFIELD bny.f : F
+    LDC 50.0
+    FADD
+    PUTFIELD bny.f : F
+   L0
+    LINENUMBER 563 L0
+    ALOAD 0
+    GETFIELD bny.c : Lblm;
+    ALOAD 2
+    ALOAD 3
+    ALOAD 0
+    GETFIELD bny.a : Z
+    ALOAD 0
+    GETFIELD bny.f : F
+    ILOAD 4
+    I2F
+    ILOAD 5
+    I2F
+    INVOKESTATIC net/minecraftforge/client/ForgeHooksClient.renderInventoryItem (Lblm;Lbqf;Ladd;ZFFF)Z
+    IFNE L1
+   L6
+    LINENUMBER 565 L6
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ALOAD 3
+    ILOAD 4
+    ILOAD 5
+    ICONST_1
+    INVOKEVIRTUAL bny.renderItemIntoGUI (Lbbu;Lbqf;Ladd;IIZ)V
+   L1
+    LINENUMBER 605 L1
+   FRAME FULL [bny bbu bqf add I I] []
+    GOTO L7
+   L2
+    LINENUMBER 568 L2
+   FRAME FULL [bny bbu bqf add I I] [java/lang/Throwable]
+    ASTORE 6
+   L8
+    LINENUMBER 570 L8
+    ALOAD 6
+    LDC "Rendering item"
+    INVOKESTATIC b.a (Ljava/lang/Throwable;Ljava/lang/String;)Lb;
+    ASTORE 7
+   L9
+    LINENUMBER 571 L9
+    ALOAD 7
+    LDC "Item being rendered"
+    INVOKEVIRTUAL b.a (Ljava/lang/String;)Lk;
+    ASTORE 8
+   L10
+    LINENUMBER 572 L10
+    ALOAD 8
+    LDC "Item Type"
+    NEW bnz
+    DUP
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL bnz.<init> (Lbny;Ladd;)V
+    INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+   L11
+    LINENUMBER 580 L11
+    ALOAD 8
+    LDC "Item Aux"
+    NEW boa
+    DUP
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL boa.<init> (Lbny;Ladd;)V
+    INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+   L12
+    LINENUMBER 588 L12
+    ALOAD 8
+    LDC "Item NBT"
+    NEW bob
+    DUP
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL bob.<init> (Lbny;Ladd;)V
+    INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+   L13
+    LINENUMBER 596 L13
+    ALOAD 8
+    LDC "Item Foil"
+    NEW boc
+    DUP
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL boc.<init> (Lbny;Ladd;)V
+    INVOKEVIRTUAL k.a (Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+   L14
+    LINENUMBER 604 L14
+    NEW s
+    DUP
+    ALOAD 7
+    INVOKESPECIAL s.<init> (Lb;)V
+    ATHROW
+   L7
+    LINENUMBER 624 L7
+   FRAME FULL [bny bbu bqf add I I] []
+    ALOAD 0
+    DUP
+    GETFIELD bny.f : F
+    LDC 50.0
+    FSUB
+    PUTFIELD bny.f : F
+   L4
+    LINENUMBER 626 L4
+   FRAME FULL [bny bbu bqf add I I] []
+    RETURN
+   L15
+    LOCALVARIABLE crashreport Lb; L9 L7 7
+    LOCALVARIABLE crashreportcategory Lk; L10 L7 8
+    LOCALVARIABLE throwable Ljava/lang/Throwable; L8 L7 6
+    LOCALVARIABLE this Lbny; L3 L15 0
+    LOCALVARIABLE p_82406_1_ Lbbu; L3 L15 1
+    LOCALVARIABLE p_82406_2_ Lbqf; L3 L15 2
+    LOCALVARIABLE p_82406_3_ Ladd; L3 L15 3
+    LOCALVARIABLE p_82406_4_ I L3 L15 4
+    LOCALVARIABLE p_82406_5_ I L3 L15 5
+    MAXSTACK = 7
+    MAXLOCALS = 9
+
+  // access flags 0x1
+  public renderEffect(Lbqf;II)V
+   L0
+    LINENUMBER 630 L0
+    SIPUSH 514
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthFunc (I)V
+   L1
+    LINENUMBER 631 L1
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L2
+    LINENUMBER 632 L2
+    ICONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthMask (Z)V
+   L3
+    LINENUMBER 633 L3
+    ALOAD 1
+    GETSTATIC bny.h : Lbqx;
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L4
+    LINENUMBER 634 L4
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L5
+    LINENUMBER 635 L5
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L6
+    LINENUMBER 636 L6
+    LDC 0.5
+    LDC 0.25
+    LDC 0.8
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L7
+    LINENUMBER 637 L7
+    ALOAD 0
+    ILOAD 2
+    LDC 431278612
+    IMUL
+    ILOAD 3
+    LDC 32178161
+    IMUL
+    IADD
+    ILOAD 2
+    ICONST_2
+    ISUB
+    ILOAD 3
+    ICONST_2
+    ISUB
+    BIPUSH 20
+    BIPUSH 20
+    INVOKESPECIAL bny.a (IIIII)V
+   L8
+    LINENUMBER 638 L8
+    ICONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthMask (Z)V
+   L9
+    LINENUMBER 639 L9
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L10
+    LINENUMBER 640 L10
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L11
+    LINENUMBER 641 L11
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L12
+    LINENUMBER 642 L12
+    SIPUSH 515
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDepthFunc (I)V
+   L13
+    LINENUMBER 643 L13
+    RETURN
+   L14
+    LOCALVARIABLE this Lbny; L0 L14 0
+    LOCALVARIABLE manager Lbqf; L0 L14 1
+    LOCALVARIABLE x I L0 L14 2
+    LOCALVARIABLE y I L0 L14 3
+    MAXSTACK = 6
+    MAXLOCALS = 4
+
+  // access flags 0x2
+  private a(IIIII)V
+   L0
+    LINENUMBER 647 L0
+    ICONST_0
+    ISTORE 6
+   L1
+   FRAME FULL [bny I I I I I I] []
+    ILOAD 6
+    ICONST_1
+    IF_ICMPGE L2
+    SIPUSH 772
+    ICONST_1
+    ICONST_0
+    ICONST_1
+    INVOKESTATIC buu.c (IIII)V
+   L3
+    LINENUMBER 650 L3
+    LDC 0.00390625
+    FSTORE 7
+   L4
+    LINENUMBER 651 L4
+    LDC 0.00390625
+    FSTORE 8
+   L5
+    LINENUMBER 652 L5
+    INVOKESTATIC bao.K ()J
+    SIPUSH 3000
+    ILOAD 6
+    SIPUSH 1873
+    IMUL
+    IADD
+    I2L
+    LREM
+    L2F
+    LDC 3000.0
+    ILOAD 6
+    SIPUSH 1873
+    IMUL
+    I2F
+    FADD
+    FDIV
+    LDC 256.0
+    FMUL
+    FSTORE 9
+   L6
+    LINENUMBER 653 L6
+    FCONST_0
+    FSTORE 10
+   L7
+    LINENUMBER 654 L7
+    GETSTATIC bmh.a : Lbmh;
+    ASTORE 11
+   L8
+    LINENUMBER 655 L8
+    LDC 4.0
+    FSTORE 12
+   L9
+    LINENUMBER 657 L9
+    ILOAD 6
+    ICONST_1
+    IF_ICMPNE L10
+   L11
+    LINENUMBER 659 L11
+    LDC -1.0
+    FSTORE 12
+   L10
+    LINENUMBER 662 L10
+   FRAME FULL [bny I I I I I I F F F F bmh F] []
+    ALOAD 11
+    INVOKEVIRTUAL bmh.b ()V
+   L12
+    LINENUMBER 663 L12
+    ALOAD 11
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    FLOAD 9
+    ILOAD 5
+    I2F
+    FLOAD 12
+    FMUL
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    ILOAD 5
+    I2F
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L13
+    LINENUMBER 664 L13
+    ALOAD 11
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    FLOAD 9
+    ILOAD 4
+    I2F
+    FADD
+    ILOAD 5
+    I2F
+    FLOAD 12
+    FMUL
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    ILOAD 5
+    I2F
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L14
+    LINENUMBER 665 L14
+    ALOAD 11
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    FLOAD 9
+    ILOAD 4
+    I2F
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    FCONST_0
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L15
+    LINENUMBER 666 L15
+    ALOAD 11
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    FLOAD 9
+    FCONST_0
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    FCONST_0
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L16
+    LINENUMBER 667 L16
+    ALOAD 11
+    INVOKEVIRTUAL bmh.a ()I
+    POP
+   L17
+    LINENUMBER 647 L17
+    IINC 6 1
+    GOTO L1
+   L2
+    LINENUMBER 669 L2
+   FRAME FULL [bny I I I I I I] []
+    RETURN
+   L18
+    LOCALVARIABLE f F L4 L17 7
+    LOCALVARIABLE f1 F L5 L17 8
+    LOCALVARIABLE f2 F L6 L17 9
+    LOCALVARIABLE f3 F L7 L17 10
+    LOCALVARIABLE tessellator Lbmh; L8 L17 11
+    LOCALVARIABLE f4 F L9 L17 12
+    LOCALVARIABLE j1 I L1 L2 6
+    LOCALVARIABLE this Lbny; L0 L18 0
+    LOCALVARIABLE p_77018_1_ I L0 L18 1
+    LOCALVARIABLE p_77018_2_ I L0 L18 2
+    LOCALVARIABLE p_77018_3_ I L0 L18 3
+    LOCALVARIABLE p_77018_4_ I L0 L18 4
+    LOCALVARIABLE p_77018_5_ I L0 L18 5
+    MAXSTACK = 11
+    MAXLOCALS = 13
+
+  // access flags 0x1
+  public c(Lbbu;Lbqf;Ladd;II)V
+   L0
+    LINENUMBER 673 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ALOAD 3
+    ILOAD 4
+    ILOAD 5
+    ACONST_NULL
+    CHECKCAST java/lang/String
+    INVOKEVIRTUAL bny.a (Lbbu;Lbqf;Ladd;IILjava/lang/String;)V
+   L1
+    LINENUMBER 674 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lbny; L0 L2 0
+    LOCALVARIABLE p_77021_1_ Lbbu; L0 L2 1
+    LOCALVARIABLE p_77021_2_ Lbqf; L0 L2 2
+    LOCALVARIABLE p_77021_3_ Ladd; L0 L2 3
+    LOCALVARIABLE p_77021_4_ I L0 L2 4
+    LOCALVARIABLE p_77021_5_ I L0 L2 5
+    MAXSTACK = 7
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public a(Lbbu;Lbqf;Ladd;IILjava/lang/String;)V
+   L0
+    LINENUMBER 678 L0
+    ALOAD 3
+    IFNULL L1
+   L2
+    LINENUMBER 680 L2
+    ALOAD 3
+    GETFIELD add.b : I
+    ICONST_1
+    IF_ICMPGT L3
+    ALOAD 6
+    IFNULL L4
+   L3
+    LINENUMBER 682 L3
+   FRAME FULL [bny bbu bqf add I I java/lang/String] []
+    ALOAD 6
+    IFNONNULL L5
+    ALOAD 3
+    GETFIELD add.b : I
+    INVOKESTATIC java/lang/String.valueOf (I)Ljava/lang/String;
+    GOTO L6
+   L5
+   FRAME FULL [bny bbu bqf add I I java/lang/String] []
+    ALOAD 6
+   L6
+   FRAME FULL [bny bbu bqf add I I java/lang/String] [java/lang/String]
+    ASTORE 7
+   L7
+    LINENUMBER 683 L7
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L8
+    LINENUMBER 684 L8
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L9
+    LINENUMBER 685 L9
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L10
+    LINENUMBER 686 L10
+    ALOAD 1
+    ALOAD 7
+    ILOAD 4
+    BIPUSH 19
+    IADD
+    ICONST_2
+    ISUB
+    ALOAD 1
+    ALOAD 7
+    INVOKEVIRTUAL bbu.a (Ljava/lang/String;)I
+    ISUB
+    ILOAD 5
+    BIPUSH 6
+    IADD
+    ICONST_3
+    IADD
+    LDC 16777215
+    INVOKEVIRTUAL bbu.a (Ljava/lang/String;III)I
+    POP
+   L11
+    LINENUMBER 687 L11
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L12
+    LINENUMBER 688 L12
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L4
+    LINENUMBER 691 L4
+   FRAME FULL [bny bbu bqf add I I java/lang/String] []
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 3
+    INVOKEVIRTUAL adb.showDurabilityBar (Ladd;)Z
+    IFEQ L1
+   L13
+    LINENUMBER 693 L13
+    ALOAD 3
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 3
+    INVOKEVIRTUAL adb.getDurabilityForDisplay (Ladd;)D
+    DSTORE 7
+   L14
+    LINENUMBER 694 L14
+    LDC 13.0
+    DLOAD 7
+    LDC 13.0
+    DMUL
+    DSUB
+    INVOKESTATIC java/lang/Math.round (D)J
+    L2I
+    ISTORE 9
+   L15
+    LINENUMBER 695 L15
+    LDC 255.0
+    DLOAD 7
+    LDC 255.0
+    DMUL
+    DSUB
+    INVOKESTATIC java/lang/Math.round (D)J
+    L2I
+    ISTORE 10
+   L16
+    LINENUMBER 696 L16
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L17
+    LINENUMBER 697 L17
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L18
+    LINENUMBER 698 L18
+    SIPUSH 3553
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L19
+    LINENUMBER 699 L19
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L20
+    LINENUMBER 700 L20
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L21
+    LINENUMBER 701 L21
+    GETSTATIC bmh.a : Lbmh;
+    ASTORE 11
+   L22
+    LINENUMBER 702 L22
+    SIPUSH 255
+    ILOAD 10
+    ISUB
+    BIPUSH 16
+    ISHL
+    ILOAD 10
+    BIPUSH 8
+    ISHL
+    IOR
+    ISTORE 12
+   L23
+    LINENUMBER 703 L23
+    SIPUSH 255
+    ILOAD 10
+    ISUB
+    ICONST_4
+    IDIV
+    BIPUSH 16
+    ISHL
+    SIPUSH 16128
+    IOR
+    ISTORE 13
+   L24
+    LINENUMBER 704 L24
+    ALOAD 0
+    ALOAD 11
+    ILOAD 4
+    ICONST_2
+    IADD
+    ILOAD 5
+    BIPUSH 13
+    IADD
+    BIPUSH 13
+    ICONST_2
+    ICONST_0
+    INVOKESPECIAL bny.a (Lbmh;IIIII)V
+   L25
+    LINENUMBER 705 L25
+    ALOAD 0
+    ALOAD 11
+    ILOAD 4
+    ICONST_2
+    IADD
+    ILOAD 5
+    BIPUSH 13
+    IADD
+    BIPUSH 12
+    ICONST_1
+    ILOAD 13
+    INVOKESPECIAL bny.a (Lbmh;IIIII)V
+   L26
+    LINENUMBER 706 L26
+    ALOAD 0
+    ALOAD 11
+    ILOAD 4
+    ICONST_2
+    IADD
+    ILOAD 5
+    BIPUSH 13
+    IADD
+    ILOAD 9
+    ICONST_1
+    ILOAD 12
+    INVOKESPECIAL bny.a (Lbmh;IIIII)V
+   L27
+    LINENUMBER 708 L27
+    SIPUSH 3008
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L28
+    LINENUMBER 709 L28
+    SIPUSH 3553
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L29
+    LINENUMBER 710 L29
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L30
+    LINENUMBER 711 L30
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L31
+    LINENUMBER 712 L31
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L1
+    LINENUMBER 715 L1
+   FRAME FULL [bny bbu bqf add I I java/lang/String] []
+    RETURN
+   L32
+    LOCALVARIABLE s1 Ljava/lang/String; L7 L4 7
+    LOCALVARIABLE health D L14 L1 7
+    LOCALVARIABLE j1 I L15 L1 9
+    LOCALVARIABLE k I L16 L1 10
+    LOCALVARIABLE tessellator Lbmh; L22 L1 11
+    LOCALVARIABLE l I L23 L1 12
+    LOCALVARIABLE i1 I L24 L1 13
+    LOCALVARIABLE this Lbny; L0 L32 0
+    LOCALVARIABLE p_94148_1_ Lbbu; L0 L32 1
+    LOCALVARIABLE p_94148_2_ Lbqf; L0 L32 2
+    LOCALVARIABLE p_94148_3_ Ladd; L0 L32 3
+    LOCALVARIABLE p_94148_4_ I L0 L32 4
+    LOCALVARIABLE p_94148_5_ I L0 L32 5
+    LOCALVARIABLE p_94148_6_ Ljava/lang/String; L0 L32 6
+    MAXSTACK = 7
+    MAXLOCALS = 14
+
+  // access flags 0x2
+  private a(Lbmh;IIIII)V
+   L0
+    LINENUMBER 719 L0
+    ALOAD 1
+    INVOKEVIRTUAL bmh.b ()V
+   L1
+    LINENUMBER 720 L1
+    ALOAD 1
+    ILOAD 6
+    INVOKEVIRTUAL bmh.c (I)V
+   L2
+    LINENUMBER 721 L2
+    ALOAD 1
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    DCONST_0
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L3
+    LINENUMBER 722 L3
+    ALOAD 1
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    DCONST_0
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L4
+    LINENUMBER 723 L4
+    ALOAD 1
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    DCONST_0
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L5
+    LINENUMBER 724 L5
+    ALOAD 1
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    DCONST_0
+    INVOKEVIRTUAL bmh.a (DDD)V
+   L6
+    LINENUMBER 725 L6
+    ALOAD 1
+    INVOKEVIRTUAL bmh.a ()I
+    POP
+   L7
+    LINENUMBER 726 L7
+    RETURN
+   L8
+    LOCALVARIABLE this Lbny; L0 L8 0
+    LOCALVARIABLE p_77017_1_ Lbmh; L0 L8 1
+    LOCALVARIABLE p_77017_2_ I L0 L8 2
+    LOCALVARIABLE p_77017_3_ I L0 L8 3
+    LOCALVARIABLE p_77017_4_ I L0 L8 4
+    LOCALVARIABLE p_77017_5_ I L0 L8 5
+    LOCALVARIABLE p_77017_6_ I L0 L8 6
+    MAXSTACK = 7
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public a(IILrf;II)V
+   L0
+    LINENUMBER 730 L0
+    GETSTATIC bmh.a : Lbmh;
+    ASTORE 6
+   L1
+    LINENUMBER 731 L1
+    ALOAD 6
+    INVOKEVIRTUAL bmh.b ()V
+   L2
+    LINENUMBER 732 L2
+    ALOAD 6
+    ILOAD 1
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 2
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.c ()F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.f ()F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L3
+    LINENUMBER 733 L3
+    ALOAD 6
+    ILOAD 1
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 2
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.d ()F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.f ()F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L4
+    LINENUMBER 734 L4
+    ALOAD 6
+    ILOAD 1
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.d ()F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.e ()F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L5
+    LINENUMBER 735 L5
+    ALOAD 6
+    ILOAD 1
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD bny.f : F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.c ()F
+    F2D
+    ALOAD 3
+    INVOKEINTERFACE rf.e ()F
+    F2D
+    INVOKEVIRTUAL bmh.a (DDDDD)V
+   L6
+    LINENUMBER 736 L6
+    ALOAD 6
+    INVOKEVIRTUAL bmh.a ()I
+    POP
+   L7
+    LINENUMBER 737 L7
+    RETURN
+   L8
+    LOCALVARIABLE this Lbny; L0 L8 0
+    LOCALVARIABLE p_94149_1_ I L0 L8 1
+    LOCALVARIABLE p_94149_2_ I L0 L8 2
+    LOCALVARIABLE p_94149_3_ Lrf; L0 L8 3
+    LOCALVARIABLE p_94149_4_ I L0 L8 4
+    LOCALVARIABLE p_94149_5_ I L0 L8 5
+    LOCALVARIABLE tessellator Lbmh; L1 L8 6
+    MAXSTACK = 11
+    MAXLOCALS = 7
+
+  // access flags 0x4
+  protected a(Lsa;)Lbqx;
+   L0
+    LINENUMBER 741 L0
+    ALOAD 0
+    ALOAD 1
+    CHECKCAST xk
+    INVOKEVIRTUAL bny.a (Lxk;)Lbqx;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    LOCALVARIABLE p_110775_1_ Lsa; L0 L1 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public a(Lsa;DDDFF)V
+   L0
+    LINENUMBER 746 L0
+    ALOAD 0
+    ALOAD 1
+    CHECKCAST xk
+    DLOAD 2
+    DLOAD 4
+    DLOAD 6
+    FLOAD 8
+    FLOAD 9
+    INVOKEVIRTUAL bny.a (Lxk;DDDFF)V
+   L1
+    LINENUMBER 747 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lbny; L0 L2 0
+    LOCALVARIABLE p_76986_1_ Lsa; L0 L2 1
+    LOCALVARIABLE p_76986_2_ D L0 L2 2
+    LOCALVARIABLE p_76986_4_ D L0 L2 4
+    LOCALVARIABLE p_76986_6_ D L0 L2 6
+    LOCALVARIABLE p_76986_8_ F L0 L2 8
+    LOCALVARIABLE p_76986_9_ F L0 L2 9
+    MAXSTACK = 10
+    MAXLOCALS = 10
+
+  // access flags 0x1
+  public shouldSpreadItems()Z
+   L0
+    LINENUMBER 757 L0
+    ICONST_1
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public shouldBob()Z
+   L0
+    LINENUMBER 766 L0
+    ICONST_1
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getMiniBlockCount(Ladd;B)B
+   L0
+    LINENUMBER 771 L0
+    ILOAD 2
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    LOCALVARIABLE stack Ladd; L0 L1 1
+    LOCALVARIABLE original B L0 L1 2
+    MAXSTACK = 1
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public getMiniItemCount(Ladd;B)B
+   L0
+    LINENUMBER 783 L0
+    ILOAD 2
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbny; L0 L1 0
+    LOCALVARIABLE stack Ladd; L0 L1 1
+    LOCALVARIABLE original B L0 L1 2
+    MAXSTACK = 1
+    MAXLOCALS = 3
+
+  // access flags 0x9
+  public static getInstance()Lbny;
+   L0
+    LINENUMBER 794 L0
+    GETSTATIC bny.instance : Lbny;
+    IFNONNULL L1
+    NEW bny
+    DUP
+    INVOKESPECIAL bny.<init> ()V
+    PUTSTATIC bny.instance : Lbny;
+   L1
+    LINENUMBER 795 L1
+   FRAME FULL [] []
+    GETSTATIC bny.instance : Lbny;
+    ARETURN
+    MAXSTACK = 2
+    MAXLOCALS = 0
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 37 L0
+    NEW bqx
+    DUP
+    LDC "textures/misc/enchanted_item_glint.png"
+    INVOKESPECIAL bqx.<init> (Ljava/lang/String;)V
+    PUTSTATIC bny.h : Lbqx;
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 0
+}

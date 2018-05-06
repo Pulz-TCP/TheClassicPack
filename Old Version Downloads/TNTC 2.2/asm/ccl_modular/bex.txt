@@ -1,0 +1,3024 @@
+// class version 50.0 (50)
+// access flags 0x421
+public abstract class bex extends bdw  {
+
+  // compiled from: GuiContainer.java
+
+  @Lcpw/mods/fml/relauncher/SideOnly;(value=Lcpw/mods/fml/relauncher/Side;.CLIENT)
+
+  // access flags 0x1C
+  protected final static Lbqx; a
+
+  // access flags 0x4
+  protected I f
+
+  // access flags 0x4
+  protected I g
+
+  // access flags 0x1
+  public Lzs; h
+
+  // access flags 0x4
+  protected I i
+
+  // access flags 0x4
+  protected I r
+
+  // access flags 0x2
+  private Laay; u
+
+  // access flags 0x2
+  private Laay; v
+
+  // access flags 0x2
+  private Z w
+
+  // access flags 0x2
+  private Ladd; x
+
+  // access flags 0x2
+  private I y
+
+  // access flags 0x2
+  private I z
+
+  // access flags 0x2
+  private Laay; A
+
+  // access flags 0x2
+  private J B
+
+  // access flags 0x2
+  private Ladd; C
+
+  // access flags 0x2
+  private Laay; D
+
+  // access flags 0x2
+  private J E
+
+  // access flags 0x14
+  protected final Ljava/util/Set; s
+
+  // access flags 0x4
+  protected Z t
+
+  // access flags 0x2
+  private I F
+
+  // access flags 0x2
+  private I G
+
+  // access flags 0x2
+  private Z H
+
+  // access flags 0x2
+  private I I
+
+  // access flags 0x2
+  private J J
+
+  // access flags 0x2
+  private Laay; K
+
+  // access flags 0x2
+  private I L
+
+  // access flags 0x2
+  private Z M
+
+  // access flags 0x2
+  private Ladd; N
+
+  // access flags 0x1A
+  private final static Ljava/lang/String; __OBFID = "CL_00000737"
+
+  // access flags 0x1
+  public Lcodechicken/nei/guihook/GuiContainerManager; manager
+
+  // access flags 0x1
+  public <init>(Lzs;)V
+   L0
+    LINENUMBER 60 L0
+    ALOAD 0
+    INVOKESPECIAL bdw.<init> ()V
+   L1
+    LINENUMBER 30 L1
+    ALOAD 0
+    SIPUSH 176
+    PUTFIELD bex.f : I
+   L2
+    LINENUMBER 31 L2
+    ALOAD 0
+    SIPUSH 166
+    PUTFIELD bex.g : I
+   L3
+    LINENUMBER 46 L3
+    ALOAD 0
+    NEW java/util/HashSet
+    DUP
+    INVOKESPECIAL java/util/HashSet.<init> ()V
+    PUTFIELD bex.s : Ljava/util/Set;
+   L4
+    LINENUMBER 61 L4
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD bex.h : Lzs;
+   L5
+    LINENUMBER 62 L5
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bex.H : Z
+   L6
+    LINENUMBER 63 L6
+    RETURN
+   L7
+    LOCALVARIABLE this Lbex; L0 L7 0
+    LOCALVARIABLE p_i1072_1_ Lzs; L0 L7 1
+    MAXSTACK = 3
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public b()V
+   L0
+    LINENUMBER 67 L0
+    ALOAD 0
+    INVOKESPECIAL bdw.b ()V
+   L1
+    LINENUMBER 68 L1
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    PUTFIELD bjk.bo : Lzs;
+   L2
+    LINENUMBER 69 L2
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.l : I
+    ALOAD 0
+    GETFIELD bex.f : I
+    ISUB
+    ICONST_2
+    IDIV
+    PUTFIELD bex.i : I
+   L3
+    LINENUMBER 70 L3
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.m : I
+    ALOAD 0
+    GETFIELD bex.g : I
+    ISUB
+    ICONST_2
+    IDIV
+    PUTFIELD bex.r : I
+   L4
+    LINENUMBER 71 L4
+    RETURN
+   L5
+    LOCALVARIABLE this Lbex; L0 L5 0
+    MAXSTACK = 3
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public a(IIF)V
+   L0
+    LINENUMBER 174 L0
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.preDraw ()V
+   L1
+    LINENUMBER 75 L1
+    ALOAD 0
+    INVOKEVIRTUAL bex.c ()V
+   L2
+    LINENUMBER 76 L2
+    ALOAD 0
+    GETFIELD bex.i : I
+    ISTORE 4
+   L3
+    LINENUMBER 77 L3
+    ALOAD 0
+    GETFIELD bex.r : I
+    ISTORE 5
+   L4
+    LINENUMBER 78 L4
+    ALOAD 0
+    FLOAD 3
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bex.a (FII)V
+   L5
+    LINENUMBER 79 L5
+    LDC 32826
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L6
+    LINENUMBER 80 L6
+    INVOKESTATIC bam.a ()V
+   L7
+    LINENUMBER 81 L7
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L8
+    LINENUMBER 82 L8
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L9
+    LINENUMBER 83 L9
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    FLOAD 3
+    INVOKESPECIAL bdw.a (IIF)V
+   L10
+    LINENUMBER 84 L10
+    INVOKESTATIC bam.c ()V
+   L11
+    LINENUMBER 85 L11
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPushMatrix ()V
+   L12
+    LINENUMBER 86 L12
+    ILOAD 4
+    I2F
+    ILOAD 5
+    I2F
+    FCONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L13
+    LINENUMBER 87 L13
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L14
+    LINENUMBER 88 L14
+    LDC 32826
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L15
+    LINENUMBER 89 L15
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.u : Laay;
+   L16
+    LINENUMBER 90 L16
+    SIPUSH 240
+    ISTORE 6
+   L17
+    LINENUMBER 91 L17
+    SIPUSH 240
+    ISTORE 7
+   L18
+    LINENUMBER 92 L18
+    GETSTATIC buu.c : I
+    ILOAD 6
+    I2F
+    FCONST_1
+    FDIV
+    ILOAD 7
+    I2F
+    FCONST_1
+    FDIV
+    INVOKESTATIC buu.a (IFF)V
+   L19
+    LINENUMBER 93 L19
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L20
+    LINENUMBER 96 L20
+    ICONST_0
+    ISTORE 8
+   L21
+   FRAME FULL [bex I I F I I I I I] []
+    ILOAD 8
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    GETFIELD zs.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L22
+   L23
+    LINENUMBER 98 L23
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    GETFIELD zs.c : Ljava/util/List;
+    ILOAD 8
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST aay
+    ASTORE 9
+   L24
+    LINENUMBER 99 L24
+    ALOAD 0
+    ALOAD 9
+    INVOKESPECIAL bex.a (Laay;)V
+   L25
+    LINENUMBER 101 L25
+    ALOAD 0
+    ALOAD 9
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bex.a (Laay;II)Z
+    IFEQ L26
+    ALOAD 9
+    INVOKEVIRTUAL aay.b ()Z
+    IFEQ L26
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.objectUnderMouse (II)Z
+    IFNE L26
+   L27
+    LINENUMBER 103 L27
+    ALOAD 0
+    ALOAD 9
+    PUTFIELD bex.u : Laay;
+   L28
+    LINENUMBER 104 L28
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L29
+    LINENUMBER 105 L29
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L30
+    LINENUMBER 106 L30
+    ALOAD 9
+    GETFIELD aay.h : I
+    ISTORE 10
+   L31
+    LINENUMBER 107 L31
+    ALOAD 9
+    GETFIELD aay.i : I
+    ISTORE 11
+   L32
+    LINENUMBER 108 L32
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    ICONST_0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColorMask (ZZZZ)V
+   L33
+    LINENUMBER 109 L33
+    ALOAD 0
+    ILOAD 10
+    ILOAD 11
+    ILOAD 10
+    BIPUSH 16
+    IADD
+    ILOAD 11
+    BIPUSH 16
+    IADD
+    LDC -2130706433
+    LDC -2130706433
+    INVOKEVIRTUAL bex.a (IIIIII)V
+   L34
+    LINENUMBER 110 L34
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColorMask (ZZZZ)V
+   L35
+    LINENUMBER 111 L35
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L36
+    LINENUMBER 112 L36
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L26
+    LINENUMBER 96 L26
+   FRAME FULL [bex I I F I I I I I aay] []
+    IINC 8 1
+    GOTO L21
+   L22
+    LINENUMBER 118 L22
+   FRAME FULL [bex I I F I I I I I] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L37
+    LINENUMBER 119 L37
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bex.b (II)V
+   L38
+    LINENUMBER 120 L38
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.renderObjects (II)V
+   L39
+    LINENUMBER 121 L39
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    ASTORE 8
+   L40
+    LINENUMBER 122 L40
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNONNULL L41
+    ALOAD 8
+    INVOKEVIRTUAL yx.o ()Ladd;
+    GOTO L42
+   L41
+   FRAME FULL [bex I I F I I I I yx] []
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+   L42
+   FRAME FULL [bex I I F I I I I yx] [add]
+    ASTORE 9
+   L43
+    LINENUMBER 124 L43
+    ALOAD 9
+    IFNULL L44
+   L45
+    LINENUMBER 126 L45
+    BIPUSH 8
+    ISTORE 10
+   L46
+    LINENUMBER 127 L46
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNONNULL L47
+    BIPUSH 8
+    GOTO L48
+   L47
+   FRAME FULL [bex I I F I I I I yx add I] []
+    BIPUSH 16
+   L48
+   FRAME FULL [bex I I F I I I I yx add I] [I]
+    ISTORE 11
+   L49
+    LINENUMBER 128 L49
+    ACONST_NULL
+    ASTORE 12
+   L50
+    LINENUMBER 130 L50
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNULL L51
+    ALOAD 0
+    GETFIELD bex.w : Z
+    IFEQ L51
+   L52
+    LINENUMBER 132 L52
+    ALOAD 9
+    INVOKEVIRTUAL add.m ()Ladd;
+    ASTORE 9
+   L53
+    LINENUMBER 133 L53
+    ALOAD 9
+    ALOAD 9
+    GETFIELD add.b : I
+    I2F
+    FCONST_2
+    FDIV
+    INVOKESTATIC qh.f (F)I
+    PUTFIELD add.b : I
+    GOTO L54
+   L51
+    LINENUMBER 135 L51
+   FRAME FULL [bex I I F I I I I yx add I I N] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L54
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.size ()I
+    ICONST_1
+    IF_ICMPLE L54
+   L55
+    LINENUMBER 137 L55
+    ALOAD 9
+    INVOKEVIRTUAL add.m ()Ladd;
+    ASTORE 9
+   L56
+    LINENUMBER 138 L56
+    ALOAD 9
+    ALOAD 0
+    GETFIELD bex.I : I
+    PUTFIELD add.b : I
+   L57
+    LINENUMBER 140 L57
+    ALOAD 9
+    GETFIELD add.b : I
+    IFNE L54
+   L58
+    LINENUMBER 142 L58
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    LDC ""
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    GETSTATIC a.o : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    LDC "0"
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    ASTORE 12
+   L54
+    LINENUMBER 146 L54
+   FRAME FULL [bex I I F I I I I yx add I I java/lang/String] []
+    ALOAD 0
+    ALOAD 9
+    ILOAD 1
+    ILOAD 4
+    ISUB
+    ILOAD 10
+    ISUB
+    ILOAD 2
+    ILOAD 5
+    ISUB
+    ILOAD 11
+    ISUB
+    ALOAD 12
+    INVOKESPECIAL bex.a (Ladd;IILjava/lang/String;)V
+   L44
+    LINENUMBER 149 L44
+   FRAME FULL [bex I I F I I I I yx add] []
+    ALOAD 0
+    GETFIELD bex.C : Ladd;
+    IFNULL L59
+   L60
+    LINENUMBER 151 L60
+    INVOKESTATIC bao.K ()J
+    ALOAD 0
+    GETFIELD bex.B : J
+    LSUB
+    L2F
+    LDC 100.0
+    FDIV
+    FSTORE 10
+   L61
+    LINENUMBER 153 L61
+    FLOAD 10
+    FCONST_1
+    FCMPL
+    IFLT L62
+   L63
+    LINENUMBER 155 L63
+    FCONST_1
+    FSTORE 10
+   L64
+    LINENUMBER 156 L64
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.C : Ladd;
+   L62
+    LINENUMBER 159 L62
+   FRAME FULL [bex I I F I I I I yx add F] []
+    ALOAD 0
+    GETFIELD bex.A : Laay;
+    GETFIELD aay.h : I
+    ALOAD 0
+    GETFIELD bex.y : I
+    ISUB
+    ISTORE 11
+   L65
+    LINENUMBER 160 L65
+    ALOAD 0
+    GETFIELD bex.A : Laay;
+    GETFIELD aay.i : I
+    ALOAD 0
+    GETFIELD bex.z : I
+    ISUB
+    ISTORE 12
+   L66
+    LINENUMBER 161 L66
+    ALOAD 0
+    GETFIELD bex.y : I
+    ILOAD 11
+    I2F
+    FLOAD 10
+    FMUL
+    F2I
+    IADD
+    ISTORE 13
+   L67
+    LINENUMBER 162 L67
+    ALOAD 0
+    GETFIELD bex.z : I
+    ILOAD 12
+    I2F
+    FLOAD 10
+    FMUL
+    F2I
+    IADD
+    ISTORE 14
+   L68
+    LINENUMBER 163 L68
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.C : Ladd;
+    ILOAD 13
+    ILOAD 14
+    ACONST_NULL
+    CHECKCAST java/lang/String
+    INVOKESPECIAL bex.a (Ladd;IILjava/lang/String;)V
+   L59
+    LINENUMBER 166 L59
+   FRAME FULL [bex I I F I I I I yx add] []
+    INVOKESTATIC org/lwjgl/opengl/GL11.glPopMatrix ()V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.renderToolTips (II)V
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L69
+    LINENUMBER 175 L69
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L70
+    LINENUMBER 176 L70
+    INVOKESTATIC bam.b ()V
+   L71
+    LINENUMBER 177 L71
+    RETURN
+   L72
+    LOCALVARIABLE j1 I L31 L26 10
+    LOCALVARIABLE k1 I L32 L26 11
+    LOCALVARIABLE slot Laay; L24 L26 9
+    LOCALVARIABLE i1 I L21 L22 8
+    LOCALVARIABLE b0 B L46 L44 10
+    LOCALVARIABLE s Ljava/lang/String; L50 L44 12
+    LOCALVARIABLE k1 I L49 L44 11
+    LOCALVARIABLE f1 F L61 L59 10
+    LOCALVARIABLE j2 I L66 L59 12
+    LOCALVARIABLE l1 I L67 L59 13
+    LOCALVARIABLE i2 I L68 L59 14
+    LOCALVARIABLE k1 I L65 L59 11
+    LOCALVARIABLE itemstack1 Ladd; L0 L0 10
+    LOCALVARIABLE this Lbex; L1 L72 0
+    LOCALVARIABLE p_73863_1_ I L1 L72 1
+    LOCALVARIABLE p_73863_2_ I L1 L72 2
+    LOCALVARIABLE p_73863_3_ F L1 L72 3
+    LOCALVARIABLE k I L3 L72 4
+    LOCALVARIABLE l I L4 L72 5
+    LOCALVARIABLE short1 S L17 L72 6
+    LOCALVARIABLE short2 S L18 L72 7
+    LOCALVARIABLE inventoryplayer Lyx; L40 L72 8
+    LOCALVARIABLE itemstack Ladd; L43 L72 9
+    MAXSTACK = 7
+    MAXLOCALS = 15
+
+  // access flags 0x2
+  private a(Ladd;IILjava/lang/String;)V
+   L0
+    LINENUMBER 181 L0
+    FCONST_0
+    FCONST_0
+    LDC 32.0
+    INVOKESTATIC org/lwjgl/opengl/GL11.glTranslatef (FFF)V
+   L1
+    LINENUMBER 182 L1
+    ALOAD 0
+    LDC 500.0
+    PUTFIELD bex.e : F
+   L2
+    LINENUMBER 183 L2
+    GETSTATIC bex.j : Lbny;
+    LDC 500.0
+    PUTFIELD bny.f : F
+   L3
+    LINENUMBER 184 L3
+    ACONST_NULL
+    ASTORE 5
+   L4
+    LINENUMBER 185 L4
+    ALOAD 1
+    IFNULL L5
+    ALOAD 1
+    INVOKEVIRTUAL add.b ()Ladb;
+    ALOAD 1
+    INVOKEVIRTUAL adb.getFontRenderer (Ladd;)Lbbu;
+    ASTORE 5
+   L5
+    LINENUMBER 186 L5
+   FRAME FULL [bex add I I java/lang/String bbu] []
+    ALOAD 5
+    IFNONNULL L6
+    ALOAD 0
+    GETFIELD bex.q : Lbbu;
+    ASTORE 5
+   L6
+    LINENUMBER 187 L6
+   FRAME FULL [bex add I I java/lang/String bbu] []
+    GETSTATIC bex.j : Lbny;
+    ALOAD 5
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    INVOKEVIRTUAL bao.P ()Lbqf;
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL bny.b (Lbbu;Lbqf;Ladd;II)V
+   L7
+    LINENUMBER 188 L7
+    GETSTATIC bex.j : Lbny;
+    ALOAD 5
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    INVOKEVIRTUAL bao.P ()Lbqf;
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNONNULL L8
+    ICONST_0
+    GOTO L9
+   L8
+   FRAME FULL [bex add I I java/lang/String bbu] [bny bbu bqf add I I]
+    BIPUSH 8
+   L9
+   FRAME FULL [bex add I I java/lang/String bbu] [bny bbu bqf add I I I]
+    ISUB
+    ALOAD 4
+    INVOKEVIRTUAL bny.a (Lbbu;Lbqf;Ladd;IILjava/lang/String;)V
+   L10
+    LINENUMBER 189 L10
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bex.e : F
+   L11
+    LINENUMBER 190 L11
+    GETSTATIC bex.j : Lbny;
+    FCONST_0
+    PUTFIELD bny.f : F
+   L12
+    LINENUMBER 191 L12
+    RETURN
+   L13
+    LOCALVARIABLE this Lbex; L0 L13 0
+    LOCALVARIABLE p_146982_1_ Ladd; L0 L13 1
+    LOCALVARIABLE p_146982_2_ I L0 L13 2
+    LOCALVARIABLE p_146982_3_ I L0 L13 3
+    LOCALVARIABLE p_146982_4_ Ljava/lang/String; L0 L13 4
+    LOCALVARIABLE font Lbbu; L4 L13 5
+    MAXSTACK = 7
+    MAXLOCALS = 6
+
+  // access flags 0x4
+  protected b(II)V
+   L0
+    LINENUMBER 193 L0
+    RETURN
+   L1
+    LOCALVARIABLE this Lbex; L0 L1 0
+    LOCALVARIABLE p_146979_1_ I L0 L1 1
+    LOCALVARIABLE p_146979_2_ I L0 L1 2
+    MAXSTACK = 0
+    MAXLOCALS = 3
+
+  // access flags 0x404
+  protected abstract a(FII)V
+
+  // access flags 0x2
+  private a(Laay;)V
+   L0
+    LINENUMBER 199 L0
+    ALOAD 1
+    GETFIELD aay.h : I
+    ISTORE 2
+   L1
+    LINENUMBER 200 L1
+    ALOAD 1
+    GETFIELD aay.i : I
+    ISTORE 3
+   L2
+    LINENUMBER 201 L2
+    ALOAD 1
+    INVOKEVIRTUAL aay.d ()Ladd;
+    ASTORE 4
+   L3
+    LINENUMBER 202 L3
+    ICONST_0
+    ISTORE 5
+   L4
+    LINENUMBER 203 L4
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IF_ACMPNE L5
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNULL L5
+    ALOAD 0
+    GETFIELD bex.w : Z
+    IFNE L5
+    ICONST_1
+    GOTO L6
+   L5
+   FRAME FULL [bex aay I I add I] []
+    ICONST_0
+   L6
+   FRAME FULL [bex aay I I add I] [I]
+    ISTORE 6
+   L7
+    LINENUMBER 204 L7
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    ASTORE 7
+   L8
+    LINENUMBER 205 L8
+    ACONST_NULL
+    ASTORE 8
+   L9
+    LINENUMBER 207 L9
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IF_ACMPNE L10
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNULL L10
+    ALOAD 0
+    GETFIELD bex.w : Z
+    IFEQ L10
+    ALOAD 4
+    IFNULL L10
+   L11
+    LINENUMBER 209 L11
+    ALOAD 4
+    INVOKEVIRTUAL add.m ()Ladd;
+    ASTORE 4
+   L12
+    LINENUMBER 210 L12
+    ALOAD 4
+    DUP
+    GETFIELD add.b : I
+    ICONST_2
+    IDIV
+    PUTFIELD add.b : I
+    GOTO L13
+   L10
+    LINENUMBER 212 L10
+   FRAME FULL [bex aay I I add I I add N] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L13
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    ALOAD 1
+    INVOKEINTERFACE java/util/Set.contains (Ljava/lang/Object;)Z
+    IFEQ L13
+    ALOAD 7
+    IFNULL L13
+   L14
+    LINENUMBER 214 L14
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.size ()I
+    ICONST_1
+    IF_ICMPNE L15
+   L16
+    LINENUMBER 216 L16
+    RETURN
+   L15
+    LINENUMBER 219 L15
+   FRAME FULL [bex aay I I add I I add N] []
+    ALOAD 1
+    ALOAD 7
+    ICONST_1
+    INVOKESTATIC zs.a (Laay;Ladd;Z)Z
+    IFEQ L17
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    ALOAD 1
+    INVOKEVIRTUAL zs.b (Laay;)Z
+    IFEQ L17
+   L18
+    LINENUMBER 221 L18
+    ALOAD 7
+    INVOKEVIRTUAL add.m ()Ladd;
+    ASTORE 4
+   L19
+    LINENUMBER 222 L19
+    ICONST_1
+    ISTORE 5
+   L20
+    LINENUMBER 223 L20
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    ALOAD 0
+    GETFIELD bex.F : I
+    ALOAD 4
+    ALOAD 1
+    INVOKEVIRTUAL aay.d ()Ladd;
+    IFNONNULL L21
+    ICONST_0
+    GOTO L22
+   L21
+   FRAME FULL [bex aay I I add I I add N] [java/util/Set I add]
+    ALOAD 1
+    INVOKEVIRTUAL aay.d ()Ladd;
+    GETFIELD add.b : I
+   L22
+   FRAME FULL [bex aay I I add I I add N] [java/util/Set I add I]
+    INVOKESTATIC zs.a (Ljava/util/Set;ILadd;I)V
+   L23
+    LINENUMBER 225 L23
+    ALOAD 4
+    GETFIELD add.b : I
+    ALOAD 4
+    INVOKEVIRTUAL add.e ()I
+    IF_ICMPLE L24
+   L25
+    LINENUMBER 227 L25
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    GETSTATIC a.o : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    LDC ""
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ALOAD 4
+    INVOKEVIRTUAL add.e ()I
+    INVOKEVIRTUAL java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    ASTORE 8
+   L26
+    LINENUMBER 228 L26
+    ALOAD 4
+    ALOAD 4
+    INVOKEVIRTUAL add.e ()I
+    PUTFIELD add.b : I
+   L24
+    LINENUMBER 231 L24
+   FRAME FULL [bex aay I I add I I add java/lang/String] []
+    ALOAD 4
+    GETFIELD add.b : I
+    ALOAD 1
+    INVOKEVIRTUAL aay.a ()I
+    IF_ICMPLE L13
+   L27
+    LINENUMBER 233 L27
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    GETSTATIC a.o : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    LDC ""
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ALOAD 1
+    INVOKEVIRTUAL aay.a ()I
+    INVOKEVIRTUAL java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    ASTORE 8
+   L28
+    LINENUMBER 234 L28
+    ALOAD 4
+    ALOAD 1
+    INVOKEVIRTUAL aay.a ()I
+    PUTFIELD add.b : I
+    GOTO L13
+   L17
+    LINENUMBER 239 L17
+   FRAME FULL [bex aay I I add I I add N] []
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    ALOAD 1
+    INVOKEINTERFACE java/util/Set.remove (Ljava/lang/Object;)Z
+    POP
+   L29
+    LINENUMBER 240 L29
+    ALOAD 0
+    INVOKESPECIAL bex.a ()V
+   L13
+    LINENUMBER 244 L13
+   FRAME FULL [bex aay I I add I I add java/lang/String] []
+    ALOAD 0
+    LDC 100.0
+    PUTFIELD bex.e : F
+   L30
+    LINENUMBER 245 L30
+    GETSTATIC bex.j : Lbny;
+    LDC 100.0
+    PUTFIELD bny.f : F
+   L31
+    LINENUMBER 247 L31
+    ALOAD 4
+    IFNONNULL L32
+   L33
+    LINENUMBER 249 L33
+    ALOAD 1
+    INVOKEVIRTUAL aay.c ()Lrf;
+    ASTORE 9
+   L34
+    LINENUMBER 251 L34
+    ALOAD 9
+    IFNULL L32
+   L35
+    LINENUMBER 253 L35
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L36
+    LINENUMBER 254 L36
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L37
+    LINENUMBER 255 L37
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    INVOKEVIRTUAL bao.P ()Lbqf;
+    GETSTATIC bpz.c : Lbqx;
+    INVOKEVIRTUAL bqf.a (Lbqx;)V
+   L38
+    LINENUMBER 256 L38
+    ALOAD 0
+    ILOAD 2
+    ILOAD 3
+    ALOAD 9
+    BIPUSH 16
+    BIPUSH 16
+    INVOKEVIRTUAL bex.a (IILrf;II)V
+   L39
+    LINENUMBER 257 L39
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L40
+    LINENUMBER 258 L40
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L41
+    LINENUMBER 259 L41
+    ICONST_1
+    ISTORE 6
+   L32
+    LINENUMBER 263 L32
+   FRAME FULL [bex aay I I add I I add java/lang/String] []
+    ILOAD 6
+    IFNE L42
+   L43
+    LINENUMBER 265 L43
+    ILOAD 5
+    IFEQ L44
+   L45
+    LINENUMBER 267 L45
+    ILOAD 2
+    ILOAD 3
+    ILOAD 2
+    BIPUSH 16
+    IADD
+    ILOAD 3
+    BIPUSH 16
+    IADD
+    LDC -2130706433
+    INVOKESTATIC bex.a (IIIII)V
+   L44
+    LINENUMBER 270 L44
+   FRAME FULL [bex aay I I add I I add java/lang/String] []
+    SIPUSH 2929
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ALOAD 1
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.renderSlotUnderlay (Lnet/minecraft/inventory/Slot;)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ALOAD 1
+    ALOAD 4
+    ILOAD 2
+    ILOAD 3
+    ALOAD 8
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.drawSlotItem (Lnet/minecraft/inventory/Slot;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ALOAD 1
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.renderSlotOverlay (Lnet/minecraft/inventory/Slot;)V
+   L42
+    LINENUMBER 275 L42
+   FRAME FULL [bex aay I I add I I add java/lang/String] []
+    GETSTATIC bex.j : Lbny;
+    FCONST_0
+    PUTFIELD bny.f : F
+   L46
+    LINENUMBER 276 L46
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bex.e : F
+   L47
+    LINENUMBER 277 L47
+    RETURN
+   L48
+    LOCALVARIABLE iicon Lrf; L34 L32 9
+    LOCALVARIABLE this Lbex; L0 L48 0
+    LOCALVARIABLE p_146977_1_ Laay; L0 L48 1
+    LOCALVARIABLE i I L1 L48 2
+    LOCALVARIABLE j I L2 L48 3
+    LOCALVARIABLE itemstack Ladd; L3 L48 4
+    LOCALVARIABLE flag Z L4 L48 5
+    LOCALVARIABLE flag1 Z L7 L48 6
+    LOCALVARIABLE itemstack1 Ladd; L8 L48 7
+    LOCALVARIABLE s Ljava/lang/String; L9 L48 8
+    MAXSTACK = 6
+    MAXLOCALS = 10
+
+  // access flags 0x2
+  private a()V
+   L0
+    LINENUMBER 281 L0
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    ASTORE 1
+   L1
+    LINENUMBER 283 L1
+    ALOAD 1
+    IFNULL L2
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L2
+   L3
+    LINENUMBER 285 L3
+    ALOAD 0
+    ALOAD 1
+    GETFIELD add.b : I
+    PUTFIELD bex.I : I
+   L4
+    LINENUMBER 289 L4
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
+    ASTORE 4
+   L5
+   FRAME FULL [bex add T T java/util/Iterator] []
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L2
+   L6
+    LINENUMBER 291 L6
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST aay
+    ASTORE 5
+   L7
+    LINENUMBER 292 L7
+    ALOAD 1
+    INVOKEVIRTUAL add.m ()Ladd;
+    ASTORE 2
+   L8
+    LINENUMBER 293 L8
+    ALOAD 5
+    INVOKEVIRTUAL aay.d ()Ladd;
+    IFNONNULL L9
+    ICONST_0
+    GOTO L10
+   L9
+   FRAME FULL [bex add add T java/util/Iterator aay] []
+    ALOAD 5
+    INVOKEVIRTUAL aay.d ()Ladd;
+    GETFIELD add.b : I
+   L10
+   FRAME FULL [bex add add T java/util/Iterator aay] [I]
+    ISTORE 3
+   L11
+    LINENUMBER 294 L11
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    ALOAD 0
+    GETFIELD bex.F : I
+    ALOAD 2
+    ILOAD 3
+    INVOKESTATIC zs.a (Ljava/util/Set;ILadd;I)V
+   L12
+    LINENUMBER 296 L12
+    ALOAD 2
+    GETFIELD add.b : I
+    ALOAD 2
+    INVOKEVIRTUAL add.e ()I
+    IF_ICMPLE L13
+   L14
+    LINENUMBER 298 L14
+    ALOAD 2
+    ALOAD 2
+    INVOKEVIRTUAL add.e ()I
+    PUTFIELD add.b : I
+   L13
+    LINENUMBER 301 L13
+   FRAME FULL [bex add add I java/util/Iterator aay] []
+    ALOAD 2
+    GETFIELD add.b : I
+    ALOAD 5
+    INVOKEVIRTUAL aay.a ()I
+    IF_ICMPLE L15
+   L16
+    LINENUMBER 303 L16
+    ALOAD 2
+    ALOAD 5
+    INVOKEVIRTUAL aay.a ()I
+    PUTFIELD add.b : I
+   L15
+    LINENUMBER 289 L15
+   FRAME FULL [bex add add I java/util/Iterator aay] []
+    ALOAD 0
+    DUP
+    GETFIELD bex.I : I
+    ALOAD 2
+    GETFIELD add.b : I
+    ILOAD 3
+    ISUB
+    ISUB
+    PUTFIELD bex.I : I
+    GOTO L5
+   L2
+    LINENUMBER 307 L2
+   FRAME FULL [bex add] []
+    RETURN
+   L17
+    LOCALVARIABLE slot Laay; L7 L15 5
+    LOCALVARIABLE itemstack1 Ladd; L8 L2 2
+    LOCALVARIABLE i I L11 L2 3
+    LOCALVARIABLE iterator Ljava/util/Iterator; L5 L2 4
+    LOCALVARIABLE this Lbex; L0 L17 0
+    LOCALVARIABLE itemstack Ladd; L1 L17 1
+    MAXSTACK = 4
+    MAXLOCALS = 6
+
+  // access flags 0x2
+  private c(II)Laay;
+   L0
+    LINENUMBER 311 L0
+    ICONST_0
+    ISTORE 3
+   L1
+   FRAME FULL [bex I I I] []
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    GETFIELD zs.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L2
+   L3
+    LINENUMBER 313 L3
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    GETFIELD zs.c : Ljava/util/List;
+    ILOAD 3
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST aay
+    ASTORE 4
+   L4
+    LINENUMBER 315 L4
+    ALOAD 0
+    ALOAD 4
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bex.a (Laay;II)Z
+    IFEQ L5
+   L6
+    LINENUMBER 317 L6
+    ALOAD 4
+    ARETURN
+   L5
+    LINENUMBER 311 L5
+   FRAME FULL [bex I I I aay] []
+    IINC 3 1
+    GOTO L1
+   L2
+    LINENUMBER 321 L2
+   FRAME FULL [bex I I I] []
+    ACONST_NULL
+    ARETURN
+   L7
+    LOCALVARIABLE slot Laay; L4 L5 4
+    LOCALVARIABLE k I L1 L2 3
+    LOCALVARIABLE this Lbex; L0 L7 0
+    LOCALVARIABLE p_146975_1_ I L0 L7 1
+    LOCALVARIABLE p_146975_2_ I L0 L7 2
+    MAXSTACK = 4
+    MAXLOCALS = 5
+
+  // access flags 0x4
+  protected a(III)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.mouseClicked (III)Z
+    IFEQ L0
+    RETURN
+   L0
+    LINENUMBER 326 L0
+   FRAME FULL [bex I I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdw.a (III)V
+   L1
+    LINENUMBER 327 L1
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ae : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    BIPUSH 100
+    IADD
+    IF_ICMPNE L2
+    ICONST_1
+    GOTO L3
+   L2
+   FRAME FULL [bex I I I] []
+    ICONST_0
+   L3
+   FRAME FULL [bex I I I] [I]
+    ISTORE 4
+   L4
+    LINENUMBER 328 L4
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bex.c (II)Laay;
+    ASTORE 5
+   L5
+    LINENUMBER 329 L5
+    INVOKESTATIC bao.K ()J
+    LSTORE 6
+   L6
+    LINENUMBER 330 L6
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.K : Laay;
+    ALOAD 5
+    IF_ACMPNE L7
+    LLOAD 6
+    ALOAD 0
+    GETFIELD bex.J : J
+    LSUB
+    LDC 250
+    LCMP
+    IFGE L7
+    ALOAD 0
+    GETFIELD bex.L : I
+    ILOAD 3
+    IF_ICMPNE L7
+    ICONST_1
+    GOTO L8
+   L7
+   FRAME FULL [bex I I I I aay J] [bex]
+    ICONST_0
+   L8
+   FRAME FULL [bex I I I I aay J] [bex I]
+    PUTFIELD bex.M : Z
+   L9
+    LINENUMBER 331 L9
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.H : Z
+   L10
+    LINENUMBER 333 L10
+    ILOAD 3
+    IFEQ L11
+    ILOAD 3
+    ICONST_1
+    IF_ICMPEQ L11
+    ILOAD 4
+    IFEQ L12
+   L11
+    LINENUMBER 335 L11
+   FRAME FULL [bex I I I I aay J] []
+    ALOAD 0
+    GETFIELD bex.i : I
+    ISTORE 8
+   L13
+    LINENUMBER 336 L13
+    ALOAD 0
+    GETFIELD bex.r : I
+    ISTORE 9
+   L14
+    LINENUMBER 337 L14
+    ILOAD 1
+    ILOAD 8
+    IF_ICMPLT L15
+    ILOAD 2
+    ILOAD 9
+    IF_ICMPLT L15
+    ILOAD 1
+    ILOAD 8
+    ALOAD 0
+    GETFIELD bex.f : I
+    IADD
+    IF_ICMPGE L15
+    ILOAD 2
+    ILOAD 9
+    ALOAD 0
+    GETFIELD bex.g : I
+    IADD
+    IF_ICMPLT L16
+   L15
+   FRAME FULL [bex I I I I aay J I I] []
+    ICONST_1
+    GOTO L17
+   L16
+   FRAME FULL [bex I I I I aay J I I] []
+    ICONST_0
+   L17
+   FRAME FULL [bex I I I I aay J I I] [I]
+    ISTORE 10
+   L18
+    LINENUMBER 338 L18
+    ICONST_M1
+    ISTORE 11
+   L19
+    LINENUMBER 340 L19
+    ALOAD 5
+    IFNULL L20
+   L21
+    LINENUMBER 342 L21
+    ALOAD 5
+    GETFIELD aay.g : I
+    ISTORE 11
+   L20
+    LINENUMBER 345 L20
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ILOAD 10
+    IFEQ L22
+   L23
+    LINENUMBER 347 L23
+    SIPUSH -999
+    ISTORE 11
+   L22
+    LINENUMBER 350 L22
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.y : Z
+    IFEQ L24
+    ILOAD 10
+    IFEQ L24
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNONNULL L24
+   L25
+    LINENUMBER 352 L25
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    ACONST_NULL
+    CHECKCAST bdw
+    INVOKEVIRTUAL bao.a (Lbdw;)V
+   L26
+    LINENUMBER 353 L26
+    RETURN
+   L24
+    LINENUMBER 356 L24
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ILOAD 11
+    ICONST_M1
+    IF_ICMPEQ L12
+   L27
+    LINENUMBER 358 L27
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.y : Z
+    IFEQ L28
+   L29
+    LINENUMBER 360 L29
+    ALOAD 5
+    IFNULL L30
+    ALOAD 5
+    INVOKEVIRTUAL aay.e ()Z
+    IFEQ L30
+   L31
+    LINENUMBER 362 L31
+    ALOAD 0
+    ALOAD 5
+    PUTFIELD bex.v : Laay;
+   L32
+    LINENUMBER 363 L32
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.x : Ladd;
+   L33
+    LINENUMBER 364 L33
+    ALOAD 0
+    ILOAD 3
+    ICONST_1
+    IF_ICMPNE L34
+    ICONST_1
+    GOTO L35
+   L34
+   FRAME FULL [bex I I I I aay J I I I I] [bex]
+    ICONST_0
+   L35
+   FRAME FULL [bex I I I I aay J I I I I] [bex I]
+    PUTFIELD bex.w : Z
+    GOTO L12
+   L30
+    LINENUMBER 368 L30
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.v : Laay;
+    GOTO L12
+   L28
+    LINENUMBER 371 L28
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFNE L12
+   L36
+    LINENUMBER 373 L36
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNONNULL L37
+   L38
+    LINENUMBER 375 L38
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ae : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    BIPUSH 100
+    IADD
+    IF_ICMPNE L39
+   L40
+    LINENUMBER 377 L40
+    ALOAD 0
+    ALOAD 5
+    ILOAD 11
+    ILOAD 3
+    ICONST_3
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L41
+   L39
+    LINENUMBER 381 L39
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ILOAD 11
+    SIPUSH -999
+    IF_ICMPEQ L42
+    BIPUSH 42
+    INVOKESTATIC org/lwjgl/input/Keyboard.isKeyDown (I)Z
+    IFNE L43
+    BIPUSH 54
+    INVOKESTATIC org/lwjgl/input/Keyboard.isKeyDown (I)Z
+    IFEQ L42
+   L43
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ICONST_1
+    GOTO L44
+   L42
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ICONST_0
+   L44
+   FRAME FULL [bex I I I I aay J I I I I] [I]
+    ISTORE 12
+   L45
+    LINENUMBER 382 L45
+    ICONST_0
+    ISTORE 13
+   L46
+    LINENUMBER 384 L46
+    ILOAD 12
+    IFEQ L47
+   L48
+    LINENUMBER 386 L48
+    ALOAD 0
+    ALOAD 5
+    IFNULL L49
+    ALOAD 5
+    INVOKEVIRTUAL aay.e ()Z
+    IFEQ L49
+    ALOAD 5
+    INVOKEVIRTUAL aay.d ()Ladd;
+    GOTO L50
+   L49
+   FRAME FULL [bex I I I I aay J I I I I I I] [bex]
+    ACONST_NULL
+   L50
+   FRAME FULL [bex I I I I aay J I I I I I I] [bex add]
+    PUTFIELD bex.N : Ladd;
+   L51
+    LINENUMBER 387 L51
+    ICONST_1
+    ISTORE 13
+    GOTO L52
+   L47
+    LINENUMBER 389 L47
+   FRAME FULL [bex I I I I aay J I I I I I I] []
+    ILOAD 11
+    SIPUSH -999
+    IF_ICMPNE L52
+   L53
+    LINENUMBER 391 L53
+    ICONST_4
+    ISTORE 13
+   L52
+    LINENUMBER 394 L52
+   FRAME FULL [bex I I I I aay J I I I I I I] []
+    ALOAD 0
+    ALOAD 5
+    ILOAD 11
+    ILOAD 3
+    ILOAD 13
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L41
+    LINENUMBER 397 L41
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bex.H : Z
+    GOTO L12
+   L37
+    LINENUMBER 401 L37
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bex.t : Z
+   L54
+    LINENUMBER 402 L54
+    ALOAD 0
+    ILOAD 3
+    PUTFIELD bex.G : I
+   L55
+    LINENUMBER 403 L55
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.clear ()V
+   L56
+    LINENUMBER 405 L56
+    ILOAD 3
+    IFNE L57
+   L58
+    LINENUMBER 407 L58
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.F : I
+    GOTO L12
+   L57
+    LINENUMBER 409 L57
+   FRAME FULL [bex I I I I aay J I I I I] []
+    ILOAD 3
+    ICONST_1
+    IF_ICMPNE L12
+   L59
+    LINENUMBER 411 L59
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bex.F : I
+   L12
+    LINENUMBER 418 L12
+   FRAME FULL [bex I I I I aay J] []
+    ALOAD 0
+    ALOAD 5
+    PUTFIELD bex.K : Laay;
+   L60
+    LINENUMBER 419 L60
+    ALOAD 0
+    LLOAD 6
+    PUTFIELD bex.J : J
+   L61
+    LINENUMBER 420 L61
+    ALOAD 0
+    ILOAD 3
+    PUTFIELD bex.L : I
+   L62
+    LINENUMBER 421 L62
+    RETURN
+   L63
+    LOCALVARIABLE flag2 Z L45 L41 12
+    LOCALVARIABLE b0 B L46 L41 13
+    LOCALVARIABLE i1 I L13 L12 8
+    LOCALVARIABLE j1 I L14 L12 9
+    LOCALVARIABLE flag1 Z L18 L12 10
+    LOCALVARIABLE k1 I L19 L12 11
+    LOCALVARIABLE this Lbex; L0 L63 0
+    LOCALVARIABLE p_73864_1_ I L0 L63 1
+    LOCALVARIABLE p_73864_2_ I L0 L63 2
+    LOCALVARIABLE p_73864_3_ I L0 L63 3
+    LOCALVARIABLE flag Z L4 L63 4
+    LOCALVARIABLE slot Laay; L5 L63 5
+    LOCALVARIABLE l J L6 L63 6
+    MAXSTACK = 5
+    MAXLOCALS = 14
+
+  // access flags 0x4
+  protected a(IIIJ)V
+   L0
+    LINENUMBER 425 L0
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bex.c (II)Laay;
+    ASTORE 6
+   L1
+    LINENUMBER 426 L1
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    ASTORE 7
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    LLOAD 4
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.mouseDragged (IIIJ)V
+   L2
+    LINENUMBER 428 L2
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IFNULL L3
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.y : Z
+    IFEQ L3
+   L4
+    LINENUMBER 430 L4
+    ILOAD 3
+    IFEQ L5
+    ILOAD 3
+    ICONST_1
+    IF_ICMPNE L6
+   L5
+    LINENUMBER 432 L5
+   FRAME FULL [bex I I I J aay add] []
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNONNULL L7
+   L8
+    LINENUMBER 434 L8
+    ALOAD 6
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IF_ACMPEQ L6
+   L9
+    LINENUMBER 436 L9
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    INVOKEVIRTUAL aay.d ()Ladd;
+    INVOKEVIRTUAL add.m ()Ladd;
+    PUTFIELD bex.x : Ladd;
+    GOTO L6
+   L7
+    LINENUMBER 439 L7
+   FRAME FULL [bex I I I J aay add] []
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    GETFIELD add.b : I
+    ICONST_1
+    IF_ICMPLE L6
+    ALOAD 6
+    IFNULL L6
+    ALOAD 6
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    ICONST_0
+    INVOKESTATIC zs.a (Laay;Ladd;Z)Z
+    IFEQ L6
+   L10
+    LINENUMBER 441 L10
+    INVOKESTATIC bao.K ()J
+    LSTORE 8
+   L11
+    LINENUMBER 443 L11
+    ALOAD 0
+    GETFIELD bex.D : Laay;
+    ALOAD 6
+    IF_ACMPNE L12
+   L13
+    LINENUMBER 445 L13
+    LLOAD 8
+    ALOAD 0
+    GETFIELD bex.E : J
+    LSUB
+    LDC 500
+    LCMP
+    IFLE L14
+   L15
+    LINENUMBER 447 L15
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    GETFIELD aay.g : I
+    ICONST_0
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L16
+    LINENUMBER 448 L16
+    ALOAD 0
+    ALOAD 6
+    ALOAD 6
+    GETFIELD aay.g : I
+    ICONST_1
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L17
+    LINENUMBER 449 L17
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    GETFIELD aay.g : I
+    ICONST_0
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L18
+    LINENUMBER 450 L18
+    ALOAD 0
+    LLOAD 8
+    LDC 750
+    LADD
+    PUTFIELD bex.E : J
+   L19
+    LINENUMBER 451 L19
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    DUP
+    GETFIELD add.b : I
+    ICONST_1
+    ISUB
+    PUTFIELD add.b : I
+    GOTO L14
+   L12
+    LINENUMBER 456 L12
+   FRAME FULL [bex I I I J aay add J] []
+    ALOAD 0
+    ALOAD 6
+    PUTFIELD bex.D : Laay;
+   L20
+    LINENUMBER 457 L20
+    ALOAD 0
+    LLOAD 8
+    PUTFIELD bex.E : J
+   L14
+    LINENUMBER 459 L14
+   FRAME FULL [bex I I I J aay add J] []
+    GOTO L6
+   L3
+    LINENUMBER 462 L3
+   FRAME FULL [bex I I I J aay add] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L6
+    ALOAD 6
+    IFNULL L6
+    ALOAD 7
+    IFNULL L6
+    ALOAD 7
+    GETFIELD add.b : I
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.size ()I
+    IF_ICMPLE L6
+    ALOAD 6
+    ALOAD 7
+    ICONST_1
+    INVOKESTATIC zs.a (Laay;Ladd;Z)Z
+    IFEQ L6
+    ALOAD 6
+    ALOAD 7
+    INVOKEVIRTUAL aay.a (Ladd;)Z
+    IFEQ L6
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    ALOAD 6
+    INVOKEVIRTUAL zs.b (Laay;)Z
+    IFEQ L6
+   L21
+    LINENUMBER 464 L21
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    ALOAD 6
+    INVOKEINTERFACE java/util/Set.add (Ljava/lang/Object;)Z
+    POP
+   L22
+    LINENUMBER 465 L22
+    ALOAD 0
+    INVOKESPECIAL bex.a ()V
+   L6
+    LINENUMBER 467 L6
+   FRAME FULL [bex I I I J aay add] []
+    RETURN
+   L23
+    LOCALVARIABLE i1 J L11 L14 8
+    LOCALVARIABLE this Lbex; L0 L23 0
+    LOCALVARIABLE p_146273_1_ I L0 L23 1
+    LOCALVARIABLE p_146273_2_ I L0 L23 2
+    LOCALVARIABLE p_146273_3_ I L0 L23 3
+    LOCALVARIABLE p_146273_4_ J L0 L23 4
+    LOCALVARIABLE slot Laay; L1 L23 6
+    LOCALVARIABLE itemstack Ladd; L2 L23 7
+    MAXSTACK = 6
+    MAXLOCALS = 10
+
+  // access flags 0x4
+  protected b(III)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.overrideMouseUp (III)Z
+    IFEQ L0
+    RETURN
+   L0
+    LINENUMBER 471 L0
+   FRAME FULL [bex I I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdw.b (III)V
+   L1
+    LINENUMBER 472 L1
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bex.c (II)Laay;
+    ASTORE 4
+   L2
+    LINENUMBER 473 L2
+    ALOAD 0
+    GETFIELD bex.i : I
+    ISTORE 5
+   L3
+    LINENUMBER 474 L3
+    ALOAD 0
+    GETFIELD bex.r : I
+    ISTORE 6
+   L4
+    LINENUMBER 475 L4
+    ILOAD 1
+    ILOAD 5
+    IF_ICMPLT L5
+    ILOAD 2
+    ILOAD 6
+    IF_ICMPLT L5
+    ILOAD 1
+    ILOAD 5
+    ALOAD 0
+    GETFIELD bex.f : I
+    IADD
+    IF_ICMPGE L5
+    ILOAD 2
+    ILOAD 6
+    ALOAD 0
+    GETFIELD bex.g : I
+    IADD
+    IF_ICMPLT L6
+   L5
+   FRAME FULL [bex I I I aay I I] []
+    ICONST_1
+    GOTO L7
+   L6
+   FRAME FULL [bex I I I aay I I] []
+    ICONST_0
+   L7
+   FRAME FULL [bex I I I aay I I] [I]
+    ISTORE 7
+   L8
+    LINENUMBER 476 L8
+    ICONST_M1
+    ISTORE 8
+   L9
+    LINENUMBER 478 L9
+    ALOAD 4
+    IFNULL L10
+   L11
+    LINENUMBER 480 L11
+    ALOAD 4
+    GETFIELD aay.g : I
+    ISTORE 8
+   L10
+    LINENUMBER 483 L10
+   FRAME FULL [bex I I I aay I I I I] []
+    ILOAD 7
+    IFEQ L12
+   L13
+    LINENUMBER 485 L13
+    SIPUSH -999
+    ISTORE 8
+   L12
+    LINENUMBER 491 L12
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.M : Z
+    IFEQ L14
+    ALOAD 4
+    IFNULL L14
+    ILOAD 3
+    IFNE L14
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    ACONST_NULL
+    CHECKCAST add
+    ALOAD 4
+    INVOKEVIRTUAL zs.a (Ladd;Laay;)Z
+    IFEQ L14
+   L15
+    LINENUMBER 493 L15
+    INVOKESTATIC bex.r ()Z
+    IFEQ L16
+   L17
+    LINENUMBER 495 L17
+    ALOAD 4
+    IFNULL L18
+    ALOAD 4
+    GETFIELD aay.f : Lrb;
+    IFNULL L18
+    ALOAD 0
+    GETFIELD bex.N : Ladd;
+    IFNULL L18
+   L19
+    LINENUMBER 497 L19
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    GETFIELD zs.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 9
+   L20
+    LINENUMBER 499 L20
+   FRAME FULL [bex I I I aay I I I I java/util/Iterator] []
+    ALOAD 9
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L18
+   L21
+    LINENUMBER 501 L21
+    ALOAD 9
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST aay
+    ASTORE 10
+   L22
+    LINENUMBER 503 L22
+    ALOAD 10
+    IFNULL L20
+    ALOAD 10
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    INVOKEVIRTUAL aay.a (Lyz;)Z
+    IFEQ L20
+    ALOAD 10
+    INVOKEVIRTUAL aay.e ()Z
+    IFEQ L20
+    ALOAD 10
+    GETFIELD aay.f : Lrb;
+    ALOAD 4
+    GETFIELD aay.f : Lrb;
+    IF_ACMPNE L20
+    ALOAD 10
+    ALOAD 0
+    GETFIELD bex.N : Ladd;
+    ICONST_1
+    INVOKESTATIC zs.a (Laay;Ladd;Z)Z
+    IFEQ L20
+   L23
+    LINENUMBER 505 L23
+    ALOAD 0
+    ALOAD 10
+    ALOAD 10
+    GETFIELD aay.g : I
+    ILOAD 3
+    ICONST_1
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L20
+   L16
+    LINENUMBER 512 L16
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    ALOAD 4
+    ILOAD 8
+    ILOAD 3
+    BIPUSH 6
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L18
+    LINENUMBER 515 L18
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.M : Z
+   L24
+    LINENUMBER 516 L24
+    ALOAD 0
+    LCONST_0
+    PUTFIELD bex.J : J
+    GOTO L25
+   L14
+    LINENUMBER 520 L14
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L26
+    ALOAD 0
+    GETFIELD bex.G : I
+    ILOAD 3
+    IF_ICMPEQ L26
+   L27
+    LINENUMBER 522 L27
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.t : Z
+   L28
+    LINENUMBER 523 L28
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.clear ()V
+   L29
+    LINENUMBER 524 L29
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bex.H : Z
+   L30
+    LINENUMBER 525 L30
+    RETURN
+   L26
+    LINENUMBER 528 L26
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.H : Z
+    IFEQ L31
+   L32
+    LINENUMBER 530 L32
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.H : Z
+   L33
+    LINENUMBER 531 L33
+    RETURN
+   L31
+    LINENUMBER 536 L31
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IFNULL L34
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.y : Z
+    IFEQ L34
+   L35
+    LINENUMBER 538 L35
+    ILOAD 3
+    IFEQ L36
+    ILOAD 3
+    ICONST_1
+    IF_ICMPNE L25
+   L36
+    LINENUMBER 540 L36
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNONNULL L37
+    ALOAD 4
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    IF_ACMPEQ L37
+   L38
+    LINENUMBER 542 L38
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    INVOKEVIRTUAL aay.d ()Ladd;
+    PUTFIELD bex.x : Ladd;
+   L37
+    LINENUMBER 545 L37
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 4
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    ICONST_0
+    INVOKESTATIC zs.a (Laay;Ladd;Z)Z
+    ISTORE 11
+   L39
+    LINENUMBER 547 L39
+    ILOAD 8
+    ICONST_M1
+    IF_ICMPEQ L40
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNULL L40
+    ILOAD 11
+    IFEQ L40
+   L41
+    LINENUMBER 549 L41
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    GETFIELD aay.g : I
+    ILOAD 3
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L42
+    LINENUMBER 550 L42
+    ALOAD 0
+    ALOAD 4
+    ILOAD 8
+    ICONST_0
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L43
+    LINENUMBER 552 L43
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNULL L44
+   L45
+    LINENUMBER 554 L45
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    GETFIELD aay.g : I
+    ILOAD 3
+    ICONST_0
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L46
+    LINENUMBER 555 L46
+    ALOAD 0
+    ILOAD 1
+    ILOAD 5
+    ISUB
+    PUTFIELD bex.y : I
+   L47
+    LINENUMBER 556 L47
+    ALOAD 0
+    ILOAD 2
+    ILOAD 6
+    ISUB
+    PUTFIELD bex.z : I
+   L48
+    LINENUMBER 557 L48
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    PUTFIELD bex.A : Laay;
+   L49
+    LINENUMBER 558 L49
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    PUTFIELD bex.C : Ladd;
+   L50
+    LINENUMBER 559 L50
+    ALOAD 0
+    INVOKESTATIC bao.K ()J
+    PUTFIELD bex.B : J
+    GOTO L51
+   L44
+    LINENUMBER 563 L44
+   FRAME FULL [bex I I I aay I I I I T T I] []
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.C : Ladd;
+    GOTO L51
+   L40
+    LINENUMBER 566 L40
+   FRAME FULL [bex I I I aay I I I I T T I] []
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    IFNULL L51
+   L52
+    LINENUMBER 568 L52
+    ALOAD 0
+    ILOAD 1
+    ILOAD 5
+    ISUB
+    PUTFIELD bex.y : I
+   L53
+    LINENUMBER 569 L53
+    ALOAD 0
+    ILOAD 2
+    ILOAD 6
+    ISUB
+    PUTFIELD bex.z : I
+   L54
+    LINENUMBER 570 L54
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.v : Laay;
+    PUTFIELD bex.A : Laay;
+   L55
+    LINENUMBER 571 L55
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.x : Ladd;
+    PUTFIELD bex.C : Ladd;
+   L56
+    LINENUMBER 572 L56
+    ALOAD 0
+    INVOKESTATIC bao.K ()J
+    PUTFIELD bex.B : J
+   L51
+    LINENUMBER 575 L51
+   FRAME FULL [bex I I I aay I I I I T T I] []
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.x : Ladd;
+   L57
+    LINENUMBER 576 L57
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bex.v : Laay;
+    GOTO L25
+   L34
+    LINENUMBER 579 L34
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.t : Z
+    IFEQ L58
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.isEmpty ()Z
+    IFNE L58
+   L59
+    LINENUMBER 581 L59
+    ALOAD 0
+    ACONST_NULL
+    CHECKCAST aay
+    SIPUSH -999
+    ICONST_0
+    ALOAD 0
+    GETFIELD bex.F : I
+    INVOKESTATIC zs.d (II)I
+    ICONST_5
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L60
+    LINENUMBER 582 L60
+    ALOAD 0
+    GETFIELD bex.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
+    ASTORE 9
+   L61
+    LINENUMBER 584 L61
+   FRAME FULL [bex I I I aay I I I I java/util/Iterator] []
+    ALOAD 9
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L62
+   L63
+    LINENUMBER 586 L63
+    ALOAD 9
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST aay
+    ASTORE 10
+   L64
+    LINENUMBER 587 L64
+    ALOAD 0
+    ALOAD 10
+    ALOAD 10
+    GETFIELD aay.g : I
+    ICONST_1
+    ALOAD 0
+    GETFIELD bex.F : I
+    INVOKESTATIC zs.d (II)I
+    ICONST_5
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L61
+   L62
+    LINENUMBER 590 L62
+   FRAME FULL [bex I I I aay I I I I java/util/Iterator] []
+    ALOAD 0
+    ACONST_NULL
+    CHECKCAST aay
+    SIPUSH -999
+    ICONST_2
+    ALOAD 0
+    GETFIELD bex.F : I
+    INVOKESTATIC zs.d (II)I
+    ICONST_5
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L25
+   L58
+    LINENUMBER 592 L58
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNULL L65
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ae : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    BIPUSH 100
+    IADD
+    IF_ICMPNE L66
+   L67
+    LINENUMBER 596 L67
+    ALOAD 0
+    ALOAD 4
+    ILOAD 8
+    ILOAD 3
+    ICONST_3
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L25
+   L66
+    LINENUMBER 600 L66
+   FRAME FULL [bex I I I aay I I I I] []
+    ILOAD 8
+    SIPUSH -999
+    IF_ICMPEQ L68
+    BIPUSH 42
+    INVOKESTATIC org/lwjgl/input/Keyboard.isKeyDown (I)Z
+    IFNE L69
+    BIPUSH 54
+    INVOKESTATIC org/lwjgl/input/Keyboard.isKeyDown (I)Z
+    IFEQ L68
+   L69
+   FRAME FULL [bex I I I aay I I I I] []
+    ICONST_1
+    GOTO L70
+   L68
+   FRAME FULL [bex I I I aay I I I I] []
+    ICONST_0
+   L70
+   FRAME FULL [bex I I I aay I I I I] [I]
+    ISTORE 11
+   L71
+    LINENUMBER 602 L71
+    ILOAD 11
+    IFEQ L72
+   L73
+    LINENUMBER 604 L73
+    ALOAD 0
+    ALOAD 4
+    IFNULL L74
+    ALOAD 4
+    INVOKEVIRTUAL aay.e ()Z
+    IFEQ L74
+    ALOAD 4
+    INVOKEVIRTUAL aay.d ()Ladd;
+    GOTO L75
+   L74
+   FRAME FULL [bex I I I aay I I I I T T I] [bex]
+    ACONST_NULL
+   L75
+   FRAME FULL [bex I I I aay I I I I T T I] [bex add]
+    PUTFIELD bex.N : Ladd;
+   L72
+    LINENUMBER 607 L72
+   FRAME FULL [bex I I I aay I I I I T T I] []
+    ALOAD 0
+    ALOAD 4
+    ILOAD 8
+    ILOAD 3
+    ILOAD 11
+    IFEQ L76
+    ICONST_1
+    GOTO L77
+   L76
+   FRAME FULL [bex I I I aay I I I I T T I] [bex aay I I]
+    ICONST_0
+   L77
+   FRAME FULL [bex I I I aay I I I I T T I] [bex aay I I I]
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L25
+   L65
+   FRAME FULL [bex I I I aay I I I I] []
+    ILOAD 3
+    IFLT L25
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.mouseUp (III)V
+   L25
+    LINENUMBER 612 L25
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNONNULL L78
+   L79
+    LINENUMBER 614 L79
+    ALOAD 0
+    LCONST_0
+    PUTFIELD bex.J : J
+   L78
+    LINENUMBER 617 L78
+   FRAME FULL [bex I I I aay I I I I] []
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bex.t : Z
+   L80
+    LINENUMBER 618 L80
+    RETURN
+   L81
+    LOCALVARIABLE slot1 Laay; L22 L16 10
+    LOCALVARIABLE iterator Ljava/util/Iterator; L20 L16 9
+    LOCALVARIABLE flag1 Z L39 L34 11
+    LOCALVARIABLE slot1 Laay; L64 L62 10
+    LOCALVARIABLE iterator Ljava/util/Iterator; L61 L58 9
+    LOCALVARIABLE flag1 Z L71 L25 11
+    LOCALVARIABLE this Lbex; L0 L81 0
+    LOCALVARIABLE p_146286_1_ I L0 L81 1
+    LOCALVARIABLE p_146286_2_ I L0 L81 2
+    LOCALVARIABLE p_146286_3_ I L0 L81 3
+    LOCALVARIABLE slot Laay; L2 L81 4
+    LOCALVARIABLE l I L3 L81 5
+    LOCALVARIABLE i1 I L4 L81 6
+    LOCALVARIABLE flag Z L8 L81 7
+    LOCALVARIABLE j1 I L9 L81 8
+    MAXSTACK = 5
+    MAXLOCALS = 12
+
+  // access flags 0x2
+  private a(Laay;II)Z
+   L0
+    LINENUMBER 622 L0
+    ALOAD 0
+    ALOAD 1
+    GETFIELD aay.h : I
+    ALOAD 1
+    GETFIELD aay.i : I
+    BIPUSH 16
+    BIPUSH 16
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL bex.c (IIIIII)Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbex; L0 L1 0
+    LOCALVARIABLE p_146981_1_ Laay; L0 L1 1
+    LOCALVARIABLE p_146981_2_ I L0 L1 2
+    LOCALVARIABLE p_146981_3_ I L0 L1 3
+    MAXSTACK = 7
+    MAXLOCALS = 4
+
+  // access flags 0x4
+  protected c(IIIIII)Z
+   L0
+    LINENUMBER 627 L0
+    ALOAD 0
+    GETFIELD bex.i : I
+    ISTORE 7
+   L1
+    LINENUMBER 628 L1
+    ALOAD 0
+    GETFIELD bex.r : I
+    ISTORE 8
+   L2
+    LINENUMBER 629 L2
+    ILOAD 5
+    ILOAD 7
+    ISUB
+    ISTORE 5
+   L3
+    LINENUMBER 630 L3
+    ILOAD 6
+    ILOAD 8
+    ISUB
+    ISTORE 6
+   L4
+    LINENUMBER 631 L4
+    ILOAD 5
+    ILOAD 1
+    ICONST_1
+    ISUB
+    IF_ICMPLT L5
+    ILOAD 5
+    ILOAD 1
+    ILOAD 3
+    IADD
+    ICONST_1
+    IADD
+    IF_ICMPGE L5
+    ILOAD 6
+    ILOAD 2
+    ICONST_1
+    ISUB
+    IF_ICMPLT L5
+    ILOAD 6
+    ILOAD 2
+    ILOAD 4
+    IADD
+    ICONST_1
+    IADD
+    IF_ICMPGE L5
+    ICONST_1
+    GOTO L6
+   L5
+   FRAME FULL [bex I I I I I I I I] []
+    ICONST_0
+   L6
+   FRAME FULL [bex I I I I I I I I] [I]
+    IRETURN
+   L7
+    LOCALVARIABLE this Lbex; L0 L7 0
+    LOCALVARIABLE p_146978_1_ I L0 L7 1
+    LOCALVARIABLE p_146978_2_ I L0 L7 2
+    LOCALVARIABLE p_146978_3_ I L0 L7 3
+    LOCALVARIABLE p_146978_4_ I L0 L7 4
+    LOCALVARIABLE p_146978_5_ I L0 L7 5
+    LOCALVARIABLE p_146978_6_ I L0 L7 6
+    LOCALVARIABLE k1 I L1 L7 7
+    LOCALVARIABLE l1 I L2 L7 8
+    MAXSTACK = 3
+    MAXLOCALS = 9
+
+  // access flags 0x4
+  protected a(Laay;III)V
+   L0
+    LINENUMBER 636 L0
+    ALOAD 1
+    IFNULL L1
+   L2
+    LINENUMBER 638 L2
+    ALOAD 1
+    GETFIELD aay.g : I
+    ISTORE 2
+   L1
+   FRAME FULL [bex aay I I I] []
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.handleSlotClick (III)V
+   L3
+    LINENUMBER 642 L3
+    RETURN
+   L4
+    LOCALVARIABLE this Lbex; L0 L4 0
+    LOCALVARIABLE p_146984_1_ Laay; L0 L4 1
+    LOCALVARIABLE p_146984_2_ I L0 L4 2
+    LOCALVARIABLE p_146984_3_ I L0 L4 3
+    LOCALVARIABLE p_146984_4_ I L0 L4 4
+    MAXSTACK = 4
+    MAXLOCALS = 5
+
+  // access flags 0x4
+  protected a(CI)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 2
+    ILOAD 1
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.lastKeyTyped (IC)Z
+    IFEQ L0
+    RETURN
+   L0
+    LINENUMBER 646 L0
+   FRAME FULL [bex I I] []
+    ILOAD 2
+    ICONST_1
+    IF_ICMPEQ L1
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.aa : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    IF_ICMPNE L2
+   L1
+    LINENUMBER 648 L1
+   FRAME FULL [bex I I] []
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    INVOKEVIRTUAL bjk.k ()V
+   L2
+    LINENUMBER 651 L2
+   FRAME FULL [bex I I] []
+    ALOAD 0
+    ILOAD 2
+    INVOKEVIRTUAL bex.b (I)Z
+    POP
+   L3
+    LINENUMBER 653 L3
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    IFNULL L4
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    INVOKEVIRTUAL aay.e ()Z
+    IFEQ L4
+   L5
+    LINENUMBER 655 L5
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ae : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    IF_ICMPNE L6
+   L7
+    LINENUMBER 657 L7
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    GETFIELD aay.g : I
+    ICONST_0
+    ICONST_3
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+    GOTO L4
+   L6
+    LINENUMBER 659 L6
+   FRAME FULL [bex I I] []
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ac : Lbal;
+    INVOKEVIRTUAL bal.i ()I
+    IF_ICMPNE L4
+   L8
+    LINENUMBER 661 L8
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    GETFIELD aay.g : I
+    INVOKESTATIC bex.q ()Z
+    IFEQ L9
+    ICONST_1
+    GOTO L10
+   L9
+   FRAME FULL [bex I I] [bex aay I]
+    ICONST_0
+   L10
+   FRAME FULL [bex I I] [bex aay I I]
+    ICONST_4
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L4
+    LINENUMBER 664 L4
+   FRAME FULL [bex I I] []
+    RETURN
+   L11
+    LOCALVARIABLE this Lbex; L0 L11 0
+    LOCALVARIABLE p_73869_1_ C L0 L11 1
+    LOCALVARIABLE p_73869_2_ I L0 L11 2
+    MAXSTACK = 5
+    MAXLOCALS = 3
+
+  // access flags 0x4
+  protected b(I)Z
+   L0
+    LINENUMBER 668 L0
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.bm : Lyx;
+    INVOKEVIRTUAL yx.o ()Ladd;
+    IFNONNULL L1
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    IFNULL L1
+   L2
+    LINENUMBER 670 L2
+    ICONST_0
+    ISTORE 2
+   L3
+   FRAME FULL [bex I I] []
+    ILOAD 2
+    BIPUSH 9
+    IF_ICMPGE L1
+   L4
+    LINENUMBER 672 L4
+    ILOAD 1
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.u : Lbbj;
+    GETFIELD bbj.ar : [Lbal;
+    ILOAD 2
+    AALOAD
+    INVOKEVIRTUAL bal.i ()I
+    IF_ICMPNE L5
+   L6
+    LINENUMBER 674 L6
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    ALOAD 0
+    GETFIELD bex.u : Laay;
+    GETFIELD aay.g : I
+    ILOAD 2
+    ICONST_2
+    INVOKEVIRTUAL bex.managerHandleMouseClick (Laay;III)V
+   L7
+    LINENUMBER 675 L7
+    ICONST_1
+    IRETURN
+   L5
+    LINENUMBER 670 L5
+   FRAME FULL [bex I I] []
+    IINC 2 1
+    GOTO L3
+   L1
+    LINENUMBER 680 L1
+   FRAME FULL [bex I] []
+    ICONST_0
+    IRETURN
+   L8
+    LOCALVARIABLE j I L3 L1 2
+    LOCALVARIABLE this Lbex; L0 L8 0
+    LOCALVARIABLE p_146983_1_ I L0 L8 1
+    MAXSTACK = 5
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public m()V
+   L0
+    LINENUMBER 685 L0
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    IFNULL L1
+   L2
+    LINENUMBER 687 L2
+    ALOAD 0
+    GETFIELD bex.h : Lzs;
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    INVOKEVIRTUAL zs.b (Lyz;)V
+   L1
+    LINENUMBER 689 L1
+   FRAME FULL [bex] []
+    RETURN
+   L3
+    LOCALVARIABLE this Lbex; L0 L3 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public d()Z
+   L0
+    LINENUMBER 693 L0
+    ICONST_0
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbex; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public e()V
+   L0
+    LINENUMBER 698 L0
+    ALOAD 0
+    INVOKESPECIAL bdw.e ()V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.updateScreen ()V
+   L1
+    LINENUMBER 700 L1
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    INVOKEVIRTUAL bjk.Z ()Z
+    IFEQ L2
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    GETFIELD bjk.K : Z
+    IFEQ L3
+   L2
+    LINENUMBER 702 L2
+   FRAME FULL [bex] []
+    ALOAD 0
+    GETFIELD bex.k : Lbao;
+    GETFIELD bao.h : Lbjk;
+    INVOKEVIRTUAL bjk.k ()V
+   L3
+    LINENUMBER 704 L3
+   FRAME FULL [bex] []
+    RETURN
+   L4
+    LOCALVARIABLE this Lbex; L0 L4 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 29 L0
+    NEW bqx
+    DUP
+    LDC "textures/gui/container/inventory.png"
+    INVOKESPECIAL bqx.<init> (Ljava/lang/String;)V
+    PUTSTATIC bex.a : Lbqx;
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public a(Lbao;II)V
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdw.a (Lbao;II)V
+    ALOAD 1
+    GETFIELD bao.n : Lbdw;
+    ALOAD 0
+    IF_ACMPNE L0
+    ALOAD 0
+    NEW codechicken/nei/guihook/GuiContainerManager
+    DUP
+    ALOAD 0
+    INVOKESPECIAL codechicken/nei/guihook/GuiContainerManager.<init> (Lnet/minecraft/client/gui/inventory/GuiContainer;)V
+    PUTFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.load ()V
+   L0
+   FRAME FULL [bex bao I I] []
+    RETURN
+    MAXSTACK = 4
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public l()V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.handleKeyboardInput ()V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public k()V
+    ALOAD 0
+    INVOKESPECIAL bdw.k ()V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.handleMouseWheel ()V
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public public_func_73869_a(CI)V
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bex.a (CI)V
+    RETURN
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public public_func_146984_a(Laay;III)V
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL bex.a (Laay;III)V
+    RETURN
+    MAXSTACK = 5
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public managerHandleMouseClick(Laay;III)V
+    ALOAD 0
+    GETFIELD bex.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.handleMouseClick (Lnet/minecraft/inventory/Slot;III)V
+    RETURN
+    MAXSTACK = 5
+    MAXLOCALS = 5
+}
