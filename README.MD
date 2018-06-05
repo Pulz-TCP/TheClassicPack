@@ -25,8 +25,5 @@ If you know what you are doing, here are the most recent download links.
 
 | Type | URL |
 | ------ | ------ |
-| Client | https://s3.amazonaws.com/files.enjin.com/650925/Downloads/TNTC-2.5.3_CLIENT.zip |
-| Server | https://s3.amazonaws.com/files.enjin.com/650925/Downloads/TNTC-2.5.3_SERVER.zip |
-| TNTCRestrict | http://download.hydrox.co:8000/f/5d34b04cf6/?raw=1 |
-
-*TNTCRestrict is created and maintained by TomCrawley_*
+| Client | http://tntc.cubik.host/TNTC-2.5.4_CLIENT.zip |
+| Server | http://tntc.cubik.host/TNTC-2.5.4_SERVER.zip |
