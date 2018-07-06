@@ -21,9 +21,10 @@ It is imperative that you have the Java version downloaded that your system uses
 
 ### Manual downloads (Latest)
 If you know what you are doing, here are the most recent download links.
-*I haven't had time to finish this page yet, so alternative links are not available!*
 
 | Type | URL |
 | ------ | ------ |
 | Client | http://tntc.cubik.host/TNTC-2.5.4_CLIENT.zip |
 | Server | http://tntc.cubik.host/TNTC-2.5.4_SERVER.zip |
+| TNTCRestrict | http://tntc.cubik.host/TNTCRestrict.jar |
+*TNTCRestrict is managed and maintained by TomCrawley_*
