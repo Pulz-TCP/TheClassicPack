@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://vgy.me/wDa5Zp.png">
+  <img src="https://i.imgur.com/cP0bl4A.png">
 </p>
 
 # The Classic Pack
@@ -24,5 +24,5 @@ If you know what you are doing, here are the most recent download links.
 
 | Type | URL |
 | ------ | ------ |
-| Client | http://download.theclassicpack.com/TCP-3.0.3_CLIENT.zip |
-| Server | http://download.theclassicpack.com/TCP-3.0.3_SERVER.zip |
+| Client | http://files.theclassicpack.com/CLIENT/TCP-3.0.6_CLIENT.zip |
+| Server | http://files.theclassicpack.com/SERVER/TCP-3.0.6_SERVER.zip |
