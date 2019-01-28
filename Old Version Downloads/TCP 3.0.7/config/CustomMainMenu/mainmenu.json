@@ -1,0 +1,176 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "tntcstuff:tntc/Logo_Large.png",
+            "posX" : -77,
+            "posY" : 10,
+            "width" : 300,
+            "height" : 225,
+            "alignment" : "top_center"
+        }
+    ,
+        
+        "black":
+        {
+            "image" : "tntcstuff:tntc/longblock.png",
+            "posX" : 50,
+            "posY" : 0,
+            "width" : 100,
+            "height" : 2000,
+            "alignment" : "top_left"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 55,
+            "posY" : -110,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 55,
+            "posY" : -85,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods (#modsloaded#)",
+            "posX" : 55,
+            "posY" : -60,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 55,
+            "posY" : -35,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		
+		"patreon":
+        {
+            "text" : "- Patreon -",
+            "posX" : 55,
+            "posY" : 55,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.patreon.com/Pulz"
+            }
+        },
+		
+		"pebblehost":
+        {
+            "text" : "- PebbleHost -",
+            "posX" : 55,
+            "posY" : 80,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"normalTextColor" : 000255000,
+			"hoverTextColor" : 000255000,
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://pebblehost.com/minecraft"
+            }
+        },
+		
+		"website":
+        {
+            "text" : "- Website -",
+            "posX" : 55,
+            "posY" : 30,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "http://theclassicpack.com"
+            }
+        },
+		
+		"discord":
+        {
+            "text" : "- Discord -",
+            "posX" : 55,
+            "posY" : 5,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/FgVtf4b"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : 88,
+            "posY" : -25,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        }
+    },
+    
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "blur" : true,
+            "gradient" : false
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "comment": "Sets default conversions for various metals from other mods",
+  "comment_1": "This file is only shown as an example, it will be regenerated every time mapping occurs in order to let us",
+  "comment_2": "change default values. To specify your own custom values use a separate JSON or the /projecte commands ingame",
+  "groups": {},
+  "values": {
+    "before": {
+      "OD|ingotIron":256
+    },
+    "conversion": [
+      {"evalOD": true, "o": "OD|ingotObsidian", "c": 2, "i": {"minecraft:obsidian|0": 1}},
+      {"evalOD": true, "o": "OD|ingotGold", "c": 1, "i": {"OD|ingotIron":8}},
+      {"evalOD": true, "o": "OD|ingotCopper", "c": 2, "i": {"OD|ingotIron":1}},
+      {"evalOD": true, "o": "OD|ingotTin", "c": 1, "i": {"OD|ingotIron":1}},
+      {"evalOD": true, "o": "OD|ingotSilver", "c": 1, "i": {"OD|ingotIron":2}},
+      {"evalOD": true, "o": "OD|ingotLead", "c": 1, "i": {"OD|ingotIron":2}},
+      {"evalOD": true, "o": "OD|ingotNickel", "c": 1, "i": {"OD|ingotIron":4}},
+      {"evalOD": true, "o": "OD|ingotAluminum", "c": 2, "i": {"OD|ingotIron":1}},
+      {"evalOD": true, "o": "OD|ingotArdite", "c": 1, "i": {"OD|ingotIron":4}},
+      {"evalOD": true, "o": "OD|ingotCobalt", "c": 1, "i": {"OD|ingotIron":4}},
+      {"evalOD": true, "o": "OD|ingotManyullyn", "c": 1, "i": {"OD|ingotCobalt": 1, "OD|ingotArdite": 1}},
+      {"evalOD": true, "o": "OD|ingotAlumite", "c": 48, "i": {"OD|ingotAluminum": 80, "OD|ingotIron": 32, "OD|ingotObsidian": 32}},
+      {"evalOD": true, "o": "OD|ingotPlatinum", "c": 1, "i": {"OD|ingotIron":16}}
+    ]
+  }
+}

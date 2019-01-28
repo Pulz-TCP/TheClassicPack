@@ -1,0 +1,196 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:dirt|0",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:glass|0",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:leaves|0",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:leaves|1",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:leaves|2",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:leaves|3",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:leaves2|0",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:leaves2|1",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:stone_pressure_plate|0",
+      "emc": 2
+    },
+    {
+      "item": "minecraft:wooden_pressure_plate|0",
+      "emc": 16
+    },
+    {
+      "item": "minecraft:wooden_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:birch_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:spruce_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:jungle_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:acacia_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:dark_oak_door|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:iron_door|0",
+      "emc": 1536
+    },
+    {
+      "item": "minecraft:spruce_fence_gate|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:birch_fence_gate|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:dark_oak_fence_gate|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:jungle_fence_gate|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:acacia_fence_gate|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:lever|0",
+      "emc": 5
+    },
+    {
+      "item": "minecraft:light_weighted_pressure_plate|0",
+      "emc": 4096
+    },
+    {
+      "item": "minecraft:heavy_weighted_pressure_plate|0",
+      "emc": 512
+    },
+    {
+      "item": "minecraft:chest|0",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest|0",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest|1",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest|2",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest|3",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest|4",
+      "emc": 64
+    },
+    {
+      "item": "quark:custom_chest_trap|0",
+      "emc": 198
+    },
+    {
+      "item": "quark:custom_chest_trap|1",
+      "emc": 198
+    },
+    {
+      "item": "quark:custom_chest_trap|2",
+      "emc": 198
+    },
+    {
+      "item": "minecraft:quartz|0",
+      "emc": 256
+    },
+    {
+      "item": "minecraft:sign|0",
+      "emc": 17
+    },
+    {
+      "item": "quark:spruce_trapdoor|0",
+      "emc": 48
+    },
+    {
+      "item": "quark:birch_trapdoor|0",
+      "emc": 48
+    },
+    {
+      "item": "quark:jungle_trapdoor|0",
+      "emc": 48
+    },
+    {
+      "item": "quark:acacia_trapdoor|0",
+      "emc": 48
+    },
+    {
+      "item": "quark:dark_oak_trapdoor|0",
+      "emc": 48
+    },
+    {
+      "item": "minecraft:tripwire_hook|0",
+      "emc": 134
+    },
+    {
+      "item": "quark:custom_chest_trap|3",
+      "emc": 198
+    },
+    {
+      "item": "quark:custom_chest_trap|4",
+      "emc": 198
+    },
+    {
+      "item": "minecraft:trapped_chest|0",
+      "emc": 198
+    },
+    {
+      "item": "minecraft:stone|1",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:stone|3",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:stone|5",
+      "emc": 1
+    }
+  ]
+}
