@@ -24,5 +24,5 @@ If you know what you are doing, here are the most recent download links.
 
 | Type | URL |
 | ------ | ------ |
-| Client | http://files.theclassicpack.com/CLIENT/TCP-3.0.6_CLIENT.zip |
-| Server | http://files.theclassicpack.com/SERVER/TCP-3.0.6_SERVER.zip |
+| Client | http://files.theclassicpack.com/CLIENT/TCP-3.1.0_CLIENT.zip |
+| Server | http://files.theclassicpack.com/SERVER/TCP-3.1.0_SERVER.zip |
