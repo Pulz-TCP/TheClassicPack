@@ -60,5 +60,5 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
 mods.thaumcraft.Infusion.registerRecipe("causalitycollapserfix", "RIFTCLOSER", <thaumcraft:causality_collapser>, 9, 
 [<aspect:alienis>*50, <aspect:vitium>*50], 
 <minecraft:gunpowder>, 
-[<thaumcraft:morphic_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>, <thaumcraft:vis_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>]
+[<thaumcraft:morphic_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>, <thaumcraft:vis_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>];
 //===========================================
