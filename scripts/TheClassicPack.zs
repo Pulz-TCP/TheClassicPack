@@ -9,11 +9,28 @@ import crafttweaker.oredict.IOreDictEntry;
 //additionalpipes ---------------------------
 var itemTeleportPipe = <additionalpipes:pipe_items_teleport>;
 
+//advanced machines -------------------------
+var thermalWasher = <advanced_machines:machines:7>;
 
 //buildcraft --------------------------------
 var diamondChipset = <buildcraftsilicon:redstone_chipset:4>;
 var diamondTransportPipe = <buildcrafttransport:pipe_diamond_item>;
 var quartzChipset = <buildcraftsilicon:redstone_chipset:3>;
+
+//ic2 ---------------------------------------
+var advancedMachineCasing = <ic2:resource:13>;
+var oreWashingPlant = <ic2:te:56>;
+
+//mrcrayfish furniture-----------------------
+var choppedLog = <cfm:item_log>;
+
+//minecraft ---------------------------------
+var emerald = <minecraft:emerald>;
+var emeraldBlock = <ore:blockEmerald>;
+var log = <ore:logWood>;
+
+//other -------------------------------------
+var sulfurDust = <ore:dustSulfur>;
 //===========================================
 
 
@@ -32,17 +49,17 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 
 //=============== PATCHES ===================
 //fix potential duplication exploit ---------
-recipes.remove(<minecraft:emerald>);
-recipes.addShapeless(<minecraft:emerald> * 9, [<ore:blockEmerald>]);
-recipes.addShaped(<minecraft:emerald_block>, [[<minecraft:emerald>, <ore:gemEmerald>, <ore:gemEmerald>], [<ore:gemEmerald>, <ore:gemEmerald>, <minecraft:emerald>], [<ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>]]);
+recipes.remove(emerald);
+recipes.addShapeless(emerald * 9, [emeraldBlock]);
+recipes.addShaped(emeraldBlock, [[emerald, emerald, emerald], [emerald, emerald, emerald], [emerald, emerald, emerald]]);
 
 //fix intentional plank duplication ---------
-recipes.removeShapeless(<cfm:item_log>);
-recipes.addShapeless(<cfm:item_log> * 8, 
-                                             [<minecraft:stone_axe:*>, <ore:logWood>]);
+recipes.removeShapeless(choppedLog);
+recipes.addShapeless(choppedLog * 8, 
+                                             [<minecraft:stone_axe:*>, log]);
 
 //fix result of difficult to fix emerald exploit
-recipes.removeShapeless(<minecraft:diamond> * 2, [<projecte:item.pe_philosophers_stone>, <ore:gemEmerald>]);
+recipes.removeShapeless(<minecraft:diamond> * 2, [<projecte:item.pe_philosophers_stone>, emerald]);
 
 /*
 //fix bugged turtle recipes -----------------
@@ -54,9 +71,9 @@ recipes.addShaped(<computercraft:turtle>,			[[<ore:ingotIron>, <ore:ingotIron>, 
                                              [<ore:ingotIron>, <computercraft:computer>, <ore:ingotIron>], 
 											 [<minecraft:iron_ingot>, <ore:chest>, <ore:ingotIron>]]);
 */
-recipes.addShaped(<advanced_machines:machines:7>,			[[<ore:dustSulfur>, <thermalfoundation:material:771>, <ore:dustSulfur>], 
-                                             [<ore:dustSulfur>, <ic2:te:56>, <ore:dustSulfur>], 
-											 [<ore:dustSulfur>, <ic2:resource:13>, <thermalfoundation:material:771>]]);
+recipes.addShaped(thermalWasher,			[[sulfurDust, sulfurDust, sulfurDust], 
+                                             [sulfurDust, oreWashingPlant, sulfurDust], 
+											 [sulfurDust, advancedMachineCasing, sulfurDust]]);
 											 
 recipes.addShaped(<energyconverters:energy_producer_mj>,			[[<ore:materialStoneTool>, <ore:gearIron>, <ore:materialStoneTool>], 
                                              [<buildcraftcore:engine:1>, <buildcrafttransport:pipe_wood_item>, <ore:ingotGold>], 
@@ -73,10 +90,6 @@ recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:
 recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:ingotIron>, <ore:blockIron>], 
                                              [<minecraft:iron_ingot>, <vending:vendingmachine:*>, <ore:ingotIron>], 
 											 [<minecraft:iron_block>, <minecraft:iron_ingot>, <ore:blockIron>]]);
-											 
-recipes.addShaped(<advanced_machines:machines:7>,			[[<ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>], 
-                                             [<thermalfoundation:material:771>, <ic2:te:56>, <ore:dustSulfur>], 
-											 [<ore:dustSulfur>, <ic2:resource:13>, <thermalfoundation:material:771>]]);
 											 
 recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 

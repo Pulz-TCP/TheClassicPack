@@ -6,22 +6,34 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //============== VARIABLES =================
+//minecraft --------------------------------
+var gunpowder = <minecraft:gunpowder>;
+var redstoneBlock = <minecraft:redstone_block>;
+var tnt = <minecraft:tnt>;
 
+//weirding gadget ---------------------------
+var weirdingGadget = <weirdinggadget:weirding_gadget>;
 
+//ic2 ---------------------------------------
+var dynamite = <ic2:dynamite>;
+var dynamiteSticky = <ic2:dynamite_sticky>;
+var industrialTnt = <ic2:te:1>;
 
+//thaumcraft --------------------------------
+var alumentum = <thaumcraft:alumentum>;
+var causalityCollapser = <thaumcraft:causality_collapser>;
+var nitor = <ore:nitor>;
 //===========================================
 
 
 
 
 //=========== RECIPES TO REMOVE =============
-recipes.remove(<weirdinggadget:weirding_gadget>);
-recipes.remove(<ic2:dynamite>);
-recipes.remove(<minecraft:tnt>);
-recipes.remove(<ic2:te:1>);
-recipes.remove(<ic2:dynamite_sticky>);
-recipes.remove(<ic2:dynamite>);
-
+recipes.remove(weirdingGadget);
+recipes.remove(dynamite);
+recipes.remove(tnt);
+recipes.remove(industrialTnt);
+recipes.remove(dynamiteSticky);
 //===========================================
 
 
@@ -29,12 +41,12 @@ recipes.remove(<ic2:dynamite>);
 
 //=============== THAUMCRAFT =================
 //remove and re-add infusion so it doesnt need tnt
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
-mods.thaumcraft.Infusion.registerRecipe("causalitycollapserfix", "RIFTCLOSER", <thaumcraft:causality_collapser>, 9, 
+mods.thaumcraft.Infusion.removeRecipe(causalityCollapser);
+mods.thaumcraft.Infusion.registerRecipe("causalitycollapserpatch", "RIFTCLOSER", causalityCollapser, 9, 
 [<aspect:alienis>*50, <aspect:vitium>*50], 
-<minecraft:gunpowder>, [<thaumcraft:morphic_resonator>, <minecraft:redstone_block>, 
-<thaumcraft:alumentum>, <ore:nitor>, <thaumcraft:vis_resonator>, 
-<minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>]);									 
+gunpowder, [<thaumcraft:morphic_resonator>, redstoneBlock, 
+alumentum, nitor, <thaumcraft:vis_resonator>, 
+redstoneBlock, alumentum, nitor]);									 
 //============================================
 
 
