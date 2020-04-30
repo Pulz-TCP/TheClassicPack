@@ -19,6 +19,16 @@ It is imperative that you have the Java version downloaded that your system uses
 >The TCP pack is primarily hosted and supposed to be run via [The Technic Launcher](https://www.technicpack.net/download)
 >Simply install the launcher, sign in with your Minecraft credentials and search for The Classic Pack on the browser.
 
+### Sphax Patchpacks
+These are curated packs of mod texture patches for Sphax PureBDCraft. 
+To install, download the official 1.12.2 Sphax PureBDCraft texturepack, download the matching Patchpack below and enable them both in your texturepack folder!
+
+| Resolution | URL |
+| ------ | ------ |
+|x128|http://files.theclassicpack.com/patches/x128-TCP-Sphax_PatchPack.zip|
+|x64|http://files.theclassicpack.com/patches/x64-TCP-Sphax_PatchPack.zip|
+|x32|http://files.theclassicpack.com/patches/x32-TCP-Sphax_PatchPack.zip|
+
 ### Manual downloads (Latest)
 If you know what you are doing, here are the most recent download links.
 
