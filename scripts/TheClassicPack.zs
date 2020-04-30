@@ -51,18 +51,16 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 //fix potential duplication exploit ---------
 /*
 recipes.remove(emerald);
-recipes.addShapeless(emerald * 9, [emeraldBlock]);
-recipes.addShaped(emeraldBlock, [[emerald, emerald, emerald], 
-[emerald, emerald, emerald], 
-[emerald, emerald, emerald]]);
+recipes.addShapeless(emerald *9, [emeraldBlock]);
+recipes.addShapeless(emeraldBlock, [emerald *9]);
 */
 //fix intentional plank duplication ---------
 recipes.removeShapeless(choppedLog);
-recipes.addShapeless(choppedLog * 8, 
+recipes.addShapeless(choppedLog *8, 
                                              [<minecraft:stone_axe:*>, log]);
 
 //fix result of difficult to fix emerald exploit
-recipes.removeShapeless(<minecraft:diamond> * 2, [<projecte:item.pe_philosophers_stone>, emerald]);
+recipes.removeShapeless(<minecraft:diamond> *2, [<projecte:item.pe_philosophers_stone>, emerald]);
 
 /*
 //fix bugged turtle recipes -----------------
