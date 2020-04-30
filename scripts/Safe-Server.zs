@@ -7,6 +7,16 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //============== VARIABLES =================
 //ic2 ---------------------------------------
+var dynamite = <ic2:dynamite>;
+var dynamiteSticky = <ic2:dynamite_sticky>;
+var industrialTnt = <ic2:te:1>;
+
+//minecraft --------------------------------
+var gunpowder = <minecraft:gunpowder>;
+var redstoneBlock = <minecraft:redstone_block>;
+var tnt = <minecraft:tnt>;
+
+//ic2 ---------------------------------------
 var advancedAlloy = <ic2:crafting:3>;
 var advancedCircuit = <ic2:crafting:1>;
 var advancedMachineCasing = <ic2:resource:13>;
@@ -18,22 +28,47 @@ var ironIngot = <ore:ingotIron>;
 var patternStorage = <ic2:te:62>;
 var reinforcedStone = <ic2:resource:11>;
 var thermalCentrifuge = <ic2:te:52>;
+
+//thaumcraft --------------------------------
+var alumentum = <thaumcraft:alumentum>;
+var causalityCollapser = <thaumcraft:causality_collapser>;
+var nitor = <ore:nitor>;
+
+//weirding gadget ---------------------------
+var weirdingGadget = <weirdinggadget:weirding_gadget>;
 //===========================================
 
 
 
 
 //=========== RECIPES TO REMOVE =============
-recipes.remove(thermalCentrifuge); //added SHAPED RECIPE to not require Mining Laser at all
-recipes.remove(patternStorage); //added SHAPED RECIPE to not require Mining Laser at all
+recipes.remove(dynamite);
+recipes.remove(dynamiteSticky);
+recipes.remove(industrialTnt);
+recipes.remove(tnt);
+recipes.remove(weirdingGadget);
 //===========================================
+
+
+
+
+//=============== THAUMCRAFT =================
+//remove and re-add infusion so it doesnt need tnt
+mods.thaumcraft.Infusion.removeRecipe(causalityCollapser);
+mods.thaumcraft.Infusion.registerRecipe("causalitycollapserpatch", "RIFTCLOSER", causalityCollapser, 9, 
+[<aspect:alienis>*50, <aspect:vitium>*50], 
+gunpowder, [<thaumcraft:morphic_resonator>, redstoneBlock, 
+alumentum, nitor, <thaumcraft:vis_resonator>, 
+redstoneBlock, alumentum, nitor]);									 
+//============================================
 
 
 
 
 //============= SHAPED RECIPES ==============
 //(output, [components]) --------------------    
-
+recipes.remove(patternStorage);
+recipes.remove(thermalCentrifuge);
 //new recipe that doesn't use mining laser
 recipes.addShaped(thermalCentrifuge,        [[coil, energyCrystal, coil], 
                                              [advancedAlloy, advancedMachineCasing, advancedCircuit], 
@@ -47,18 +82,3 @@ recipes.addShaped(patternStorage,           [[reinforcedStone, reinforcedStone, 
 
 
 
-
-
-//NEEDS PROPER FORMATTING/VARIABLES
-//========== THAUMCRAFT INFUSION ===========
-//(name, research required, output, instability, [required aspects], central item, 
-
-//remove recipe ----------------------------
-mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
-
-//add adjusted infusion --------------------
-mods.thaumcraft.Infusion.registerRecipe("causalitycollapserfix", "RIFTCLOSER", <thaumcraft:causality_collapser>, 9, 
-[<aspect:alienis>*50, <aspect:vitium>*50], 
-<minecraft:gunpowder>, 
-[<thaumcraft:morphic_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>, <thaumcraft:vis_resonator>, <minecraft:redstone_block>, <thaumcraft:alumentum>, <ore:nitor>]);
-//===========================================
