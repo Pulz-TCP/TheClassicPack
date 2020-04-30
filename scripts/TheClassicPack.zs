@@ -49,10 +49,13 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 
 //=============== PATCHES ===================
 //fix potential duplication exploit ---------
+/*
 recipes.remove(emerald);
 recipes.addShapeless(emerald * 9, [emeraldBlock]);
-recipes.addShaped(emeraldBlock, [[emerald, emerald, emerald], [emerald, emerald, emerald], [emerald, emerald, emerald]]);
-
+recipes.addShaped(emeraldBlock, [[emerald, emerald, emerald], 
+[emerald, emerald, emerald], 
+[emerald, emerald, emerald]]);
+*/
 //fix intentional plank duplication ---------
 recipes.removeShapeless(choppedLog);
 recipes.addShapeless(choppedLog * 8, 
