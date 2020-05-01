@@ -18,7 +18,7 @@ var tnt = <minecraft:tnt>;
 
 //ic2 ---------------------------------------
 var advancedAlloy = <ic2:crafting:3>;
-var advancedCircuit = <ic2:crafting:1>;
+var advancedCircuit = <ic2:crafting:2>;
 var advancedMachineCasing = <ic2:resource:13>;
 var coil = <ic2:crafting:5>;
 var crystalMemory = <ic2:crystal_memory>;
@@ -79,6 +79,3 @@ recipes.addShaped(patternStorage,           [[reinforcedStone, reinforcedStone, 
                                              [crystalMemory, advancedMachineCasing, crystalMemory], 
                                              [energyCrystal, advancedCircuit, energyCrystal]]);											 
 //============================================
-
-
-
