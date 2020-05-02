@@ -95,10 +95,7 @@ val bannedItems = [
     <railcraft:cart_worldspike_admin>,
     <railcraft:cart_worldspike_personal>,
     <railcraft:cart_worldspike_standard>,
-    <railcraft:worldspike:1>,
-    <railcraft:worldspike:2>,
-    <railcraft:worldspike:3>,
-    <railcraft:worldspike>,
+    <railcraft:worldspike:*>,
     <railcraft:worldspike_point>,
 
     <tconstruct:piggybackpack>,
