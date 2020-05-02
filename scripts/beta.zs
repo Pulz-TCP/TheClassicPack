@@ -1,7 +1,7 @@
 import mods.appliedenergistics2.Inscriber;//Import ae2
 import crafttweaker.oredict.IOreDictEntry;//Import Oredict
 
-//============== ABLES =================
+//============== VARABLES ==================
 //appliedenergistics2 ----------------------
 var calculationProcessor = <appliedenergistics2:material:23>;
 var engineeringProcessor = <appliedenergistics2:material:24>;
