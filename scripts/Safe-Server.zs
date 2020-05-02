@@ -4,13 +4,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
+print("Safe-Server mode has been ENABLED!");
 
 //============== VARIABLES =================
-//ic2 ---------------------------------------
-var dynamite = <ic2:dynamite>;
-var dynamiteSticky = <ic2:dynamite_sticky>;
-var industrialTnt = <ic2:te:1>;
-
 //minecraft --------------------------------
 var gunpowder = <minecraft:gunpowder>;
 var redstoneBlock = <minecraft:redstone_block>;
@@ -25,6 +21,7 @@ var crystalMemory = <ic2:crystal_memory>;
 var electricMotor = <ic2:crafting:6>;
 var energyCrystal = <ic2:energy_crystal:26>.anyDamage();
 var ironIngot = <ore:ingotIron>;
+var miningLaser = <ic2:mining_laser:26>.anyDamage();
 var patternStorage = <ic2:te:62>;
 var reinforcedStone = <ic2:resource:11>;
 var thermalCentrifuge = <ic2:te:52>;
@@ -34,19 +31,94 @@ var alumentum = <thaumcraft:alumentum>;
 var causalityCollapser = <thaumcraft:causality_collapser>;
 var nitor = <ore:nitor>;
 
-//weirding gadget ---------------------------
-var weirdingGadget = <weirdinggadget:weirding_gadget>;
 //===========================================
 
 
 
 
 //=========== RECIPES TO REMOVE =============
-recipes.remove(dynamite);
-recipes.remove(dynamiteSticky);
-recipes.remove(industrialTnt);
-recipes.remove(tnt);
-recipes.remove(weirdingGadget);
+print("========== UNSAFE RECIPES REMOVED! ==========");
+val bannedItems = [
+    <additionalpipes:teleport_tether>,
+
+    <botania:hourglass>,
+    <botania:laputashard:14>,
+    <botania:laputashard:19>,
+    <botania:laputashard:4>,
+    <botania:laputashard:9>,
+    <botania:laputashard>,
+    <botania:teruterubozu>,
+
+    <forestry:crafting_material:4>,
+    <forestry:iodine_capsule>,
+    <forestry:letters>,
+    <forestry:mailbox>,
+    <forestry:rainmaker>,
+
+    <ic2:dynamite>,
+    <ic2:dynamite_sticky>,
+    <ic2:mining_laser:*>,
+    <ic2:te:1>,
+    <ic2:te:2>,
+    <ic2:te:57>,
+    <ic2:te:82>,
+
+    <inventorypets:bed_pet>,
+    <inventorypets:chest_pet>,
+    <inventorypets:cloud_pet>,
+    <inventorypets:double_chest_pet>,
+    <inventorypets:ender_chest_pet>,
+    <inventorypets:ghast_pet>,
+    <inventorypets:grave_pet>,
+    <inventorypets:illuminati_pet>,
+
+    <minecraft:tnt>,
+    <minecraft:tnt_minecart>,
+
+    <opencomputers:upgrade:4>,
+
+    <projecte:item.pe_catalitic_lens>,
+    <projecte:item.pe_evertide_amulet>,
+    <projecte:item.pe_harvest_god>,
+    <projecte:item.pe_hyperkinetic_lens>,
+    <projecte:item.pe_time_watch>,
+    <projecte:item.pe_volcanite_amulet>,
+    <projecte:nova_cataclysm>,
+    <projecte:nova_catalyst>,
+
+    <projectred-expansion:machine2:12>,
+    <projectred-expansion:machine2:2>,
+    <projectred-expansion:machine2>,
+
+    <railcraft:bore>,
+    <railcraft:borehead_bronze>,
+    <railcraft:borehead_diamond>,
+    <railcraft:borehead_iron>,
+    <railcraft:borehead_steel>,
+    <railcraft:cart_tnt_wood>,
+    <railcraft:cart_worldspike_admin>,
+    <railcraft:cart_worldspike_personal>,
+    <railcraft:cart_worldspike_standard>,
+    <railcraft:worldspike:1>,
+    <railcraft:worldspike:2>,
+    <railcraft:worldspike:3>,
+    <railcraft:worldspike>,
+    <railcraft:worldspike_point>,
+
+    <tconstruct:piggybackpack>,
+    <tconstruct:throwball:1>,
+
+    <thermalexpansion:machine:2>,
+
+    <weirdinggadget:weirding_gadget>,
+
+    <wrcbe:rep>
+] as IItemStack[];
+
+for item in bannedItems{
+    recipes.remove(item);
+}
+
 //===========================================
 
 
