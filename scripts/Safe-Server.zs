@@ -42,11 +42,7 @@ val bannedItems = [
     <additionalpipes:teleport_tether>,
 
     <botania:hourglass>,
-    <botania:laputashard:14>,
-    <botania:laputashard:19>,
-    <botania:laputashard:4>,
-    <botania:laputashard:9>,
-    <botania:laputashard>,
+    <botania:laputashard:*>,
     <botania:teruterubozu>,
 
     <forestry:crafting_material:4>,
