@@ -1,3 +1,4 @@
+//test GIT configuration
 import mods.appliedenergistics2.Inscriber;
 
 //============== VARIABLES =================
