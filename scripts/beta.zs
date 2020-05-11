@@ -54,7 +54,7 @@ Inscriber.addRecipe(inscriberSiliconPress,
             ironBlock, true, inscriberSiliconPress);
 
 Inscriber.addRecipe(printedCalculationCircuit, 
-            inscriberCalculationPress, true, pureCertusQuartzCrystal);
+            pureCertusQuartzCrystal, true, inscriberCalculationPress);
 
 Inscriber.addRecipe(printedEngineeringCircuit, 
             gemDiamond, true, inscriberEngineeringPress);
