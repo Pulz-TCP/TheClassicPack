@@ -49,22 +49,23 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 
 //=============== PATCHES ===================
 //fix potential duplication exploit ---------
-/*
+
 recipes.remove(emerald);
 recipes.addShapeless(emerald *9, [emeraldBlock]);
 recipes.addShapeless(emeraldBlock, [emerald *9]);
-*/
+
 //fix intentional plank duplication ---------
 recipes.removeShapeless(choppedLog);
-recipes.addShapeless(choppedLog *8, 
-                                             [<minecraft:stone_axe:*>, log]);
+recipes.addShapeless(choppedLog *8, [<minecraft:stone_axe:*>, log]);
 
 //fix result of difficult to fix emerald exploit
 recipes.removeShapeless(<minecraft:diamond> *2, [<projecte:item.pe_philosophers_stone>, emerald]);
 
 //fix crafty turtle recipes
+recipes.remove(<computercraft:turtle_expanded>);
+recipes.remove(<computercraft:turtle_advanced>);
 recipes.addShapeless(<computercraft:turtle_expanded>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle>, <minecraft:crafting_table>]);
-recipe.addShapeless(<computercraft:turtle_advanced>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle_advanced>.withTag({}), <minecraft:crafting_table>])
+recipes.addShapeless(<computercraft:turtle_advanced>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle_advanced>, <minecraft:crafting_table>]);
 
 //fix bugged turtle recipes -----------------
 recipes.addShaped(<computercraft:turtle_advanced>,			[[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], 

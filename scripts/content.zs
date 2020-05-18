@@ -16,20 +16,22 @@ import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.SoundEvent;
 import mods.contenttweaker.VanillaFactory;
 
+//Content added:
+print("========== TCP CONTENT ADDED: ==========");
+print("
+tcpTab\n
+tcpCoin\n
+mobsoul
+");
 
-
-print("Creating TCP Content Tab");
 var tcpTab = VanillaFactory.createCreativeTab("tcp_content", <item:contenttweaker:tcpcoin>);
 tcpTab.register();
 
-print("Registering tcpCoin");
 var tcpCoin = VanillaFactory.createItem("tcpCoin");
 tcpCoin.setMaxStackSize(64);
 tcpCoin.creativeTab = tcpTab;
 tcpCoin.register();
-print("registered tcpCoin!");
 
-print("Registering mobSoul");
 var mobsoul = VanillaFactory.createFluid("mobsoul", Color.fromHex("332218"));
 mobsoul.fillSound = <soundevent:minecraft:item.bucket.empty_lava>;
 mobsoul.emptySound = <soundevent:minecraft:item.bucket.fill_lava>;
@@ -38,7 +40,6 @@ mobsoul.temperature = 300;
 mobsoul.density = 2000;
 mobsoul.luminosity = 5;
 mobsoul.register();
-print("registered mobSoul!");
 
 //The liquid isn't the bucket, so lets add the bucket specifically
 // var mobSoulBucket = <forge:bucketfilled>.anyDamage();
