@@ -1,34 +1,57 @@
 #loader contenttweaker
 
+// import mods.contenttweaker.IItemRightClick;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+
 import mods.contenttweaker.Block;
+import mods.contenttweaker.Color;
 import mods.contenttweaker.Commands;
 import mods.contenttweaker.CreativeTab;
-import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.ResourceLocation;
+import mods.contenttweaker.SoundEvent;
 import mods.contenttweaker.VanillaFactory;
 
+
+
 print("Creating TCP Content Tab");
-val tcpTab = VanillaFactory.createCreativeTab("TCP Coin", <contenttweaker:tcpCoin>);
+var tcpTab = VanillaFactory.createCreativeTab("tcp_content", <item:contenttweaker:tcpcoin>);
 tcpTab.register();
 
 print("Registering tcpCoin");
 var tcpCoin = VanillaFactory.createItem("tcpCoin");
 tcpCoin.setMaxStackSize(64);
 tcpCoin.creativeTab = tcpTab;
-tcpCoin.itemRightClick = function(stack, world, player, hand){
-    Commands.call("message @p A shiny TCP Coin!", player, world)
-};
 tcpCoin.register();
-print("registered!");
+print("registered tcpCoin!");
 
+print("Registering mobSoul");
+var mobsoul = VanillaFactory.createFluid("mobsoul", Color.fromHex("332218"));
+mobsoul.fillSound = <soundevent:minecraft:item.bucket.empty_lava>;
+mobsoul.emptySound = <soundevent:minecraft:item.bucket.fill_lava>;
+mobsoul.viscosity = 1250;
+mobsoul.temperature = 300;
+mobsoul.density = 2000;
+mobsoul.luminosity = 5;
+mobsoul.register();
+print("registered mobSoul!");
 
-// var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
-// antiIceBlock.setLightOpacity(3);
-// antiIceBlock.setLightValue(0);
-// antiIceBlock.setBlockHardness(5.0);
-// antiIceBlock.setBlockResistance(5.0);
-// antiIceBlock.setToolClass("pickaxe");
-// antiIceBlock.setToolLevel(0);
-// antiIceBlock.setBlockSoundType(<soundtype:snow>);
-// antiIceBlock.setSlipperiness(0.3);
-// antiIceBlock.register();
+//The liquid isn't the bucket, so lets add the bucket specifically
+// var mobSoulBucket = <forge:bucketfilled>.anyDamage();
+// mobSoulBucket.creativeTab = tcpTab;
+
+// var tcpTestBlock = VanillaFactory.createBlock("tcp_test_block", <blockmaterial:ice>);
+// tcpTestBlock.setLightOpacity(3);
+// tcpTestBlock.setLightValue(0);
+// tcpTestBlock.setBlockHardness(5.0);
+// tcpTestBlock.setBlockResistance(5.0);
+// tcpTestBlock.setToolClass("pickaxe");
+// tcpTestBlock.setToolLevel(0);
+// tcpTestBlock.setBlockSoundType(<soundtype:snow>);
+// tcpTestBlock.setSlipperiness(0.3);
+// tcpTestBlock.creativeTab = tcpTab;
+// tcpTestBlock.register();
