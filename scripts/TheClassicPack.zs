@@ -62,7 +62,10 @@ recipes.addShapeless(choppedLog *8,
 //fix result of difficult to fix emerald exploit
 recipes.removeShapeless(<minecraft:diamond> *2, [<projecte:item.pe_philosophers_stone>, emerald]);
 
-/*
+//fix crafty turtle recipes
+recipes.addShapeless(<computercraft:turtle_expanded>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle>, <minecraft:crafting_table>]);
+recipe.addShapeless(<computercraft:turtle_advanced>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle_advanced>.withTag({}), <minecraft:crafting_table>])
+
 //fix bugged turtle recipes -----------------
 recipes.addShaped(<computercraft:turtle_advanced>,			[[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], 
                                              [<ore:ingotGold>, <computercraft:computer:16384>, <ore:ingotGold>], 
@@ -71,7 +74,7 @@ recipes.addShaped(<computercraft:turtle_advanced>,			[[<ore:ingotGold>, <ore:ing
 recipes.addShaped(<computercraft:turtle>,			[[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], 
                                              [<ore:ingotIron>, <computercraft:computer>, <ore:ingotIron>], 
 											 [<minecraft:iron_ingot>, <ore:chest>, <ore:ingotIron>]]);
-*/
+
 recipes.addShaped(thermalWasher,			[[sulfurDust, sulfurDust, sulfurDust], 
                                              [sulfurDust, oreWashingPlant, sulfurDust], 
 											 [sulfurDust, advancedMachineCasing, sulfurDust]]);
