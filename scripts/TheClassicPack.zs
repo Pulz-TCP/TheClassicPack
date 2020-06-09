@@ -26,7 +26,7 @@ var choppedLog = <cfm:item_log>;
 
 //minecraft ---------------------------------
 var emerald = <minecraft:emerald>;
-var emeraldBlock = <minecraft:emerald>;
+var emeraldBlock = <ore:blockEmerald>;
 var log = <ore:logWood>;
 
 //other -------------------------------------
@@ -52,7 +52,7 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 
 recipes.remove(emerald);
 recipes.addShapeless(emerald *9, [emeraldBlock]);
-recipes.addShapeless(emeraldBlock, [emerald, emerald, emerald, emerald, emerald, emerald, emerald, emerald, emerald]);
+recipes.addShapeless(emeraldBlock, [emerald *9]);
 
 //fix intentional plank duplication ---------
 recipes.removeShapeless(choppedLog);
