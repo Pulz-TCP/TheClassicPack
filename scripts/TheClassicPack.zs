@@ -48,6 +48,14 @@ mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChip
 
 
 //=============== PATCHES ===================
+
+//balance scannable recipe
+
+recipes.remove(<scannable:scanner>);
+recipes.addShaped(<scannable:scanner>,			[[<minecraft:iron_block>, null, <minecraft:iron_block>],
+                                             [<minecraft:iron_bars>, <ic2:energy_crystal:26>.anyDamage(), <minecraft:iron_bars>],
+                                             [<minecraft:gold_block>, <minecraft:redstone_block>, <minecraft:gold_block>]]);
+
 //fix potential duplication exploit ---------
 
 recipes.remove(emerald);
@@ -60,6 +68,11 @@ recipes.addShapeless(choppedLog *8, [<minecraft:stone_axe:*>, log]);
 
 //fix result of difficult to fix emerald exploit
 recipes.removeShapeless(<minecraft:diamond> *2, [<projecte:item.pe_philosophers_stone>, emerald]);
+
+//beneath portal recipe
+recipes.addShaped(<beneath:teleporterbeneath>,			[[<minecraft:coal_ore>, <minecraft:iron_ore>, <minecraft:gold_ore>], 
+                                             [<minecraft:obsidian>, <minecraft:diamond_pickaxe>, <minecraft:obsidian>], 
+											 [<minecraft:redstone_ore>, <minecraft:lapis_ore>, <minecraft:diamond_ore>]]);
 
 //fix crafty turtle recipes
 recipes.remove(<computercraft:turtle_expanded>);

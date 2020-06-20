@@ -61,6 +61,7 @@ val bannedItems = [
     <ic2:te:82>,
 
     <inventorypets:bed_pet>,
+    <inventorypets:black_hole_pet>,
     <inventorypets:chest_pet>,
     <inventorypets:cloud_pet>,
     <inventorypets:double_chest_pet>,
@@ -68,6 +69,7 @@ val bannedItems = [
     <inventorypets:ghast_pet>,
     <inventorypets:grave_pet>,
     <inventorypets:illuminati_pet>,
+    <inventorypets:wither_pet>,
 
     <minecraft:tnt>,
     <minecraft:tnt_minecart>,
