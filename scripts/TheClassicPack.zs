@@ -26,7 +26,7 @@ var choppedLog = <cfm:item_log>;
 
 //minecraft ---------------------------------
 var emerald = <minecraft:emerald>;
-var emeraldBlock = <ore:blockEmerald>;
+var emeraldBlock = <minecraft:emerald_block>;
 var log = <ore:logWood>;
 
 //other -------------------------------------
