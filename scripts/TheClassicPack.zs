@@ -35,6 +35,7 @@ var sulfurDust = <ore:dustSulfur>;
 
 
 
+//=============== PATCHES ===================
 
 //============= ASSEMBLY TABLE ==============
 //(output, power required, [components])-----
@@ -46,8 +47,12 @@ mods.buildcraft.AssemblyTable.removeByName("additionalpipes:pipe_items_teleport"
 mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChipset, diamondTransportPipe, diamondChipset]);
 //===========================================
 
+//tinkersdefence/compendium stone bucket recipe defaults to oredict for stone inc cobble, unregister recipe and set to cobblestone
+recipes.remove(<tcomplement:materials>);
+recipes.addShaped(<tcomplement:materials>,	[[null, null, null],
+                                             [<minecraft:cobblestone>, null, <minecraft:cobblestone>],
+                                             [null, <minecraft:cobblestone>, null]]);
 
-//=============== PATCHES ===================
 
 //balance scannable recipe
 
