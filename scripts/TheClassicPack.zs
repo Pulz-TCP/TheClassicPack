@@ -79,21 +79,6 @@ recipes.addShaped(<beneath:teleporterbeneath>,			[[<minecraft:coal_ore>, <minecr
                                              [<minecraft:obsidian>, <minecraft:diamond_pickaxe>, <minecraft:obsidian>], 
 											 [<minecraft:redstone_ore>, <minecraft:lapis_ore>, <minecraft:diamond_ore>]]);
 
-//fix crafty turtle recipes
-recipes.remove(<computercraft:turtle_expanded>);
-recipes.remove(<computercraft:turtle_advanced>);
-recipes.addShapeless(<computercraft:turtle_expanded>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle>, <minecraft:crafting_table>]);
-recipes.addShapeless(<computercraft:turtle_advanced>.withTag({leftUpgrade: 2 as short}), [<computercraft:turtle_advanced>, <minecraft:crafting_table>]);
-
-//fix bugged turtle recipes -----------------
-recipes.addShaped(<computercraft:turtle_advanced>,			[[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], 
-                                             [<ore:ingotGold>, <computercraft:computer:16384>, <ore:ingotGold>], 
-											 [<ore:ingotGold>, <ore:chest>, <minecraft:gold_ingot>]]);
-
-recipes.addShaped(<computercraft:turtle>,			[[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], 
-                                             [<ore:ingotIron>, <computercraft:computer>, <ore:ingotIron>], 
-											 [<minecraft:iron_ingot>, <ore:chest>, <ore:ingotIron>]]);
-
 recipes.addShaped(thermalWasher,			[[sulfurDust, sulfurDust, sulfurDust], 
                                              [sulfurDust, oreWashingPlant, sulfurDust], 
 											 [sulfurDust, advancedMachineCasing, sulfurDust]]);
