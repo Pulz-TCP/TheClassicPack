@@ -1,0 +1,14 @@
+InfoHeader=The modpack will not load properly with the [AllocatedMemory]MB of RAM you've allocated. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoLine1=The minimum amount of RAM to play is 2000MB/2GB. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoLine2=The recommended amount of RAM for smooth gameplay is 4000MB/4GB. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+InfoFooter=Please make sure you have Java 64bit, then increase the RAM in the Launcher options, under Java Settings. />Font:Yu Gothic UI Light />FontType:normal />FontSize:30 />Color:0, 0, 0, 255
+
+RedirectLink=https://www.theclassicpack.com/forums/m/50366894/viewthread/32817867-fixing-ram-issues
+
+RedirectBgColor=255, 255, 255, 255
+
+BackgroundImageDir=resources/backgroundImage.png
+
