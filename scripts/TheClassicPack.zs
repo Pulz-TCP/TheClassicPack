@@ -3,9 +3,10 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.initialinventory.InvHandler;
 
 
-//============== VARIABLES =================
+//================================= VARIABLES ====================================
 //additionalpipes ---------------------------
 var itemTeleportPipe = <additionalpipes:pipe_items_teleport>;
 
@@ -31,11 +32,48 @@ var log = <ore:logWood>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
+var akashicTome = <akashictome:tome>.withTag({
+    "akashictome:data": {
+        tconstruct: {
+            ForgeCaps: {"customnpcs:itemscripteddata": {}}, 
+            id: "tconstruct:book", 
+            Count: 1 as byte, 
+            tag: {"akashictome:definedMod": "tconstruct"}, 
+            Damage: 0 as short}, 
+
+        conarm: {
+            ForgeCaps: {"customnpcs:itemscripteddata": {}}, 
+            id: "conarm:book", 
+            Count: 1 as byte, 
+            tag: {"akashictome:definedMod": "conarm"}, 
+            Damage: 0 as short}, 
+
+        opencomputers: {
+            ForgeCaps: {"customnpcs:itemscripteddata": {}}, 
+            id: "opencomputers:tool", 
+            Count: 1 as byte, 
+            tag: {"akashictome:definedMod": "opencomputers"}, 
+            Damage: 4 as short}, 
+
+        forestry: {
+            ForgeCaps: {"customnpcs:itemscripteddata": {}}, 
+            id: "forestry:book_forester", 
+            Count: 1 as byte, 
+            tag: {"akashictome:definedMod": "forestry"}, 
+            Damage: 0 as short}}
+            }
+            );
+//=================================================================================
+
+//=============== AKASHIC ===================
+akashicTome.addTooltip(format.aqua("This book contains all starting guidebooks by default"));
+mods.jei.JEI.addDescription(akashicTome, "Only the starting books are contained, add more manually by crafting them together!");
+mods.jei.JEI.addItem(akashicTome);
+recipes.addShapeless(akashicTome, [<minecraft:cobblestone>]);
+mods.initialinventory.InvHandler.addStartingItem(akashicTome);
 //===========================================
 
-
-
-//=============== PATCHES ===================
+//================================== PATCHES ======================================
 
 //============= ASSEMBLY TABLE ==============
 //(output, power required, [components])-----
@@ -102,4 +140,4 @@ recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:
 recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
-//===========================================
+//=================================================================================
