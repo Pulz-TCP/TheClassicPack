@@ -69,7 +69,7 @@ var akashicTome = <akashictome:tome>.withTag({
 akashicTome.addTooltip(format.aqua("This book contains all starting guidebooks by default"));
 mods.jei.JEI.addDescription(akashicTome, "Only the starting books are contained, add more manually by crafting them together!");
 mods.jei.JEI.addItem(akashicTome);
-recipes.addShapeless(akashicTome, [<minecraft:cobblestone>]);
+recipes.addShapeless(akashicTome, [<minecraft:book>, <minecraft:book>]);
 mods.initialinventory.InvHandler.addStartingItem(akashicTome);
 //===========================================
 
