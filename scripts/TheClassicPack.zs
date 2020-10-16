@@ -140,4 +140,13 @@ recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:
 recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
+											 
+//polished marble temporary fix
+recipes.addShaped(<quark:marble:1>,			[[null, null, null], 
+                                             [null, <quark:marble>, <quark:marble>], 
+											 [null, <quark:marble>, <quark:marble>]]);
+											 
+recipes.addShaped(<quark:marble:1>,			[[null, null, null], 
+                                             [null, <projectred-exploration:stone>, <projectred-exploration:stone>], 
+											 [null, <projectred-exploration:stone>, <projectred-exploration:stone>]]);
 //=================================================================================
