@@ -32,6 +32,9 @@ var log = <ore:logWood>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
+var quarkPolishedMarble = <quark:marble:1>;
+var quarkMarble = <quark:marble>;
+var thermalMarble = <projectred-exploration:stone>;
 var akashicTome = <akashictome:tome>.withTag({
     "akashictome:data": {
         tconstruct: {
@@ -142,11 +145,11 @@ recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingot
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
 											 
 //polished marble temporary fix
-recipes.addShaped(<quark:marble:1>,			[[null, null, null], 
-                                             [null, <quark:marble>, <quark:marble>], 
-											 [null, <quark:marble>, <quark:marble>]]);
+recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
+                                             [null, quarkMarble, quarkMarble], 
+											 [null, quarkMarble, quarkMarble]]);
 											 
-recipes.addShaped(<quark:marble:1>,			[[null, null, null], 
-                                             [null, <projectred-exploration:stone>, <projectred-exploration:stone>], 
-											 [null, <projectred-exploration:stone>, <projectred-exploration:stone>]]);
+recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
+                                             [null, thermalMarble, thermalMarble], 
+											 [null, thermalMarble, thermalMarble]]);
 //=================================================================================
