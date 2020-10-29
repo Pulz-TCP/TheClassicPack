@@ -32,9 +32,15 @@ var log = <ore:logWood>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
-var quarkPolishedMarble = <quark:marble:1>;
+
+//marble ------------------------------------
 var quarkMarble = <quark:marble>;
-var thermalMarble = <projectred-exploration:stone>;
+var quarkMarbleBrick = <quark:world_stone_bricks:4>;
+var quarkMarblePolished = <quark:marble:1>;
+
+var projectredMarble = <projectred-exploration:stone>;
+var projectredMarbleBrick = <projectred-exploration:stone:1>;
+
 var akashicTome = <akashictome:tome>.withTag({
     "akashictome:data": {
         tconstruct: {
@@ -143,13 +149,11 @@ recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:
 recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
-											 
-//polished marble temporary fix
-recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
-                                             [null, quarkMarble, quarkMarble], 
-											 [null, quarkMarble, quarkMarble]]);
-											 
-recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
-                                             [null, thermalMarble, thermalMarble], 
-											 [null, thermalMarble, thermalMarble]]);
+
+//convert marble
+recipes.addShapeless(quarkMarble,[projectredMarble]);
+recipes.addShapeless(projectredMarble,[quarkMarble]);
+
+recipes.addShapeless(quarkMarbleBrick,[projectredMarbleBrick]);
+recipes.addShapeless(projectredMarbleBrick,[quarkMarbleBrick]);
 //=================================================================================
