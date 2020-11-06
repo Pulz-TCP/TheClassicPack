@@ -21,6 +21,7 @@ var quartzChipset = <buildcraftsilicon:redstone_chipset:3>;
 //ic2 ---------------------------------------
 var advancedMachineCasing = <ic2:resource:13>;
 var oreWashingPlant = <ic2:te:56>;
+var ic2WoodenStorage = <ic2:te:111>;
 
 //mrcrayfish furniture-----------------------
 var choppedLog = <cfm:item_log>;
@@ -29,6 +30,8 @@ var choppedLog = <cfm:item_log>;
 var emerald = <minecraft:emerald>;
 var emeraldBlock = <minecraft:emerald_block>;
 var log = <ore:logWood>;
+var logWood = <minecraft:log>;
+var planks = <minecraft:planks>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -156,4 +159,14 @@ recipes.addShapeless(projectredMarble,[quarkMarble]);
 
 recipes.addShapeless(quarkMarbleBrick,[projectredMarbleBrick]);
 recipes.addShapeless(projectredMarbleBrick,[quarkMarbleBrick]);
+
+//fix polishedMarble conflicts
+recipes.remove(quarkMarblePolished);
+recipes.addShapeless(quarkMarblePolished,[quarkMarble *4]);
+
+//Crayfish crate + IC2 storage box conflict
+recipes.remove(ic2WoodenStorage);											 
+recipes.addShaped(ic2WoodenStorage,			[[logWood, planks, logWood], 
+                                             [planks, planks, planks], 
+											 [logWood, planks, logWood]]);
 //=================================================================================
