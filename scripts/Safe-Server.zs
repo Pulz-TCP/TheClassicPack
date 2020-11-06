@@ -74,7 +74,8 @@ val bannedItems = [
     <minecraft:tnt_minecart>,
 
     <opencomputers:upgrade:4>,
-
+	
+	<projecte:item.pe_archangel_smite>,
     <projecte:item.pe_catalitic_lens>,
     <projecte:item.pe_evertide_amulet>,
     <projecte:item.pe_harvest_god>,
