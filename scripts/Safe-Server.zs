@@ -45,9 +45,8 @@ val bannedItems = [
     <botania:laputashard:*>,
     <botania:teruterubozu>,
     <botania:manabomb>,
+	<botania:lens:7>,
 
-    <forestry:crafting_material:4>,
-    <forestry:iodine_capsule>,
     <forestry:letters>,
     <forestry:mailbox>,
     <forestry:rainmaker>,
