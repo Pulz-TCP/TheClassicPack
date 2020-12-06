@@ -19,4 +19,5 @@ WORKDIR /opt/minecraft
 
 EXPOSE 25565
 
-CMD ["java", "-Xms3024M", "-Xmx3048M", "-jar", "Forge.jar", "nogui"]
+ENV forge_path="find . -maxdepth 1 -type f -iname 'forge*.jar'"
+CMD java -Xms3024M -Xmx3048M -jar $(eval ${forge_path}) nogui
