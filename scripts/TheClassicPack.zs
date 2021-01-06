@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.initialinventory.InvHandler;
+import mods.tconstruct.Melting;
 
 
 //================================= VARIABLES ====================================
@@ -169,4 +170,11 @@ recipes.remove(ic2WoodenStorage);
 recipes.addShaped(ic2WoodenStorage,			[[logWood, planks, logWood], 
                                              [planks, planks, planks], 
 											 [logWood, planks, logWood]]);
+											 
+//remove incorrect melting recipe
+
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 0 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 1 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 2 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 3 as byte, type: 1 as byte}));
 //=================================================================================

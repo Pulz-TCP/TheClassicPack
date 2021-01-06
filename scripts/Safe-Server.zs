@@ -105,6 +105,7 @@ val bannedItems = [
     <tconstruct:throwball:1>,
 
     <thermalexpansion:machine:2>,
+	<thermalexpansion:satchel>,
 
     <weirdinggadget:weirding_gadget>,
 
