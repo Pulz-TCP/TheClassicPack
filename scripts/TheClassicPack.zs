@@ -4,7 +4,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.initialinventory.InvHandler;
-import mods.tconstruct.Melting;
 
 
 //================================= VARIABLES ====================================
@@ -20,10 +19,24 @@ var diamondTransportPipe = <buildcrafttransport:pipe_diamond_item>;
 var quartzChipset = <buildcraftsilicon:redstone_chipset:3>;
 
 //ic2 ---------------------------------------
-var advancedMachineCasing = <ic2:resource:13>;
 var oreWashingPlant = <ic2:te:56>;
-var ic2WoodenStorage = <ic2:te:111>;
+var advancedAlloy = <ic2:crafting:3>;
+var advancedCircuit = <ic2:crafting:2>;
+var advancedMachineCasing = <ic2:resource:13>;
+var coil = <ic2:crafting:5>;
+var crystalMemory = <ic2:crystal_memory>;
+var electricMotor = <ic2:crafting:6>;
+var energyCrystal = <ic2:energy_crystal:26>.anyDamage();
+var ironIngot = <ore:ingotIron>;
+var miningLaser = <ic2:mining_laser:26>.anyDamage();
+var patternStorage = <ic2:te:62>;
+var reinforcedStone = <ic2:resource:11>;
+var thermalCentrifuge = <ic2:te:52>;
 
+//minecraft --------------------------------
+var gunpowder = <minecraft:gunpowder>;
+var redstoneBlock = <minecraft:redstone_block>;
+var tnt = <minecraft:tnt>;
 //mrcrayfish furniture-----------------------
 var choppedLog = <cfm:item_log>;
 
@@ -31,20 +44,17 @@ var choppedLog = <cfm:item_log>;
 var emerald = <minecraft:emerald>;
 var emeraldBlock = <minecraft:emerald_block>;
 var log = <ore:logWood>;
-var logWood = <minecraft:log>;
-var planks = <minecraft:planks>;
+
+//thaumcraft --------------------------------
+var alumentum = <thaumcraft:alumentum>;
+var causalityCollapser = <thaumcraft:causality_collapser>;
+var nitor = <ore:nitor>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
-
-//marble ------------------------------------
+var quarkPolishedMarble = <quark:marble:1>;
 var quarkMarble = <quark:marble>;
-var quarkMarbleBrick = <quark:world_stone_bricks:4>;
-var quarkMarblePolished = <quark:marble:1>;
-
-var projectredMarble = <projectred-exploration:stone>;
-var projectredMarbleBrick = <projectred-exploration:stone:1>;
-
+var thermalMarble = <projectred-exploration:stone>;
 var akashicTome = <akashictome:tome>.withTag({
     "akashictome:data": {
         tconstruct: {
@@ -153,28 +163,36 @@ recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:
 recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
-
-//convert marble
-recipes.addShapeless(quarkMarble,[projectredMarble]);
-recipes.addShapeless(projectredMarble,[quarkMarble]);
-
-recipes.addShapeless(quarkMarbleBrick,[projectredMarbleBrick]);
-recipes.addShapeless(projectredMarbleBrick,[quarkMarbleBrick]);
-
-//fix polishedMarble conflicts
-recipes.remove(quarkMarblePolished);
-recipes.addShapeless(quarkMarblePolished,[quarkMarble *4]);
-
-//Crayfish crate + IC2 storage box conflict
-recipes.remove(ic2WoodenStorage);											 
-recipes.addShaped(ic2WoodenStorage,			[[logWood, planks, logWood], 
-                                             [planks, planks, planks], 
-											 [logWood, planks, logWood]]);
 											 
-//remove incorrect melting recipe
-
-mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 0 as byte, type: 1 as byte}));
-mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 1 as byte, type: 1 as byte}));
-mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 2 as byte, type: 1 as byte}));
-mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 3 as byte, type: 1 as byte}));
+//polished marble temporary fix
+recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
+                                             [null, quarkMarble, quarkMarble], 
+											 [null, quarkMarble, quarkMarble]]);
+											 
+recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
+                                             [null, thermalMarble, thermalMarble], 
+											 [null, thermalMarble, thermalMarble]]);
 //=================================================================================
+
+//(output, [components]) --------------------    
+recipes.remove(patternStorage);
+recipes.remove(thermalCentrifuge);
+//new recipe that doesn't use mining laser
+recipes.addShaped(thermalCentrifuge,        [[coil, energyCrystal, coil], 
+                                             [advancedAlloy, advancedMachineCasing, advancedCircuit], 
+                                             [ironIngot, electricMotor, ironIngot]]);
+
+//new recipe that doesn't use mining laser									 
+recipes.addShaped(patternStorage,           [[reinforcedStone, reinforcedStone, reinforcedStone], 
+                                             [crystalMemory, advancedMachineCasing, crystalMemory], 
+                                             [energyCrystal, advancedCircuit, energyCrystal]]);	
+
+//=============== THAUMCRAFT =================
+//remove and re-add infusion so it doesnt need tnt
+mods.thaumcraft.Infusion.removeRecipe(causalityCollapser);
+mods.thaumcraft.Infusion.registerRecipe("causalitycollapserpatch", "RIFTCLOSER", causalityCollapser, 9, 
+[<aspect:alienis>*50, <aspect:vitium>*50], 
+gunpowder, [<thaumcraft:morphic_resonator>, redstoneBlock, 
+alumentum, nitor, <thaumcraft:vis_resonator>, 
+redstoneBlock, alumentum, nitor]);									 
+//============================================
