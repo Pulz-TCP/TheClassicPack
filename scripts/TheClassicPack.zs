@@ -64,9 +64,7 @@ var projectredMarbleBrick = <projectred-exploration:stone:1>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
-var quarkPolishedMarble = <quark:marble:1>;
-var quarkMarble = <quark:marble>;
-var thermalMarble = <projectred-exploration:stone>;
+
 var akashicTome = <akashictome:tome>.withTag({
     "akashictome:data": {
         tconstruct: {
