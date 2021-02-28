@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.initialinventory.InvHandler;
-
+import mods.tconstruct.Melting;
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -32,11 +32,15 @@ var miningLaser = <ic2:mining_laser:26>.anyDamage();
 var patternStorage = <ic2:te:62>;
 var reinforcedStone = <ic2:resource:11>;
 var thermalCentrifuge = <ic2:te:52>;
+var ic2WoodenStorage = <ic2:te:111>;
 
 //minecraft --------------------------------
 var gunpowder = <minecraft:gunpowder>;
 var redstoneBlock = <minecraft:redstone_block>;
 var tnt = <minecraft:tnt>;
+var logWood = <minecraft:log>;	
+var planks = <minecraft:planks>;
+
 //mrcrayfish furniture-----------------------
 var choppedLog = <cfm:item_log>;
 
@@ -49,6 +53,14 @@ var log = <ore:logWood>;
 var alumentum = <thaumcraft:alumentum>;
 var causalityCollapser = <thaumcraft:causality_collapser>;
 var nitor = <ore:nitor>;
+
+//marble ------------------------------------
+var quarkMarble = <quark:marble>;
+var quarkMarbleBrick = <quark:world_stone_bricks:4>;
+var quarkMarblePolished = <quark:marble:1>;
+
+var projectredMarble = <projectred-exploration:stone>;
+var projectredMarbleBrick = <projectred-exploration:stone:1>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -94,9 +106,6 @@ mods.jei.JEI.addDescription(akashicTome, "Only the starting books are contained,
 mods.jei.JEI.addItem(akashicTome);
 recipes.addShapeless(akashicTome, [<minecraft:book>, <minecraft:book>]);
 mods.initialinventory.InvHandler.addStartingItem(akashicTome);
-//===========================================
-
-//================================== PATCHES ======================================
 
 //============= ASSEMBLY TABLE ==============
 //(output, power required, [components])-----
@@ -107,6 +116,7 @@ mods.buildcraft.AssemblyTable.removeByName("additionalpipes:pipe_items_teleport"
 //fix itemTeleportPipe recipe----------------
 mods.buildcraft.AssemblyTable.addRecipe(itemTeleportPipe * 8, 10000, [quartzChipset, diamondTransportPipe, diamondChipset]);
 //===========================================
+
 
 //tinkersdefence/compendium stone bucket recipe defaults to oredict for stone inc cobble, unregister recipe and set to cobblestone
 recipes.remove(<tcomplement:materials>);
@@ -164,16 +174,24 @@ recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingot
                                              [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
 											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
 											 
-//polished marble temporary fix
-recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
-                                             [null, quarkMarble, quarkMarble], 
-											 [null, quarkMarble, quarkMarble]]);
-											 
-recipes.addShaped(quarkPolishedMarble,			[[null, null, null], 
-                                             [null, thermalMarble, thermalMarble], 
-											 [null, thermalMarble, thermalMarble]]);
-//=================================================================================
+//convert marble
+recipes.addShapeless(quarkMarble,[projectredMarble]);
+recipes.addShapeless(projectredMarble,[quarkMarble]);
 
+recipes.addShapeless(quarkMarbleBrick,[projectredMarbleBrick]);
+recipes.addShapeless(projectredMarbleBrick,[quarkMarbleBrick]);
+
+//fix polishedMarble conflicts
+recipes.remove(quarkMarblePolished);
+recipes.addShapeless(quarkMarblePolished,[quarkMarble *4]);
+
+//Crayfish crate + IC2 storage box conflict
+recipes.remove(ic2WoodenStorage);											 
+recipes.addShaped(ic2WoodenStorage,			[[logWood, planks, logWood], 
+                                             [planks, planks, planks], 
+											 [logWood, planks, logWood]]);
+
+//=============== IC2 =================
 //(output, [components]) --------------------    
 recipes.remove(patternStorage);
 recipes.remove(thermalCentrifuge);
@@ -195,4 +213,11 @@ mods.thaumcraft.Infusion.registerRecipe("causalitycollapserpatch", "RIFTCLOSER",
 gunpowder, [<thaumcraft:morphic_resonator>, redstoneBlock, 
 alumentum, nitor, <thaumcraft:vis_resonator>, 
 redstoneBlock, alumentum, nitor]);									 
-//============================================
+
+
+//=============== TINKERS =================
+//remove incorrect melting recipe
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 0 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 1 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 2 as byte, type: 1 as byte}));
+mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 3 as byte, type: 1 as byte}));
