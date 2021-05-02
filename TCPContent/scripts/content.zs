@@ -75,4 +75,7 @@ cursedSludge.viscosity = 1250;
 cursedSludge.temperature = 300;
 cursedSludge.density = 2000;
 cursedSludge.luminosity = 5;
+game.setLocalization("en_us", 
+    "fluid.cursedSludge",
+    "Cursed Sludge");
 cursedSludge.register();
