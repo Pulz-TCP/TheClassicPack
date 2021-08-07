@@ -100,23 +100,6 @@
             }
         },
 		
-		"pebblehost":
-        {
-            "text" : "- PebbleHost -",
-            "posX" : 55,
-            "posY" : 80,
-            "width" : 90,
-            "height" : 20,
-            "alignment" : "left_center",
-			"normalTextColor" : 000255000,
-			"hoverTextColor" : 000255000,
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "http://billing.pebblehost.com/aff.php?aff=371"
-            }
-        },
-		
 		"website":
         {
             "text" : "- Website -",
