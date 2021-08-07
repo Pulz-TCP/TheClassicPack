@@ -5,6 +5,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
+import mods.thaumcraft.Crucible;
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -53,6 +54,8 @@ var log = <ore:logWood>;
 var alumentum = <thaumcraft:alumentum>;
 var causalityCollapser = <thaumcraft:causality_collapser>;
 var nitor = <ore:nitor>;
+var ancientStone = <thaumcraft:stone_ancient>;
+var arcaneStone = <thaumcraft:stone_arcane>;
 
 //marble ------------------------------------
 var quarkMarble = <quark:marble>;
@@ -212,6 +215,8 @@ gunpowder, [<thaumcraft:morphic_resonator>, redstoneBlock,
 alumentum, nitor, <thaumcraft:vis_resonator>, 
 redstoneBlock, alumentum, nitor]);									 
 
+//ancient stone
+mods.thaumcraft.Crucible.registerRecipe("ancientStoneCrucible", "INFUSIONANCIENT", ancientStone, arcaneStone, [<aspect:terra>*5, <aspect:alienis>*5]);
 
 //=============== TINKERS =================
 //remove incorrect melting recipe
