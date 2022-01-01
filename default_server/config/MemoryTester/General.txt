@@ -1,0 +1,10 @@
+MemoryTesterVersion=0.4.2
+
+RecommendedMemoryAllocation=2000
+
+UseMenu=false
+
+CrashWhenNotEnoughMemory=true
+
+WindowIconDir=resources/windowIcon.png
+
