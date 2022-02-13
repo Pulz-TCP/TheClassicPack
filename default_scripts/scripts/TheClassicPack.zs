@@ -65,6 +65,10 @@ var quarkMarblePolished = <quark:marble:1>;
 var projectredMarble = <projectred-exploration:stone>;
 var projectredMarbleBrick = <projectred-exploration:stone:1>;
 
+//galacticraft + planets --------------------
+var nuclearBomb = <extraplanets:nuclear_bomb>;
+var fireBomb = <extraplanets:fire_bomb>;
+
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
 
@@ -224,3 +228,7 @@ mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size:
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 1 as byte, type: 1 as byte}));
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 2 as byte, type: 1 as byte}));
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 3 as byte, type: 1 as byte}));
+
+//=============== EXTRA PLANETS =================
+recipes.remove(nuclearBomb);
+recipes.remove(fireBomb);
