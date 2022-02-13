@@ -6,6 +6,9 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -104,6 +107,54 @@ var akashicTome = <akashictome:tome>.withTag({
             }
             );
 //=================================================================================
+
+
+//======== LOOT TWEAKS - Credit to Jon from 1.12.2 pack, genius solution ==========
+//Stolen parts of Jon's LootTweaker script as we've been having a problem with chest loot too.
+
+// Change Mineshaft loot due to Railcraft, IC2 & more (overflow is still a problem due to Railcraft bug)
+val mineshaft = LootTweaker.getTable("minecraft:chests/abandoned_mineshaft");
+
+# Remove IC2 mineshaft loot altogether as it is mostly duplicates
+mineshaft.removePool("ic2");
+
+val mineshaftPoolMain = mineshaft.getPool("main");
+val mineshaftPool1 = mineshaft.getPool("pool1");
+val mineshaftPool2 = mineshaft.getPool("pool2");
+val mineshaftPoolForestryFactoryItems = mineshaft.getPool("forestry_factory_items");
+val mineshaftPoolForestryStorageItems = mineshaft.getPool("forestry_storage_items");
+val mineshaftPoolForestryApicultureBees = mineshaft.getPool("forestry_apiculture_bees");
+val mineshaftPoolRailcraftResources = mineshaft.getPool("railcraft_resources");
+val mineshaftPoolRailcraftCarts = mineshaft.getPool("railcraft_carts");
+
+# Reduce mineshaft loot pool rolls
+mineshaftPool1.setRolls(1, 2);
+mineshaftPool2.setRolls(1, 2);
+mineshaftPoolRailcraftResources.setRolls(0, 1);
+mineshaftPoolRailcraftCarts.setRolls(1, 1);
+
+# Modify Railcraft mineshaft loot
+mineshaftPoolRailcraftResources.removeEntry("minecraft:coal");
+mineshaftPoolRailcraftResources.removeEntry("railcraft:ingot");
+mineshaftPoolRailcraftResources.removeEntry("railcraft:plate");
+
+# Remove empty mineshaft loots. This real estate is worth too much
+mineshaftPoolMain.removeEntry("empty");
+mineshaftPoolForestryFactoryItems.removeEntry("empty");
+mineshaftPoolForestryStorageItems.removeEntry("empty");
+mineshaftPoolForestryApicultureBees.removeEntry("empty");
+
+// Remove more IC2 loot as it is mostly duplicates
+LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("ic2");
+LootTweaker.getTable("minecraft:chests/end_city_treasure").removePool("ic2");
+LootTweaker.getTable("minecraft:chests/igloo_chest").removePool("ic2");
+LootTweaker.getTable("minecraft:chests/nether_bridge").removePool("ic2");
+LootTweaker.getTable("minecraft:chests/stronghold_corridor").removePool("ic2");
+LootTweaker.getTable("minecraft:chests/stronghold_crossing").removePool("ic2");
+
+//=================================================================================
+
+
 
 //=============== AKASHIC ===================
 akashicTome.addTooltip(format.aqua("This book contains all starting guidebooks by default"));
