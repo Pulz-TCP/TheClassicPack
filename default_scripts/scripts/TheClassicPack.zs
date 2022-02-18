@@ -1,14 +1,17 @@
-import mods.buildcraft.AssemblyTable;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.initialinventory.InvHandler;
-import mods.tconstruct.Melting;
-import mods.thaumcraft.Crucible;
+
 import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
+
+import mods.buildcraft.AssemblyTable;
+import mods.initialinventory.InvHandler;
+import mods.tconstruct.Melting;
+import mods.thaumcraft.Crucible;
+import mods.mekanism.sawmill;
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -283,3 +286,6 @@ mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size:
 //=============== EXTRA PLANETS =================
 recipes.remove(nuclearBomb);
 recipes.remove(fireBomb);
+
+//================= MEKANISM ====================
+mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
