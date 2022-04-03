@@ -1,3 +1,4 @@
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
@@ -8,6 +9,7 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
 import mods.buildcraft.AssemblyTable;
+import mods.GalacticraftTweaker;
 import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
@@ -47,6 +49,7 @@ var redstoneBlock = <minecraft:redstone_block>;
 var tnt = <minecraft:tnt>;
 var logWood = <minecraft:log>;	
 var planks = <minecraft:planks>;
+var redWool = <minecraft:wool:14>;
 
 //mrcrayfish furniture-----------------------
 var choppedLog = <cfm:item_log>;
@@ -74,6 +77,13 @@ var projectredMarbleBrick = <projectred-exploration:stone:1>;
 //galacticraft + planets --------------------
 var nuclearBomb = <extraplanets:nuclear_bomb>;
 var fireBomb = <extraplanets:fire_bomb>;
+var boosterT8 = <extraplanets:tier8_items:1>;
+var heavyDutyPlateT7 = <extraplanets:tier7_items:3>;
+var heavyDutyPlateT8 = <extraplanets:tier8_items:3>;
+var zincIngot = <railcraft:ingot:8>;
+var compressedZinc = <extraplanets:tier8_items:4>;
+var filledFuelCanister = <galacticraftcore:fuel_canister_partial:1>;
+var airVent = <galacticraftcore:air_vent>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -286,6 +296,21 @@ mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size:
 //=============== EXTRA PLANETS =================
 recipes.remove(nuclearBomb);
 recipes.remove(fireBomb);
+
+//================ GALACTICRAFT =================
+//remove and then replace the compressor recipe for Compressed Zinc
+mods.GalacticraftTweaker.removeCompressorRecipe(compressedZinc);
+mods.GalacticraftTweaker.addCompressorShapelessRecipe(compressedZinc, zincIngot, zincIngot);
+
+//remove and then replace the compressor recipe for Tier 8 Heavy Duty Plate 
+mods.GalacticraftTweaker.removeCompressorRecipe(heavyDutyPlateT8);
+mods.GalacticraftTweaker.addCompressorShapelessRecipe(heavyDutyPlateT8, heavyDutyPlateT7, zincIngot, zincIngot, zincIngot, compressedZinc, compressedZinc);
+
+//remove and then replace recipe for Tier 8 Booster
+recipes.remove(boosterT8);
+recipes.addShaped(boosterT8,	[[zincIngot, redWool, zincIngot],
+                                [zincIngot, filledFuelCanister, zincIngot],
+                                [heavyDutyPlateT8, airVent, heavyDutyPlateT8]]);
 
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
