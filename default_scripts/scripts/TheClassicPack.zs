@@ -50,6 +50,7 @@ var tnt = <minecraft:tnt>;
 var logWood = <minecraft:log>;	
 var planks = <minecraft:planks>;
 var redWool = <minecraft:wool:14>;
+var anyStick = <ore:stickWood>;
 
 //mrcrayfish furniture-----------------------
 var choppedLog = <cfm:item_log>;
@@ -86,6 +87,7 @@ var filledFuelCanister = <galacticraftcore:fuel_canister_partial:1>;
 var airVent = <galacticraftcore:air_vent>;
 var blockOfTungsten = <extraplanets:pluto:7>;
 var rocketlaunchpadT3 = <extraplanets:advanced_launch_pad:1>;
+var zincSword = <extraplanets:zinc_sword>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -320,6 +322,14 @@ recipes.remove(rocketlaunchpadT3);
 recipes.addShaped(rocketlaunchpadT3 * 5,	[[null, null, null],
                                 [blockOfTungsten, blockOfTungsten, blockOfTungsten],
                                 [zincIngot, zincIngot, zincIngot]]);
+								
+//remove and then replace recipes for zinc items
+//sword
+recipes.remove(zincSword);
+recipes.addShaped(zincSword,		[[null, zincIngot, null],
+									[null, zincIngot, null],
+									[null, anyStick, null]]);
+
 
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
