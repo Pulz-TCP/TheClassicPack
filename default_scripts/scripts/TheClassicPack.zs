@@ -95,6 +95,7 @@ var zincHelm = <extraplanets:zinc_helmet>;
 var zincChest = <extraplanets:zinc_chest>;
 var zincLegs = <extraplanets:zinc_legings>;
 var zincBoots = <extraplanets:zinc_boots>;
+var zincBattery = <extraplanets:zinc_battery>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -376,6 +377,12 @@ recipes.remove(zincBoots);
 recipes.addShaped(zincBoots,		[[null, null, null],
 									[zincIngot, null, zincIngot],
 									[zincIngot, null, zincIngot]]);
+									
+//fix zinc battery									
+recipes.remove(zincBattery);
+recipes.addShaped(zincBattery,		[[null, zincIngot, null],
+									[zincIngot, <ore:dustRedstone>, zincIngot],
+									[zincIngot, <ore:coal>, zincIngot]]);
 									
 									
 //================= MEKANISM ====================
