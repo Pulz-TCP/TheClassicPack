@@ -84,6 +84,8 @@ var zincIngot = <railcraft:ingot:8>;
 var compressedZinc = <extraplanets:tier8_items:4>;
 var filledFuelCanister = <galacticraftcore:fuel_canister_partial:1>;
 var airVent = <galacticraftcore:air_vent>;
+var blockOfTungsten = <extraplanets:pluto:7>;
+var rocketlaunchpadT3 = <extraplanets:advanced_launch_pad:1>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -311,6 +313,13 @@ recipes.remove(boosterT8);
 recipes.addShaped(boosterT8,	[[zincIngot, redWool, zincIngot],
                                 [zincIngot, filledFuelCanister, zincIngot],
                                 [heavyDutyPlateT8, airVent, heavyDutyPlateT8]]);
+								
+								
+//remove and then replace recipe for Tier 3 rocket launch pad
+recipes.remove(rocketlaunchpadT3);
+recipes.addShaped(rocketlaunchpadT3 * 5,	[[null, null, null],
+                                [blockOfTungsten, blockOfTungsten, blockOfTungsten],
+                                [zincIngot, zincIngot, zincIngot]]);
 
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
