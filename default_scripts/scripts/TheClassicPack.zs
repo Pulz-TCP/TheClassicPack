@@ -89,6 +89,7 @@ var blockOfTungsten = <extraplanets:pluto:7>;
 var rocketlaunchpadT3 = <extraplanets:advanced_launch_pad:1>;
 var zincSword = <extraplanets:zinc_sword>;
 var zincShovel = <extraplanets:zinc_shovel>;
+var zincPickaxe = <extraplanets:zinc_pickaxe>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -337,5 +338,11 @@ recipes.addShaped(zincShovel,	[[null, zincIngot, null],
 									[null, anyStick, null],
 									[null, anyStick, null]]);
 
+
+//pickaxe								
+recipes.remove(zincPickaxe);
+recipes.addShaped(zincPickaxe,	[[zincIngot, zincIngot, zincIngot],
+									[null, anyStick, null],
+									[null, anyStick, null]]);
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
