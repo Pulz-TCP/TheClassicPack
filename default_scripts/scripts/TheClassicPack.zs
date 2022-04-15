@@ -88,6 +88,7 @@ var airVent = <galacticraftcore:air_vent>;
 var blockOfTungsten = <extraplanets:pluto:7>;
 var rocketlaunchpadT3 = <extraplanets:advanced_launch_pad:1>;
 var zincSword = <extraplanets:zinc_sword>;
+var zincShovel = <extraplanets:zinc_shovel>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -330,6 +331,11 @@ recipes.addShaped(zincSword,		[[null, zincIngot, null],
 									[null, zincIngot, null],
 									[null, anyStick, null]]);
 
+//shovel								
+recipes.remove(zincShovel);
+recipes.addShaped(zincShovel,	[[null, zincIngot, null],
+									[null, anyStick, null],
+									[null, anyStick, null]]);
 
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
