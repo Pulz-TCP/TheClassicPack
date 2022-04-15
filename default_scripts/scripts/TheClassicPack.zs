@@ -90,6 +90,7 @@ var rocketlaunchpadT3 = <extraplanets:advanced_launch_pad:1>;
 var zincSword = <extraplanets:zinc_sword>;
 var zincShovel = <extraplanets:zinc_shovel>;
 var zincPickaxe = <extraplanets:zinc_pickaxe>;
+var zincHoe = <extraplanets:zinc_hoe>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -334,15 +335,22 @@ recipes.addShaped(zincSword,		[[null, zincIngot, null],
 
 //shovel								
 recipes.remove(zincShovel);
-recipes.addShaped(zincShovel,	[[null, zincIngot, null],
+recipes.addShaped(zincShovel,		[[null, zincIngot, null],
 									[null, anyStick, null],
 									[null, anyStick, null]]);
 
 
 //pickaxe								
 recipes.remove(zincPickaxe);
-recipes.addShaped(zincPickaxe,	[[zincIngot, zincIngot, zincIngot],
+recipes.addShaped(zincPickaxe,		[[zincIngot, zincIngot, zincIngot],
 									[null, anyStick, null],
 									[null, anyStick, null]]);
+									
+//hoe								
+recipes.remove(zincHoe);
+recipes.addShaped(zincHoe,			[[zincIngot, zincIngot, null],
+									[null, anyStick, null],
+									[null, anyStick, null]]);
+									
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
