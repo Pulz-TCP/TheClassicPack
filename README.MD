@@ -25,14 +25,15 @@ To install, download the official 1.12.2 Sphax PureBDCraft texturepack, download
 
 | Resolution | URL |
 | ------ | ------ |
-|x128|http://files.theclassicpack.com/patches/x128-TCP-Sphax_PatchPack.zip|
-|x64|http://files.theclassicpack.com/patches/x64-TCP-Sphax_PatchPack.zip|
-|x32|http://files.theclassicpack.com/patches/x32-TCP-Sphax_PatchPack.zip|
+|x128|https://files.theclassicpack.com/patches/x128-TCP-Sphax_PatchPack.zip|
+|x128 WIP|https://files.theclassicpack.com/patches/x128-TCP-Sphax_PatchPack_WIP1.zip|
+|x64|https://files.theclassicpack.com/patches/x64-TCP-Sphax_PatchPack.zip|
+|x32|https://files.theclassicpack.com/patches/x32-TCP-Sphax_PatchPack.zip|
 
 ### Manual downloads (Latest)
 If you know what you are doing, here are the most recent download links.
 
 | Type | URL |
 | ------ | ------ |
-| Client | http://files.theclassicpack.com/CLIENT/TCP-3.1.8a_CLIENT.zip |
-| Server | http://files.theclassicpack.com/SERVER/TCP-3.1.8a_SERVER.zip |
+| Client | https://files.theclassicpack.com/CLIENT/TCP-3.3.3b_CLIENT.zip |
+| Server | https://files.theclassicpack.com/SERVER/TCP-3.3.3b_SERVER.zip |
