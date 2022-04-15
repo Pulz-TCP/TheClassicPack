@@ -91,6 +91,10 @@ var zincSword = <extraplanets:zinc_sword>;
 var zincShovel = <extraplanets:zinc_shovel>;
 var zincPickaxe = <extraplanets:zinc_pickaxe>;
 var zincHoe = <extraplanets:zinc_hoe>;
+var zincHelm = <extraplanets:zinc_helmet>;
+var zincChest = <extraplanets:zinc_chest>;
+var zincLegs = <extraplanets:zinc_legings>;
+var zincBoots = <extraplanets:zinc_boots>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -351,6 +355,28 @@ recipes.remove(zincHoe);
 recipes.addShaped(zincHoe,			[[zincIngot, zincIngot, null],
 									[null, anyStick, null],
 									[null, anyStick, null]]);
+									
+//zinc armor								
+recipes.remove(zincHelm);
+recipes.addShaped(zincHelm,			[[zincIngot, zincIngot, zincIngot],
+									[zincIngot, null, zincIngot],
+									[null, null, null]]);
+									
+recipes.remove(zincChest);
+recipes.addShaped(zincChest,		[[zincIngot, null, zincIngot],
+									[zincIngot, zincIngot, zincIngot],
+									[zincIngot, zincIngot, zincIngot]]);
+									
+recipes.remove(zincLegs);
+recipes.addShaped(zincLegs,			[[zincIngot, zincIngot, zincIngot],
+									[zincIngot, null, zincIngot],
+									[zincIngot, null, zincIngot]]);
+									
+recipes.remove(zincBoots);
+recipes.addShaped(zincBoots,		[[null, null, null],
+									[zincIngot, null, zincIngot],
+									[zincIngot, null, zincIngot]]);
+									
 									
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
