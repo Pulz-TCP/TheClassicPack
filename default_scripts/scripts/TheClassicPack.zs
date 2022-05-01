@@ -220,40 +220,25 @@ recipes.addShapeless(emerald *9, [emeraldBlock]);
 recipes.addShapeless(emeraldBlock, [emerald *9]);
 
 //fix intentional plank duplication ---------
-recipes.removeShapeless(choppedLog);
-recipes.addShapeless(choppedLog *8, [<minecraft:stone_axe:*>, log]);
+recipes.removeShapeless(choppedLog);recipes.addShapeless(choppedLog *8, [<minecraft:stone_axe:*>, log]);
 
 //fix result of difficult to fix emerald exploit
 recipes.removeShapeless(<minecraft:diamond> *2, [<projecte:item.pe_philosophers_stone>, emerald]);
 
 //beneath portal recipe
-recipes.addShaped(<beneath:teleporterbeneath>,			[[<minecraft:coal_ore>, <minecraft:iron_ore>, <minecraft:gold_ore>], 
-                                             [<minecraft:obsidian>, <minecraft:diamond_pickaxe>, <minecraft:obsidian>], 
-											 [<minecraft:redstone_ore>, <minecraft:lapis_ore>, <minecraft:diamond_ore>]]);
+recipes.addShaped(<beneath:teleporterbeneath>,					[[<minecraft:coal_ore>, <minecraft:iron_ore>, <minecraft:gold_ore>],[<minecraft:obsidian>, <minecraft:diamond_pickaxe>, <minecraft:obsidian>],[<minecraft:redstone_ore>, <minecraft:lapis_ore>, <minecraft:diamond_ore>]]);
 
-recipes.addShaped(thermalWasher,			[[sulfurDust, sulfurDust, sulfurDust], 
-                                             [sulfurDust, oreWashingPlant, sulfurDust], 
-											 [sulfurDust, advancedMachineCasing, sulfurDust]]);
+recipes.addShaped(thermalWasher,			    				[[sulfurDust, sulfurDust, sulfurDust],[sulfurDust, oreWashingPlant, sulfurDust],[sulfurDust, advancedMachineCasing, sulfurDust]]);
 											 
-recipes.addShaped(<energyconverters:energy_producer_mj>,			[[<ore:materialStoneTool>, <ore:gearIron>, <ore:materialStoneTool>], 
-                                             [<buildcraftcore:engine:1>, <buildcrafttransport:pipe_wood_item>, <ore:ingotGold>], 
-											 [<minecraft:stone>, <thermalfoundation:material:24>, <ore:materialStoneTool>]]);
+recipes.addShaped(<energyconverters:energy_producer_mj>,		[[<ore:materialStoneTool>, <ore:gearIron>, <ore:materialStoneTool>],[<buildcraftcore:engine:1>, <buildcrafttransport:pipe_wood_item>, <ore:ingotGold>],[<minecraft:stone>, <thermalfoundation:material:24>, <ore:materialStoneTool>]]);
 											 
-recipes.addShaped(<cfm:wreath>,			[[<ore:treeLeaves>, <ore:dustGlowstone>, <ore:treeLeaves>], 
-                                             [<ore:dustGlowstone>, null, <minecraft:glowstone_dust>], 
-                                             [<ore:treeLeaves>, <minecraft:glowstone_dust>, <ore:treeLeaves>]]);
+recipes.addShaped(<cfm:wreath>,									[[<ore:treeLeaves>, <ore:dustGlowstone>, <ore:treeLeaves>],[<ore:dustGlowstone>, null, <minecraft:glowstone_dust>],[<ore:treeLeaves>, <minecraft:glowstone_dust>, <ore:treeLeaves>]]);
 											 
-recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:ingotIron>, <minecraft:iron_block>], 
-                                             [<ore:ingotIron>, <vending:vendingmachineadvanced>, <ore:ingotIron>], 
-											 [<minecraft:iron_block>, <ore:ingotIron>, <ore:blockIron>]]);
+recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:ingotIron>, <minecraft:iron_block>],[<ore:ingotIron>, <vending:vendingmachineadvanced>, <ore:ingotIron>],[<minecraft:iron_block>, <ore:ingotIron>, <ore:blockIron>]]);
 											 
-recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:ingotIron>, <ore:blockIron>], 
-                                             [<minecraft:iron_ingot>, <vending:vendingmachine:*>, <ore:ingotIron>], 
-											 [<minecraft:iron_block>, <minecraft:iron_ingot>, <ore:blockIron>]]);
+recipes.addShaped(<vending:vendingstorageattachment>,			[[<ore:blockIron>, <ore:ingotIron>, <ore:blockIron>],[<minecraft:iron_ingot>, <vending:vendingmachine:*>, <ore:ingotIron>],[<minecraft:iron_block>, <minecraft:iron_ingot>, <ore:blockIron>]]);
 											 
-recipes.addShaped(<thermalfoundation:storage:3>,			[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>], 
-                                             [<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>], 
-											 [<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
+recipes.addShaped(<thermalfoundation:storage:3>,				[[<ore:ingotLead>, <ore:ingotLead>, <thermalfoundation:material:131>],[<ore:ingotLead>, <thermalfoundation:material:131>, <thermalfoundation:material:131>],[<thermalfoundation:material:131>, <thermalfoundation:material:131>, <thermalfoundation:material:131>]]);
 											 
 //convert marble
 recipes.addShapeless(quarkMarble,[projectredMarble]);
@@ -263,28 +248,18 @@ recipes.addShapeless(quarkMarbleBrick,[projectredMarbleBrick]);
 recipes.addShapeless(projectredMarbleBrick,[quarkMarbleBrick]);
 
 //fix polishedMarble conflicts
-recipes.remove(quarkMarblePolished);
-recipes.addShapeless(quarkMarblePolished,[quarkMarble *4]);
+recipes.remove(quarkMarblePolished);recipes.addShapeless(quarkMarblePolished,[quarkMarble *4]);
 
 //Crayfish crate + IC2 storage box conflict
-recipes.remove(ic2WoodenStorage);											 
-recipes.addShaped(ic2WoodenStorage,			[[logWood, planks, logWood], 
-                                             [planks, planks, planks], 
-											 [logWood, planks, logWood]]);
+recipes.remove(ic2WoodenStorage);recipes.addShaped(ic2WoodenStorage,	[[logWood, planks, logWood],[planks, planks, planks],[logWood, planks, logWood]]);
 
 //=============== IC2 =================
 //(output, [components]) --------------------    
-recipes.remove(patternStorage);
-recipes.remove(thermalCentrifuge);
 //new recipe that doesn't use mining laser
-recipes.addShaped(thermalCentrifuge,        [[coil, energyCrystal, coil], 
-                                             [advancedAlloy, advancedMachineCasing, advancedCircuit], 
-                                             [ironIngot, electricMotor, ironIngot]]);
+recipes.remove(thermalCentrifuge);recipes.addShaped(thermalCentrifuge,  [[coil, energyCrystal, coil],[advancedAlloy, advancedMachineCasing, advancedCircuit],[ironIngot, electricMotor, ironIngot]]);
 
 //new recipe that doesn't use mining laser									 
-recipes.addShaped(patternStorage,           [[reinforcedStone, reinforcedStone, reinforcedStone], 
-                                             [crystalMemory, advancedMachineCasing, crystalMemory], 
-                                             [energyCrystal, advancedCircuit, energyCrystal]]);	
+recipes.remove(patternStorage);recipes.addShaped(patternStorage, 		[[reinforcedStone, reinforcedStone, reinforcedStone],[crystalMemory, advancedMachineCasing, crystalMemory],[energyCrystal, advancedCircuit, energyCrystal]]);	
 
 //=============== THAUMCRAFT =================
 //remove and re-add infusion so it doesnt need tnt
@@ -319,70 +294,28 @@ mods.GalacticraftTweaker.removeCompressorRecipe(heavyDutyPlateT8);
 mods.GalacticraftTweaker.addCompressorShapelessRecipe(heavyDutyPlateT8, heavyDutyPlateT7, zincIngot, zincIngot, zincIngot, compressedZinc, compressedZinc);
 
 //remove and then replace recipe for Tier 8 Booster
-recipes.remove(boosterT8);
-recipes.addShaped(boosterT8,	[[zincIngot, redWool, zincIngot],
-                                [zincIngot, filledFuelCanister, zincIngot],
-                                [heavyDutyPlateT8, airVent, heavyDutyPlateT8]]);
+recipes.remove(boosterT8);recipes.addShaped(boosterT8,		[[zincIngot, redWool, zincIngot],[zincIngot, filledFuelCanister, zincIngot],[heavyDutyPlateT8, airVent, heavyDutyPlateT8]]);
 								
 								
 //remove and then replace recipe for Tier 3 rocket launch pad
-recipes.remove(rocketlaunchpadT3);
-recipes.addShaped(rocketlaunchpadT3 * 5,	[[null, null, null],
-                                [blockOfTungsten, blockOfTungsten, blockOfTungsten],
-                                [zincIngot, zincIngot, zincIngot]]);
+recipes.remove(rocketlaunchpadT3);recipes.addShaped(rocketlaunchpadT3 * 5,	[[null, null, null],[blockOfTungsten, blockOfTungsten, blockOfTungsten],[zincIngot, zincIngot, zincIngot]]);
 								
 //remove and then replace recipes for zinc items
-//sword
-recipes.remove(zincSword);
-recipes.addShaped(zincSword,		[[null, zincIngot, null],
-									[null, zincIngot, null],
-									[null, anyStick, null]]);
 
-//shovel								
-recipes.remove(zincShovel);
-recipes.addShaped(zincShovel,		[[null, zincIngot, null],
-									[null, anyStick, null],
-									[null, anyStick, null]]);
-
-
-//pickaxe								
-recipes.remove(zincPickaxe);
-recipes.addShaped(zincPickaxe,		[[zincIngot, zincIngot, zincIngot],
-									[null, anyStick, null],
-									[null, anyStick, null]]);
-									
-//hoe								
-recipes.remove(zincHoe);
-recipes.addShaped(zincHoe,			[[zincIngot, zincIngot, null],
-									[null, anyStick, null],
-									[null, anyStick, null]]);
+//zinc tools
+recipes.remove(zincSword);recipes.addShaped(zincSword,		[[null, zincIngot, null],[null, zincIngot, null],[null, anyStick, null]]);			
+recipes.remove(zincShovel);recipes.addShaped(zincShovel,	[[null, zincIngot, null],[null, anyStick, null],[null, anyStick, null]]);						
+recipes.remove(zincPickaxe);recipes.addShaped(zincPickaxe,	[[zincIngot, zincIngot, zincIngot],[null, anyStick, null],[null, anyStick, null]]);					
+recipes.remove(zincHoe);recipes.addShaped(zincHoe,			[[zincIngot, zincIngot, null],[null, anyStick, null],[null, anyStick, null]]);
 									
 //zinc armor								
-recipes.remove(zincHelm);
-recipes.addShaped(zincHelm,			[[zincIngot, zincIngot, zincIngot],
-									[zincIngot, null, zincIngot],
-									[null, null, null]]);
-									
-recipes.remove(zincChest);
-recipes.addShaped(zincChest,		[[zincIngot, null, zincIngot],
-									[zincIngot, zincIngot, zincIngot],
-									[zincIngot, zincIngot, zincIngot]]);
-									
-recipes.remove(zincLegs);
-recipes.addShaped(zincLegs,			[[zincIngot, zincIngot, zincIngot],
-									[zincIngot, null, zincIngot],
-									[zincIngot, null, zincIngot]]);
-									
-recipes.remove(zincBoots);
-recipes.addShaped(zincBoots,		[[null, null, null],
-									[zincIngot, null, zincIngot],
-									[zincIngot, null, zincIngot]]);
+recipes.remove(zincHelm);recipes.addShaped(zincHelm,		[[zincIngot, zincIngot, zincIngot],[zincIngot, null, zincIngot],[null, null, null]]);	
+recipes.remove(zincChest);recipes.addShaped(zincChest,		[[zincIngot, null, zincIngot],[zincIngot, zincIngot, zincIngot],[zincIngot, zincIngot, zincIngot]]);							
+recipes.remove(zincLegs);recipes.addShaped(zincLegs,		[[zincIngot, zincIngot, zincIngot],[zincIngot, null, zincIngot],[zincIngot, null, zincIngot]]);		
+recipes.remove(zincBoots);recipes.addShaped(zincBoots,		[[null, null, null],[zincIngot, null, zincIngot],[zincIngot, null, zincIngot]]);
 									
 //fix zinc battery									
-recipes.remove(zincBattery);
-recipes.addShaped(zincBattery,		[[null, zincIngot, null],
-									[zincIngot, <ore:dustRedstone>, zincIngot],
-									[zincIngot, <ore:coal>, zincIngot]]);
+recipes.remove(zincBattery);recipes.addShaped(zincBattery,	[[null, zincIngot, null],[zincIngot, <ore:dustRedstone>, zincIngot],[zincIngot, <ore:coal>, zincIngot]]);
 									
 									
 //================= MEKANISM ====================
