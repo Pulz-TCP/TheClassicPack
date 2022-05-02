@@ -206,13 +206,6 @@ recipes.addShaped(<tcomplement:materials>,	[[null, null, null],
                                              [null, <minecraft:cobblestone>, null]]);
 
 
-//balance scannable recipe
-
-recipes.remove(<scannable:scanner>);
-recipes.addShaped(<scannable:scanner>,			[[<minecraft:iron_block>, null, <minecraft:iron_block>],
-                                             [<minecraft:iron_bars>, <ic2:energy_crystal:26>.anyDamage(), <minecraft:iron_bars>],
-                                             [<minecraft:gold_block>, <minecraft:redstone_block>, <minecraft:gold_block>]]);
-
 //fix potential duplication exploit ---------
 
 recipes.remove(emerald);
