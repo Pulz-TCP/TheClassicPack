@@ -85,36 +85,6 @@
             }
         },
 		
-		"patreon":
-        {
-            "text" : "- Patreon -",
-            "posX" : 55,
-            "posY" : 55,
-            "width" : 90,
-            "height" : 20,
-            "alignment" : "left_center",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "https://www.patreon.com/Pulz"
-            }
-        },
-		
-		"website":
-        {
-            "text" : "- Website -",
-            "posX" : 55,
-            "posY" : 30,
-            "width" : 90,
-            "height" : 20,
-            "alignment" : "left_center",
-            "action" : 
-            {
-                "type" : "openLink",
-                "link" : "http://theclassicpack.com"
-            }
-        },
-		
 		"discord":
         {
             "text" : "- Discord -",
@@ -127,6 +97,38 @@
             {
                 "type" : "openLink",
                 "link" : "https://discord.gg/FgVtf4b"
+            }
+        },
+		
+		"patreon":
+        {
+            "text" : "- Patreon -",
+            "posX" : 55,
+            "posY" : 30,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.patreon.com/Pulz"
+            }
+        },
+		
+		"hosting":
+        {
+            "text" : "Server Hosting",
+            "posX" : 55,
+            "posY" : 55,
+            "width" : 90,
+            "height" : 20,
+            "alignment" : "left_center",
+			"normalTextColor" : 16746622,
+			"hoverTextColor" : 16746622,
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://billing.bloom.host/aff.php?aff=6"
             }
         },
         
