@@ -1,4 +1,3 @@
-
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
@@ -47,9 +46,10 @@ var ic2WoodenStorage = <ic2:te:111>;
 var gunpowder = <minecraft:gunpowder>;
 var redstoneBlock = <minecraft:redstone_block>;
 var tnt = <minecraft:tnt>;
-var logWood = <minecraft:log>;	
+var logWood = <minecraft:log>;
 var planks = <minecraft:planks>;
 var redWool = <minecraft:wool:14>;
+var yellowWool = <minecraft:wool:4>;
 var anyStick = <ore:stickWood>;
 
 //mrcrayfish furniture-----------------------
@@ -96,6 +96,8 @@ var zincChest = <extraplanets:zinc_chest>;
 var zincLegs = <extraplanets:zinc_legings>;
 var zincBoots = <extraplanets:zinc_boots>;
 var zincBattery = <extraplanets:zinc_battery>;
+var extremelyHeavyOxygenTank = <extraplanets:oxygen_tank_extremely_heavy_full:9000>;
+var veryHeavyOxygenTank = <extraplanets:oxygen_tank_very_heavy_full:*>;
 
 //other -------------------------------------
 var sulfurDust = <ore:dustSulfur>;
@@ -310,6 +312,9 @@ recipes.remove(zincBoots);recipes.addShaped(zincBoots,		[[null, null, null],[zin
 //fix zinc battery									
 recipes.remove(zincBattery);recipes.addShaped(zincBattery,	[[null, zincIngot, null],[zincIngot, <ore:dustRedstone>, zincIngot],[zincIngot, <ore:coal>, zincIngot]]);
 									
-									
+//fix extremely heavy oxygen tank
+recipes.remove(extremelyHeavyOxygenTank);
+recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellowWool],[veryHeavyOxygenTank, veryHeavyOxygenTank, veryHeavyOxygenTank],[zincIngot, zincIngot, zincIngot]]);
+
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
