@@ -3,7 +3,7 @@
 	"message":"\u00A7d[The Classic Pack]",
 	"fireworks":"true",
 	"mode":"3",
-	"x":"100000",
-	"y":"10000",
-	"capeurl":"https://github.com/Pulz-TCP/TheClassicPack/blob/master/special/cape.json"
+	"x":"0",
+	"y":"0",
+	"capeurl":"https://raw.githubusercontent.com/Pulz-TCP/TheClassicPack/master/special/cape.json"
 }
