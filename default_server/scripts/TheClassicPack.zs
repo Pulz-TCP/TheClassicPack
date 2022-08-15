@@ -3,6 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.GalacticraftTweaker;
 import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
@@ -224,3 +225,27 @@ mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size:
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 1 as byte, type: 1 as byte}));
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 2 as byte, type: 1 as byte}));
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>.withTag({size: 3 as byte, type: 1 as byte}));
+
+//=============== EXTRA PLANETS =================
+recipes.remove(nuclearBomb);
+recipes.remove(fireBomb);
+
+//================ GALACTICRAFT =================
+//remove and then replace the compressor recipe for Compressed Zinc
+mods.GalacticraftTweaker.removeCompressorRecipe(compressedZinc);
+mods.GalacticraftTweaker.addCompressorShapelessRecipe(compressedZinc, zincIngot, zincIngot);
+
+//remove and then replace the compressor recipe for Tier 8 Heavy Duty Plate 
+mods.GalacticraftTweaker.removeCompressorRecipe(heavyDutyPlateT8);
+mods.GalacticraftTweaker.addCompressorShapelessRecipe(heavyDutyPlateT8, heavyDutyPlateT7, zincIngot, zincIngot, zincIngot, compressedZinc, compressedZinc);
+
+//remove and then replace recipe for Tier 8 Booster
+recipes.remove(boosterT8);recipes.addShaped(boosterT8,		[[zincIngot, redWool, zincIngot],[zincIngot, filledFuelCanister, zincIngot],[heavyDutyPlateT8, airVent, heavyDutyPlateT8]]);
+								
+								
+//remove and then replace recipe for Tier 3 rocket launch pad
+recipes.remove(rocketlaunchpadT3);recipes.addShaped(rocketlaunchpadT3 * 5,	[[null, null, null],[blockOfTungsten, blockOfTungsten, blockOfTungsten],[zincIngot, zincIngot, zincIngot]]);
+
+//fix extremely heavy oxygen tank
+recipes.remove(extremelyHeavyOxygenTank);
+recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellowWool],[veryHeavyOxygenTank, veryHeavyOxygenTank, veryHeavyOxygenTank],[zincIngot, zincIngot, zincIngot]]);
