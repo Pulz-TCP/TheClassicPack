@@ -7,6 +7,7 @@ import mods.GalacticraftTweaker;
 import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
+import mods.mekanism.sawmill;
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -249,3 +250,6 @@ recipes.remove(rocketlaunchpadT3);recipes.addShaped(rocketlaunchpadT3 * 5,	[[nul
 //fix extremely heavy oxygen tank
 recipes.remove(extremelyHeavyOxygenTank);
 recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellowWool],[veryHeavyOxygenTank, veryHeavyOxygenTank, veryHeavyOxygenTank],[zincIngot, zincIngot, zincIngot]]);
+
+//================= MEKANISM ====================
+mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
