@@ -100,6 +100,10 @@ var extremelyHeavyOxygenTank = <extraplanets:oxygen_tank_extremely_heavy_full:90
 var veryHeavyOxygenTank = <extraplanets:oxygen_tank_very_heavy_full:*>;
 
 //other -------------------------------------
+
+val listAllWater = <ore:listAllwater>;
+listAllWater.remove(<harvestcraft:freshwateritem>);
+
 var sulfurDust = <ore:dustSulfur>;
 
 var akashicTome = <akashictome:tome>.withTag({
