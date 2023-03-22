@@ -329,3 +329,8 @@ recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellow
 
 //================= MEKANISM ====================
 mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
+
+//================= HARVESTCRAFT ====================
+//fresh water duplication fix
+val listAllWater = <ore:listAllwater>;
+listAllWater.remove(<harvestcraft:freshwateritem>);
