@@ -66,6 +66,11 @@ var causalityCollapser = <thaumcraft:causality_collapser>;
 var nitor = <ore:nitor>;
 var ancientStone = <thaumcraft:stone_ancient>;
 var arcaneStone = <thaumcraft:stone_arcane>;
+var amberBlockthaum = <thaumcraft:amber_block>;
+var amberBlockBOP = <biomesoplenty:gem_block:7>;
+var amberBOP = <biomesoplenty:gem:7>;
+var amber = <ore:gemAmber>;
+var amberBrick = <thaumcraft:amber_brick>;
 
 //marble ------------------------------------
 var quarkMarble = <quark:marble>;
@@ -267,6 +272,12 @@ redstoneBlock, alumentum, nitor]);
 
 //ancient stone
 mods.thaumcraft.Crucible.registerRecipe("ancientStoneCrucible", "INFUSIONANCIENT", ancientStone, arcaneStone, [<aspect:terra>*5, <aspect:alienis>*5]);
+
+//fixes amber net gain exploit
+recipes.remove(amberBlockthaum);
+recipes.addShapeless(amberBlockthaum, [amber, amber, amber, amber, amber, amber, amber, amber, amber]);
+recipes.addShapeless(amberBlockthaum * 4 , [amberBrick, amberBrick, amberBrick, amberBrick]);
+recipes.addShapeless(amberBlockthaum, [amberBlockBOP, amberBlockBOP]);
 
 //=============== TINKERS =================
 //remove incorrect melting recipe
