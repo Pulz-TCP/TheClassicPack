@@ -41,6 +41,7 @@ var patternStorage = <ic2:te:62>;
 var reinforcedStone = <ic2:resource:11>;
 var thermalCentrifuge = <ic2:te:52>;
 var ic2WoodenStorage = <ic2:te:111>;
+var iridiumStorageBox = <ic2:te:115>;
 
 //minecraft --------------------------------
 var gunpowder = <minecraft:gunpowder>;
@@ -253,6 +254,9 @@ recipes.remove(quarkMarblePolished);recipes.addShapeless(quarkMarblePolished,[qu
 //Crayfish crate + IC2 storage box conflict
 recipes.remove(ic2WoodenStorage);recipes.addShaped(ic2WoodenStorage,	[[logWood, planks, logWood],[planks, planks, planks],[logWood, planks, logWood]]);
 
+//iridium storage box tooltip
+iridiumStorageBox.addTooltip(format.red("Requires IC2 wrench to pick up!"));
+
 //=============== IC2 =================
 //(output, [components]) --------------------    
 //new recipe that doesn't use mining laser
@@ -328,7 +332,10 @@ recipes.remove(extremelyHeavyOxygenTank);
 recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellowWool],[veryHeavyOxygenTank, veryHeavyOxygenTank, veryHeavyOxygenTank],[zincIngot, zincIngot, zincIngot]]);
 
 //================= MEKANISM ====================
-mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
+//sawmill torch duplication fix
+mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4);
 
+//================= HARVESTCRAFT ====================
+//fresh water duplication fix
 val listAllWater = <ore:listAllwater>;
 listAllWater.remove(<harvestcraft:freshwateritem>);
