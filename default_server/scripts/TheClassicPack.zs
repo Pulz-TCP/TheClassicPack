@@ -339,3 +339,8 @@ mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4);
 //fresh water duplication fix
 val listAllWater = <ore:listAllwater>;
 listAllWater.remove(<harvestcraft:freshwateritem>);
+
+//================= FUTUREMC ====================
+//adjusts smooth stone recipe to allow Circuit Plates
+furnace.remove(<futuremc:smooth_stone>);
+recipes.addShapeless(<futuremc:smooth_stone>, [<projectred-core:resource_item:0>, <projectred-core:resource_item:0>]);
