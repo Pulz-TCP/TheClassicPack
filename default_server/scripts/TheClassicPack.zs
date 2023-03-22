@@ -255,7 +255,7 @@ recipes.remove(quarkMarblePolished);recipes.addShapeless(quarkMarblePolished,[qu
 recipes.remove(ic2WoodenStorage);recipes.addShaped(ic2WoodenStorage,	[[logWood, planks, logWood],[planks, planks, planks],[logWood, planks, logWood]]);
 
 //iridium storage box tooltip
-iridiumStorageBox.addTooltip("Requires IC2 wrench to pick up!");
+iridiumStorageBox.addTooltip(format.red("Requires IC2 wrench to pick up!"));
 
 //=============== IC2 =================
 //(output, [components]) --------------------    
