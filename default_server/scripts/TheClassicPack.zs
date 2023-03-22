@@ -328,7 +328,8 @@ recipes.remove(extremelyHeavyOxygenTank);
 recipes.addShaped(extremelyHeavyOxygenTank, 				[[yellowWool, yellowWool, yellowWool],[veryHeavyOxygenTank, veryHeavyOxygenTank, veryHeavyOxygenTank],[zincIngot, zincIngot, zincIngot]]);
 
 //================= MEKANISM ====================
-mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4, <minecraft:stick>, <minecraft:coal>);
+//sawmill torch duplication fix
+mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4);
 
 //================= HARVESTCRAFT ====================
 //fresh water duplication fix
