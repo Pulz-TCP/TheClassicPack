@@ -341,10 +341,7 @@ val listAllWater = <ore:listAllwater>;
 listAllWater.remove(<harvestcraft:freshwateritem>);
 
 //================= Storage drawers ====================
-//add OreDict to Storage Drawers Extra
-<ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
-
-//add OreDict to Storage Drawers Unlimited
+//add Storage Drawers Unlimited to drawerBasic OreDict, allows addon drawers for Upgrade Template recipe
 for item in itemUtils.getItemsByRegexRegistryName("storagedrawersunlimited:.*drawer.*") {
 	for i in 0 to 5 {
 		<ore:drawerBasic>.add(item.definition.makeStack(i));
