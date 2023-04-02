@@ -339,3 +339,6 @@ mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4);
 //fresh water duplication fix
 val listAllWater = <ore:listAllwater>;
 listAllWater.remove(<harvestcraft:freshwateritem>);
+
+//================= Storage drawers ====================
+<ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
