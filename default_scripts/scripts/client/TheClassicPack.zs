@@ -339,3 +339,16 @@ mods.mekanism.sawmill.removeRecipe(<minecraft:torch> * 4);
 //fresh water duplication fix
 val listAllWater = <ore:listAllwater>;
 listAllWater.remove(<harvestcraft:freshwateritem>);
+
+//================= FUTUREMC ====================	
+//adjusts smooth stone recipe to allow Circuit Plates	
+furnace.remove(<futuremc:smooth_stone>);	
+recipes.addShapeless(<futuremc:smooth_stone>, [<projectred-core:resource_item:0>, <projectred-core:resource_item:0>]);
+
+//================= Storage drawers ====================
+//add Storage Drawers Unlimited to drawerBasic OreDict, allows addon drawers for Upgrade Template recipe
+for item in itemUtils.getItemsByRegexRegistryName("storagedrawersunlimited:.*drawer.*") {
+	for i in 0 to 5 {
+		<ore:drawerBasic>.add(item.definition.makeStack(i));
+		}
+	}
