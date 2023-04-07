@@ -35,5 +35,5 @@ If you know what you are doing, here are the most recent download links.
 
 | Type | URL |
 | ------ | ------ |
-| Client | https://files.theclassicpack.com/CLIENT/TCP-3.3.3b_CLIENT.zip |
-| Server | https://files.theclassicpack.com/SERVER/TCP-3.3.3b_SERVER.zip |
+| Client | https://files.theclassicpack.com/CLIENT/TCP-3.3.6_CLIENT.zip |
+| Server | https://files.theclassicpack.com/SERVER/TCP-3.3.6_SERVER.zip |
