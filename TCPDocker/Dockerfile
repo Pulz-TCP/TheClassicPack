@@ -7,8 +7,8 @@ RUN yum -y install java-1.8.0-openjdk-headless wget unzip
 
 RUN useradd -r -m -U -d /opt/minecraft -s /bin/bash -u 10001 minecraft
 
-RUN wget http://files.theclassicpack.com/SERVER/TCP-3.3.2_SERVER.zip
-RUN unzip -d /opt/minecraft TCP-3.3.2_SERVER.zip
+RUN wget http://files.theclassicpack.com/SERVER/TCP-3.3.5_SERVER.zip
+RUN unzip -d /opt/minecraft TCP-3.3.5_SERVER.zip
 
 COPY eula.txt /opt/minecraft/
 RUN chown -R minecraft:minecraft /opt/minecraft/
