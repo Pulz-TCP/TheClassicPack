@@ -265,6 +265,17 @@ recipes.remove(thermalCentrifuge);recipes.addShaped(thermalCentrifuge,  [[coil, 
 //new recipe that doesn't use mining laser									 
 recipes.remove(patternStorage);recipes.addShaped(patternStorage, 		[[reinforcedStone, reinforcedStone, reinforcedStone],[crystalMemory, advancedMachineCasing, crystalMemory],[energyCrystal, advancedCircuit, energyCrystal]]);	
 
+//https://github.com/Pulz-TCP/TheClassicPack/issues/71 -- waila harvestability fix for wooden storage box
+val woodenStorageBoxBlock = <ic2:wooden_storage_box> as IBlock;
+var woodenStorageBoxBlockDef = woodenStorageBoxBlock.definition;
+woodenStorageBoxBlockDef.setHarvestLevel("axe", 2);
+/*
+-- Doesn't work for iridium, leaving comment as a future reminder --
+val iridiumStorageBoxBlock = <ic2:iridium_storage_box> as IBlock; 
+var iridiumStorageBoxBlockDef = iridiumStorageBoxBlock.definition;
+iridiumStorageBoxBlockDef.setHarvestLevel("pickaxe", 2);
+*/
+
 //=============== THAUMCRAFT =================
 //remove and re-add infusion so it doesnt need tnt
 mods.thaumcraft.Infusion.removeRecipe(causalityCollapser);
