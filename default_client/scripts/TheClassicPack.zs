@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockDefinition;
 
 import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
