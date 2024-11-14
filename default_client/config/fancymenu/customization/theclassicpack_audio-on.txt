@@ -1,0 +1,261 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/DigitalReams2.wav
+  loop = true
+  action = addaudio
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 47
+  action = movebutton
+  y = 80
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 89
+  action = resizebutton
+  height = 25
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/Buttons/title_button_hover.png
+  backgroundnormal = resources/Buttons/title_button1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 47
+  action = movebutton
+  y = 112
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 89
+  action = resizebutton
+  height = 25
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/Buttons/title_button_hover.png
+  backgroundnormal = resources/Buttons/title_button1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 47
+  action = movebutton
+  y = 49
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 89
+  action = resizebutton
+  height = 25
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/Buttons/title_button_hover.png
+  backgroundnormal = resources/Buttons/title_button1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 47
+  action = movebutton
+  y = 142
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 89
+  action = resizebutton
+  height = 25
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/Buttons/title_button_hover.png
+  backgroundnormal = resources/Buttons/title_button1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 106
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 841ad562-2412-43e1-911f-b27f5b2ccc7c1728814493155
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = ac5ab41c-991c-4f6a-9e76-eac75be7d40b1728814493155
+  y = 211
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 251
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 3fea6585-7548-43dc-adb9-715cd972148d1728814493155
+  y = 233
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 343
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = eeee6b19-1d05-42fc-bc20-9557a1e705311728814493155
+  y = 163
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 103
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 8c9d2d78-314a-41a8-b219-4c582d7b34451728814493155
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a8269627-f4a4-4c0b-b418-d597d76a154c1728814493155
+  y = 0
+  height = 30
+}
+
+customization {
+  path = resources/tntcstuff/tntc/logo_large.png
+  orientation = top-left
+  x = 190
+  width = 258
+  actionid = ca5168e7-a15e-422e-80a6-b42cba44631f1728814654354
+  action = addtexture
+  y = 9
+  height = 196
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://billing.bloom.host/aff.php?aff=6%btnaction_splitter_fm%
+  backgroundhovered = resources/Buttons/title_button_hover.png
+  label = Server Hosting
+  loopbackgroundanimations = true
+  x = 47
+  width = 89
+  action = addbutton
+  actionid = cb16a6f5-8940-4487-a8e0-adc64e0cfeb11728818904442
+  y = 173
+  backgroundnormal = resources/Buttons/title_button1.png
+  height = 25
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/E4bt3HU%btnaction_splitter_fm%
+  backgroundhovered = resources/Buttons/title_discord.png
+  description = Discord Server
+  label = 
+  loopbackgroundanimations = true
+  x = 59
+  width = 26
+  action = addbutton
+  actionid = 3c007723-892e-4f96-bf77-d911cc9732111731581780302
+  y = 203
+  backgroundnormal = resources/Buttons/title_discord.png
+  height = 26
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://www.patreon.com/Pulz%btnaction_splitter_fm%
+  backgroundhovered = resources/Buttons/title_support.png
+  description = Patreon
+  label = 
+  loopbackgroundanimations = true
+  x = 98
+  width = 26
+  action = addbutton
+  actionid = a4bddbf5-c68b-4dc9-8b19-91a15ef55ac81731582025149
+  y = 203
+  backgroundnormal = resources/Buttons/title_support.png
+  height = 26
+}
+
