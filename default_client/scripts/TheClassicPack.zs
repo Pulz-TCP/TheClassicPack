@@ -16,6 +16,13 @@ import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
 import mods.mekanism.sawmill;
 
+//================================= FUNCTIONS ====================================
+function addItemsToOreDict(items as IItemStack[], oreDictName as IOreDictEntry) {
+    for item in items {
+        oreDictName.add(item);  // Adds each item in the array to the Ore Dictionary
+    }
+}
+
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
 var itemTeleportPipe = <additionalpipes:pipe_items_teleport>;
@@ -365,3 +372,20 @@ for item in itemUtils.getItemsByRegexRegistryName("storagedrawersunlimited:.*dra
 		<ore:drawerBasic>.add(item.definition.makeStack(i));
 		}
 	}
+
+//================= Trapdoors for Oredict ====================
+val excludedTrapdoors = [
+    <tconstruct:wood_rail_trapdoor>,
+    <mcwtrpdoors:print_cottage>,
+    <mcwtrpdoors:print_paper>,
+    <mcwtrpdoors:print_beach>,
+    <mcwtrpdoors:print_tropical>,
+    <mcwtrpdoors:print_four_panel>,
+    <mcwtrpdoors:print_classic>
+];
+
+for item in itemUtils.getItemsByRegexRegistryName(".*trapdoor.*") {
+    if (!excludedTrapdoors.contains(item)) {
+        <ore:trapdoorWood>.add(item);
+    }
+}
