@@ -31,3 +31,6 @@ recipes.remove(gemLegs);
 recipes.addShapeless(gemHelm, [rmHelm, kleinStarOmega, soulStone, darkMatter, darkMatter, darkMatter]);
 recipes.addShapeless(gemChest, [rmChest, kleinStarOmega, bodyStone, darkMatter, darkMatter, darkMatter]);
 recipes.addShapeless(gemLegs, [rmLegs, kleinStarOmega, darkMatter, darkMatter, darkMatter, darkMatter, darkMatter, darkMatter]);
+
+//remove mekanism chunkloader
+recipes.remove(<mekanism:anchorupgrade>);

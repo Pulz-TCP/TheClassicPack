@@ -2,6 +2,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockDefinition;
 
 import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
@@ -13,6 +15,13 @@ import mods.initialinventory.InvHandler;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible;
 import mods.mekanism.sawmill;
+
+//================================= FUNCTIONS ====================================
+function addItemsToOreDict(items as IItemStack[], oreDictName as IOreDictEntry) {
+    for item in items {
+        oreDictName.add(item);  // Adds each item in the array to the Ore Dictionary
+    }
+}
 
 //================================= VARIABLES ====================================
 //additionalpipes ---------------------------
@@ -265,6 +274,17 @@ recipes.remove(thermalCentrifuge);recipes.addShaped(thermalCentrifuge,  [[coil, 
 //new recipe that doesn't use mining laser									 
 recipes.remove(patternStorage);recipes.addShaped(patternStorage, 		[[reinforcedStone, reinforcedStone, reinforcedStone],[crystalMemory, advancedMachineCasing, crystalMemory],[energyCrystal, advancedCircuit, energyCrystal]]);	
 
+//https://github.com/Pulz-TCP/TheClassicPack/issues/71 -- waila harvestability fix for wooden storage box
+val woodenStorageBoxBlock = <ic2:wooden_storage_box> as IBlock;
+var woodenStorageBoxBlockDef = woodenStorageBoxBlock.definition;
+woodenStorageBoxBlockDef.setHarvestLevel("axe", 2);
+/*
+-- Doesn't work for iridium, leaving comment as a future reminder --
+val iridiumStorageBoxBlock = <ic2:iridium_storage_box> as IBlock; 
+var iridiumStorageBoxBlockDef = iridiumStorageBoxBlock.definition;
+iridiumStorageBoxBlockDef.setHarvestLevel("pickaxe", 2);
+*/
+
 //=============== THAUMCRAFT =================
 //remove and re-add infusion so it doesnt need tnt
 mods.thaumcraft.Infusion.removeRecipe(causalityCollapser);
@@ -352,3 +372,20 @@ for item in itemUtils.getItemsByRegexRegistryName("storagedrawersunlimited:.*dra
 		<ore:drawerBasic>.add(item.definition.makeStack(i));
 		}
 	}
+
+//================= Trapdoors for Oredict ====================
+val excludedTrapdoors = [
+    <tconstruct:wood_rail_trapdoor>,
+    <mcwtrpdoors:print_cottage>,
+    <mcwtrpdoors:print_paper>,
+    <mcwtrpdoors:print_beach>,
+    <mcwtrpdoors:print_tropical>,
+    <mcwtrpdoors:print_four_panel>,
+    <mcwtrpdoors:print_classic>
+];
+
+for item in itemUtils.getItemsByRegexRegistryName(".*trapdoor.*") {
+    if (!excludedTrapdoors.contains(item)) {
+        <ore:trapdoorWood>.add(item);
+    }
+}
