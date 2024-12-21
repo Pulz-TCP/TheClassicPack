@@ -6,7 +6,8 @@ on:
       - 'TheClassicPack/sphax_patch_pack/x32-TCP-Sphax_PatchPack/**'
       - 'TheClassicPack/sphax_patch_pack/x64-TCP-Sphax_PatchPack/**'
       - 'TheClassicPack/sphax_patch_pack/x128-TCP-Sphax_PatchPack/**'
-
+  workflow_dispatch:
+  
 jobs:
   zip-folders:
     runs-on: ubuntu-latest
