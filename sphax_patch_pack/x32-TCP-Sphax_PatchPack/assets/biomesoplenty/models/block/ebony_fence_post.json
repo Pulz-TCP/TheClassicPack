@@ -1,0 +1,24 @@
+{
+	"__comment": "Designed by HanFox with Cubik - http://bdcraft.net",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "biomesoplenty:blocks/ebony_planks",
+		"side": "biomesoplenty:blocks/bdc_fence_post",
+		"top": "biomesoplenty:blocks/bdc_fence_crossbar"
+	},
+	"elements": [
+		{
+			"__comment": "Centre Post Bottom",
+			"from": [ 6, 0, 6 ],
+			"to": [ 10, 16, 10 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 16 ], "texture": "#top", "cullface": "down", "rotation": 270 },
+				"up": { "uv": [ 0, 12, 4, 16 ], "texture": "#top", "cullface": "up" },
+				"north": { "uv": [ 0, 0, 4, 16 ], "texture": "#side" },
+				"south": { "uv": [ 0, 0, 4, 16 ], "texture": "#side" },
+				"west": { "uv": [ 0, 0, 4, 16 ], "texture": "#side" },
+				"east": { "uv": [ 0, 0, 4, 16 ], "texture": "#side" }
+			}
+		}
+	]
+}

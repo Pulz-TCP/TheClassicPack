@@ -1,0 +1,26 @@
+{
+	"__comment": "Designed by Sphax for PureBDcraft - http://bdcraft.net",
+	"parent": "tconstruct:block/hopper_down",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [ 10, 145, 0 ],
+			"translation": [ -0.5, 2, 0.5 ],
+			"scale": [ 0.4, 0.4, 0.4 ]
+		},
+		"firstperson_righthand": {
+			"rotation": [ 0, 105, 0 ],
+			"translation": [ 5, 0, -3 ],
+			"scale": [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation": [ 30, 135, 0 ],
+			"translation": [ 0, -1, 0 ],
+			"scale": [ 0.6, 0.6, 0.6 ]
+		},
+		"ground": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3, 0 ],
+			"scale": [ 0.25, 0.25, 0.25 ]
+		}
+	}
+}

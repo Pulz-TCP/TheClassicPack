@@ -1,0 +1,52 @@
+{
+	"multipart": [
+		{	"when": { "facing": "north|south", "in_wall": "false", "open": "false|true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_posts_ns" }
+		},
+		{	"when": { "facing": "east|west", "in_wall": "false", "open": "false|true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_posts_ew" }
+		},
+		{	"when": { "facing": "north|south", "in_wall": "false", "open": "false" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_closed_ns" }
+		},
+		{	"when": { "facing": "east|west", "in_wall": "false", "open": "false" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_closed_ew" }
+		},
+		{	"when": { "facing": "north", "in_wall": "false", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_open_n" }
+		},
+		{	"when": { "facing": "east", "in_wall": "false", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_open_e" }
+		},
+		{	"when": { "facing": "south", "in_wall": "false", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_open_s" }
+		},
+		{	"when": { "facing": "west", "in_wall": "false", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_crossbars_open_w" }
+		},
+		{	"when": { "facing": "north|south", "in_wall": "true", "open": "false|true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_posts_ns" }
+		},
+		{	"when": { "facing": "east|west", "in_wall": "true", "open": "false|true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_posts_ew" }
+		},
+		{	"when": { "facing": "north|south", "in_wall": "true", "open": "false" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_closed_ns" }
+		},
+		{	"when": { "facing": "east|west", "in_wall": "true", "open": "false" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_closed_ew" }
+		},
+		{	"when": { "facing": "north", "in_wall": "true", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_open_n" }
+		},
+		{	"when": { "facing": "east", "in_wall": "true", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_open_e" }
+		},
+		{	"when": { "facing": "south", "in_wall": "true", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_open_s" }
+		},
+		{	"when": { "facing": "west", "in_wall": "true", "open": "true" },
+			"apply": { "model": "forestry:arboriculture/fence_gate/willow/willow_wall_crossbars_open_w" }
+		}
+	]
+}

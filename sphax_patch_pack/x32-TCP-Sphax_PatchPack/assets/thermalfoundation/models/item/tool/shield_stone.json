@@ -1,0 +1,169 @@
+{
+	"__comment": "Designed by HanFox with Cubik Studio - https://cubik.studio",
+	"parent": "thermalfoundation:item/tool/shield",
+	"textures": {
+		"all": "thermalfoundation:items/tool/shield_stone"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ -0.1642, 5.3358, 11 ],
+			"to": [ 9.3358, 14.8358, 12 ],
+			"rotation": { "origin": [ 1.25, 6.75, 11 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 1, 8, 2, 16 ], "texture": "#all", "rotation": 270 },
+				"up": { "uv": [ 1, 8, 2, 16 ], "texture": "#all", "rotation": 270 },
+				"north": { "uv": [ 8, 0, 16, 8 ], "texture": "#all", "rotation": 90 },
+				"south": { "uv": [ 8, 0, 16, 8 ], "texture": "#all" },
+				"west": { "uv": [ 0, 8, 1, 16 ], "texture": "#all", "rotation": 180 },
+				"east": { "uv": [ 0, 8, 1, 16 ], "texture": "#all", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ -0.1819, 12.7285, 11.01 ],
+			"to": [ 9.3181, 22.2285, 11.99 ],
+			"rotation": { "origin": [ 1.25, 14.125, 11 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 0, 8, 1, 16 ], "texture": "#all", "rotation": 270 },
+				"up": { "uv": [ 0, 8, 1, 16 ], "texture": "#all", "rotation": 270 },
+				"north": { "uv": [ 0, 0, 8, 8 ], "texture": "#all", "rotation": 90 },
+				"south": { "uv": [ 0, 0, 8, 8 ], "texture": "#all" },
+				"west": { "uv": [ 1, 8, 2, 16 ], "texture": "#all", "rotation": 180 },
+				"east": { "uv": [ 1, 8, 2, 16 ], "texture": "#all", "rotation": 180 }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 2.5, 10.375, 10.875 ],
+			"to": [ 9.5, 10.875, 12.125 ],
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"south": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ -0.3484, 6.7389, 10.9 ],
+			"to": [ 10.7516, 7.2389, 12.05 ],
+			"rotation": { "origin": [ 1.375, 6, 11 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"south": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 2.7851, 10.6103, 10.95 ],
+			"to": [ 13.6851, 11.1103, 12.1 ],
+			"rotation": { "origin": [ 4.5, 9.875, 10.875 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"south": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box7",
+			"from": [ 5, 8, 4.5 ],
+			"to": [ 7, 14, 5.5 ],
+			"faces": {
+				"down": { "uv": [ 9, 14, 11, 15 ], "texture": "#all" },
+				"up": { "uv": [ 9, 9, 11, 10 ], "texture": "#all" },
+				"north": { "uv": [ 9, 9, 11, 15 ], "texture": "#all" },
+				"south": { "uv": [ 9, 9, 11, 15 ], "texture": "#all" },
+				"west": { "uv": [ 2, 9, 3.5, 15 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 9, 9, 15 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box7",
+			"from": [ 5, 8, 10 ],
+			"to": [ 7, 14, 11 ],
+			"faces": {
+				"down": { "uv": [ 9, 9, 11, 10 ], "texture": "#all" },
+				"up": { "uv": [ 9, 14, 11, 15 ], "texture": "#all" },
+				"north": { "uv": [ 9, 9, 11, 15 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 9, 9, 15 ], "texture": "#all" },
+				"east": { "uv": [ 2, 9, 3.5, 15 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box9",
+			"from": [ 5, 13, 5.5 ],
+			"to": [ 7, 14, 10 ],
+			"faces": {
+				"down": { "uv": [ 9, 10, 11, 14 ], "texture": "#all" },
+				"up": { "uv": [ 9, 10, 11, 14 ], "texture": "#all" },
+				"west": { "uv": [ 3.5, 9, 7.5, 10 ], "texture": "#all" },
+				"east": { "uv": [ 3.5, 9, 7.5, 10 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box9",
+			"from": [ 5, 8, 5.5 ],
+			"to": [ 7, 9, 10 ],
+			"faces": {
+				"down": { "uv": [ 9, 10, 11, 14 ], "texture": "#all" },
+				"up": { "uv": [ 9, 10, 11, 14 ], "texture": "#all" },
+				"west": { "uv": [ 3.5, 14, 7.5, 15 ], "texture": "#all" },
+				"east": { "uv": [ 3.5, 14, 7.5, 15 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 4.7857, 10.5, 9.875 ],
+			"to": [ 7.2857, 11, 11.375 ],
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 4.9107, 11.5, 9.875 ],
+			"to": [ 7.4107, 12, 11.375 ],
+			"rotation": { "origin": [ 5.625, 11.5, 9.875 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 4.3929, 11.4821, 9.75 ],
+			"to": [ 7.8929, 11.9821, 11.25 ],
+			"rotation": { "origin": [ 5.25, 11.625, 9.75 ], "axis": "z", "angle": -45 },
+			"faces": {
+				"down": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"up": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"north": { "uv": [ 2, 8, 9, 9 ], "texture": "#all" },
+				"west": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" },
+				"east": { "uv": [ 7.5, 8, 9, 9 ], "texture": "#all" }
+			}
+		}
+	],
+	"overrides": [{
+		"predicate": {
+			"blocking": 1
+		},
+		"model": "thermalfoundation:item/tool/shield_stone_blocking"
+	}]
+}
