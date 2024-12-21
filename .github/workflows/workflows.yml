@@ -3,9 +3,9 @@ name: Zip Specific Folders on Changes
 on:
   push:
     paths:
-      - 'TheClassicPack/sphax_patch_pack/x32-TCP-Sphax_PatchPack/**'
-      - 'TheClassicPack/sphax_patch_pack/x64-TCP-Sphax_PatchPack/**'
-      - 'TheClassicPack/sphax_patch_pack/x128-TCP-Sphax_PatchPack/**'
+      - 'sphax_patch_pack/x32-TCP-Sphax_PatchPack/**'
+      - 'sphax_patch_pack/x64-TCP-Sphax_PatchPack/**'
+      - 'sphax_patch_pack/x128-TCP-Sphax_PatchPack/**'
   workflow_dispatch:
   
 jobs:
@@ -16,23 +16,23 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Create zip for x32-TCP-Sphax_PatchPack (excluding .zip files)
+      - name: Create zip for x32-TCP-Sphax_PatchPack
         run: |
-          zip -r TheClassicPack/sphax_patch_pack/x32-TCP-Sphax_PatchPack/x32-TCP-Sphax_PatchPack.zip TheClassicPack/sphax_patch_pack/x32-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip sphax_patch_pack/x32-TCP-Sphax_PatchPack
 
-      - name: Create zip for x64-TCP-Sphax_PatchPack (excluding .zip files)
+      - name: Create zip for x64-TCP-Sphax_PatchPack
         run: |
-          zip -r TheClassicPack/sphax_patch_pack/x64-TCP-Sphax_PatchPack/x64-TCP-Sphax_PatchPack.zip TheClassicPack/sphax_patch_pack/x64-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip sphax_patch_pack/x64-TCP-Sphax_PatchPack
 
-      - name: Create zip for x128-TCP-Sphax_PatchPack (excluding .zip files)
+      - name: Create zip for x128-TCP-Sphax_PatchPack
         run: |
-          zip -r TheClassicPack/sphax_patch_pack/x128-TCP-Sphax_PatchPack/x128-TCP-Sphax_PatchPack.zip TheClassicPack/sphax_patch_pack/x128-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip sphax_patch_pack/x128-TCP-Sphax_PatchPack
 
       - name: Upload zip files as artifacts
         uses: actions/upload-artifact@v3
         with:
           name: zipped-folders
           path: |
-            TheClassicPack/sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip
-            TheClassicPack/sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip
-            TheClassicPack/sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip
+            sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip
+            sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip
+            sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip
