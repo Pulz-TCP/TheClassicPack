@@ -1,0 +1,32 @@
+{
+	"__comment": "Designed by HanFox with BDcraft Cubik Pro - http://bdcraft.net",
+	"ambientocclusion": false,
+	"textures": {
+		"top": "forestry:blocks/fences/bdc_fence_crossbar_top2",
+		"side": "forestry:blocks/fences/bdc_fence_crossbar_side3"
+	},
+	"elements": [
+		{
+			"__comment": "top bar",
+			"from": [ 7, 12, 8 ],
+			"to": [ 9, 15, 16 ],
+			"faces": {
+				"down": { "uv": [ 11, 10, 16, 8 ], "texture": "#top", "rotation": 90 },
+				"up":   { "uv": [ 16, 10, 8, 8 ], "texture": "#top", "rotation": 90 },
+				"west": { "uv": [ 8, 6, 16, 9 ], "texture": "#side" },
+				"east": { "uv": [ 16, 6, 8, 9 ], "texture": "#side" }
+			}
+		},
+		{
+			"__comment": "lower bar",
+			"from": [ 7, 6, 8 ],
+			"to": [ 9, 9, 16 ],
+			"faces": {
+				"down": { "uv": [ 11, 10, 16, 8 ], "texture": "#top", "rotation": 90 },
+				"up":   { "uv": [ 16, 10, 8, 8 ], "texture": "#top", "rotation": 90 },
+				"west": { "uv": [ 8, 6, 16, 9 ], "texture": "#side" },
+				"east": { "uv": [ 16, 6, 8, 9 ], "texture": "#side" }
+			}
+		}
+	]
+}

@@ -1,0 +1,120 @@
+{
+	"__comment": "Model by HanFox",
+	"textures": {
+		"minecart": "railcraft:items/_bdc/cart_wood",
+		"chest_top": "railcraft:items/_bdc/cart_gift_top",
+		"chest_front": "railcraft:items/_bdc/cart_gift_front"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 0.5, -2, -1.5 ],
+			"to": [ 15.5, -1, 17.5 ],
+			"faces": {
+				"down": { "uv": [ 0, 8, 10, 16 ], "texture": "#minecart", "rotation": 90 },
+				"up": { "uv": [ 0.5, 8.5, 9.5, 15.5 ], "texture": "#minecart", "rotation": 90 },
+				"north": { "uv": [ 9, 0, 9.5, 0.5 ], "texture": "#minecart" },
+				"south": { "uv": [ 9, 0, 9.5, 0.5 ], "texture": "#minecart" },
+				"west": { "uv": [ 9, 0, 9.5, 0.5 ], "texture": "#minecart" },
+				"east": { "uv": [ 9, 0, 9.5, 0.5 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 0, -1, 0 ],
+			"to": [ 2, 7, 16 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 9.25, 0.25 ], "texture": "#minecart" },
+				"up": { "uv": [ 1, 0, 1.5, 1 ], "texture": "#minecart", "rotation": 270 },
+				"west": { "uv": [ 1, 4, 9, 8 ], "texture": "#minecart" },
+				"east": { "uv": [ 1, 0, 9, 4 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 14, -1, 0 ],
+			"to": [ 16, 7, 16 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 9.25, 0.25 ], "texture": "#minecart" },
+				"up": { "uv": [ 1, 0, 1.5, 1 ], "texture": "#minecart", "rotation": 90 },
+				"west": { "uv": [ 1, 0, 9, 4 ], "texture": "#minecart" },
+				"east": { "uv": [ 1, 4, 9, 8 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 0, -1, -2 ],
+			"to": [ 16, 7, 0 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 9.25, 0.25 ], "texture": "#minecart" },
+				"up": { "uv": [ 1.5, 0, 2, 1 ], "texture": "#minecart" },
+				"north": { "uv": [ 1, 4, 9, 8 ], "texture": "#minecart" },
+				"south": { "uv": [ 1, 0, 9, 4 ], "texture": "#minecart" },
+				"west": { "uv": [ 0, 4, 1, 8 ], "texture": "#minecart" },
+				"east": { "uv": [ 0, 4, 1, 8 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 0, -1, 16 ],
+			"to": [ 16, 7, 18.5 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 9.25, 0.25 ], "texture": "#minecart" },
+				"up": { "uv": [ 1.5, 0, 2, 1 ], "texture": "#minecart", "rotation": 180 },
+				"north": { "uv": [ 1, 0, 9, 4 ], "texture": "#minecart" },
+				"south": { "uv": [ 1, 4, 9, 8 ], "texture": "#minecart" },
+				"west": { "uv": [ 0, 4, 1, 8 ], "texture": "#minecart" },
+				"east": { "uv": [ 0, 4, 1, 8 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 0.25, -3, 0 ],
+			"to": [ 15.75, -1, 16 ],
+			"faces": {
+				"west": { "uv": [ 9, 0.5, 16, 1.5 ], "texture": "#minecart" },
+				"east": { "uv": [ 9, 0.5, 16, 1.5 ], "texture": "#minecart" }
+			}
+		},
+		{
+			"from": [ 7, 6, 14 ],
+			"to": [ 9, 9.5, 15 ],
+			"faces": {
+				"up": { "uv": [ 0, 0, 1, 0.75 ], "texture": "#chest_front" },
+				"south": { "uv": [ 0, 4, 2, 8 ], "texture": "#chest_front" },
+				"west": { "uv": [ 0, 0, 1, 4 ], "texture": "#chest_front" },
+				"east": { "uv": [ 0, 0, 1, 4 ], "texture": "#chest_front" }
+			}
+		},
+		{
+			"from": [ 2, 0, 2 ],
+			"to": [ 14, 12, 14 ],
+			"faces": {
+				"up": { "uv": [ 1, 1, 15, 15 ], "texture": "#chest_top" },
+				"north": { "uv": [ 2, 2, 16, 16 ], "texture": "#chest_front" },
+				"south": { "uv": [ 2, 2, 16, 16 ], "texture": "#chest_front" },
+				"west": { "uv": [ 2, 2, 16, 16 ], "texture": "#chest_front" },
+				"east": { "uv": [ 2, 2, 16, 16 ], "texture": "#chest_front" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 75, -135, 0 ],
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.375, 0.375, 0.375 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, -135, 0 ],
+			"translation":  [ 0, 1, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"gui": {
+			"rotation":  [ 35, -45, 0 ],
+			"translation":  [ 0, 1, 0 ],
+			"scale":  [ 0.55, 0.55, 0.55 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"fixed": {
+			"rotation":  [ 0, 90, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

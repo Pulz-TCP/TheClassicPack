@@ -1,0 +1,127 @@
+{
+	"__comment": "Designed by HanFox with Cubik - http://bdcraft.net",
+	"parent": "block/block",
+	"textures": {
+		"particle": "forestry:blocks/wood/planks.greenheart",
+		"post": "forestry:blocks/fences/bdc_fence_post_side2",
+		"top": "forestry:blocks/fences/bdc_fence_post_top1",
+		"crossbartop": "forestry:blocks/fences/bdc_fence_crossbar_top1",
+		"crossbarside": "forestry:blocks/fences/bdc_fence_crossbar_side1"
+	},
+	"elements": [
+		{
+			"__comment": "Inner vertical post of left-hand gate door",
+			"from": [ 0, 3, 1 ],
+			"to": [ 2, 12, 3 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 8 ], "texture": "#top" },
+				"up": { "uv": [ 0, 8, 4, 12 ], "texture": "#top" },
+				"north": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"south": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"west": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"east": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" }
+			}
+		},
+		{
+			"__comment": "Inner vertical post of right-hand gate door",
+			"from": [ 14, 3, 1 ],
+			"to": [ 16, 12, 3 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 8 ], "texture": "#top" },
+				"up": { "uv": [ 0, 8, 4, 12 ], "texture": "#top" },
+				"north": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"south": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"west": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" },
+				"east": { "uv": [ 0, 0, 4, 8 ], "texture": "#post" }
+			}
+		},
+		{
+			"__comment": "Upper horizontal bar of left-hand gate door",
+			"from": [ 0, 9, 5 ],
+			"to": [ 2, 12, 7 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 5.5, 8, 3, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Upper horizontal bar of left-hand gate door2",
+			"from": [ 0, 9, 3 ],
+			"to": [ 2, 12, 5 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 3, 8, 5.5, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Lower horizontal bar of left-hand gate door",
+			"from": [ 0, 3, 5 ],
+			"to": [ 2, 6, 7 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 5.5, 8, 3, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Lower horizontal bar of left-hand gate door2",
+			"from": [ 0, 3, 3 ],
+			"to": [ 2, 6, 5 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 3, 8, 5.5, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Lower horizontal bar of right-hand gate door",
+			"from": [ 14, 3, 3 ],
+			"to": [ 16, 6, 5 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 3, 8, 5.5, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Upper horizontal bar of right-hand gate door2",
+			"from": [ 14, 9, 5 ],
+			"to": [ 16, 12, 7 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 5.5, 8, 3, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 2.5, 3, 5.5, 6 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Upper horizontal bar of right-hand gate door",
+			"from": [ 14, 9, 3 ],
+			"to": [ 16, 12, 5 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 3, 8, 5.5, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 2.5, 12, 5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" }
+			}
+		},
+		{
+			"__comment": "Lower horizontal bar of right-hand gate door2",
+			"from": [ 14, 3, 5 ],
+			"to": [ 16, 6, 7 ],
+			"faces": {
+				"down": { "uv": [ 6, 8, 8, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"up": { "uv": [ 5.5, 8, 3, 10 ], "texture": "#crossbartop", "rotation": 270 },
+				"west": { "uv": [ 5, 12, 2.5, 15 ], "texture": "#crossbarside" },
+				"east": { "uv": [ 2.5, 3, 5.5, 6 ], "texture": "#crossbarside" }
+			}
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "ironchest:iron_chest",
+		"transform": "forge:default-block"
+	},
+	"variants": {
+		"variant": {
+			"copper": {
+				"textures": {
+					"particle": "ironchest:items/chest/copper_front",
+					"top": "ironchest:items/chest/copper_top",
+					"bottom": "ironchest:items/chest/copper_bottom",
+					"front": "ironchest:items/chest/copper_front",
+					"back": "ironchest:items/chest/copper_back",
+					"side": "ironchest:items/chest/copper_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"crystal": {
+				"model": "ironchest:iron_chest_crystal",
+				"textures": {
+					"particle": "ironchest:items/chest/crystal_front",
+					"top": "ironchest:items/chest/crystal_top",
+					"bottom": "ironchest:items/chest/crystal_bottom",
+					"front": "ironchest:items/chest/crystal_front",
+					"back": "ironchest:items/chest/crystal_back",
+					"side": "ironchest:items/chest/crystal_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"diamond": {
+				"textures": {
+					"particle": "ironchest:items/chest/diamond_front",
+					"top": "ironchest:items/chest/diamond_top",
+					"bottom": "ironchest:items/chest/diamond_bottom",
+					"front": "ironchest:items/chest/diamond_front",
+					"back": "ironchest:items/chest/diamond_back",
+					"side": "ironchest:items/chest/diamond_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"dirtchest9000": {
+				"textures": {
+					"particle": "ironchest:items/chest/dirt_front",
+					"top": "ironchest:items/chest/dirt_top",
+					"bottom": "ironchest:items/chest/dirt_bottom",
+					"front": "ironchest:items/chest/dirt_front",
+					"back": "ironchest:items/chest/dirt_back",
+					"side": "ironchest:items/chest/dirt_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"gold": {
+				"textures": {
+					"particle": "ironchest:items/chest/gold_front",
+					"top": "ironchest:items/chest/gold_top",
+					"bottom": "ironchest:items/chest/gold_bottom",
+					"front": "ironchest:items/chest/gold_front",
+					"back": "ironchest:items/chest/gold_back",
+					"side": "ironchest:items/chest/gold_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"iron": {
+				"textures": {
+					"particle": "ironchest:items/chest/iron_front",
+					"top": "ironchest:items/chest/iron_top",
+					"bottom": "ironchest:items/chest/iron_bottom",
+					"front": "ironchest:items/chest/iron_front",
+					"back": "ironchest:items/chest/iron_back",
+					"side": "ironchest:items/chest/iron_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"obsidian": {
+				"textures": {
+					"particle": "ironchest:items/chest/obsidian_front",
+					"top": "ironchest:items/chest/obsidian_top",
+					"bottom": "ironchest:items/chest/obsidian_bottom",
+					"front": "ironchest:items/chest/obsidian_front",
+					"back": "ironchest:items/chest/obsidian_back",
+					"side": "ironchest:items/chest/obsidian_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			},
+			"silver": {
+				"textures": {
+					"particle": "ironchest:items/chest/silver_front",
+					"top": "ironchest:items/chest/silver_top",
+					"bottom": "ironchest:items/chest/silver_bottom",
+					"front": "ironchest:items/chest/silver_front",
+					"back": "ironchest:items/chest/silver_back",
+					"side": "ironchest:items/chest/silver_side",
+					"lock": "ironchest:items/chest/lock"
+				}
+			}
+		}
+	}
+}

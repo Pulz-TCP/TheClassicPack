@@ -1,0 +1,26 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube_column",
+    "textures": {
+      "end": "railcraft:blocks/_bdc/worldspike_personal_on",
+      "side": "railcraft:blocks/_bdc/worldspike_personal_side"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{"transform": "forge:default-block"}],
+    "enabled": {
+      "true": {
+        "textures": {
+          "end": "railcraft:blocks/_bdc/worldspike_personal_on"
+        }
+      },
+      "false": {
+        "textures": {
+          "end": "railcraft:blocks/_bdc/worldspike_personal_off"
+        }
+      }
+    }
+  }
+}

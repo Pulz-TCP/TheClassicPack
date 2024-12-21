@@ -1,0 +1,47 @@
+{
+	"__comment": "Designed by HanFox with Cubik Studio - http://bdcraft.net",
+	"parent": "block/block",
+	"textures": {
+		"top": "ironchest:items/chest/copper_top",
+		"bottom": "ironchest:items/chest/copper_bottom",
+		"front": "ironchest:items/chest/copper_front",
+		"back": "ironchest:items/chest/copper_back",
+		"side": "ironchest:items/chest/copper_side",
+		"lock": "ironchest:items/chest/lock"
+	},
+	"elements": [ 	 
+		{
+			"from": [ 1, 0, 1 ],
+			"to": [ 15, 9, 15 ],
+			"faces": {
+				"down": { "uv": [ 1, 1, 15, 15 ], "texture": "#bottom", "rotation": 90 },
+				"north": { "uv": [ 1, 5, 15, 15 ], "texture": "#front" },
+				"south": { "uv": [ 1, 5, 15, 15 ], "texture": "#back" },
+				"west": { "uv": [ 1, 5, 15, 15 ], "texture": "#side" },
+				"east": { "uv": [ 1, 5, 15, 15 ], "texture": "#side" }
+			}
+		},
+		{
+			"from": [ 1, 9, 1 ],
+			"to": [ 15, 14, 15 ],
+			"faces": {
+				"up": { "uv": [ 1, 1, 15, 15 ], "texture": "#top", "rotation": 180 },
+				"north": { "uv": [ 1, 1, 15, 5 ], "texture": "#front" },
+				"south": { "uv": [ 1, 1, 15, 5 ], "texture": "#back" },
+				"west": { "uv": [ 1, 1, 15, 5 ], "texture": "#side" },
+				"east": { "uv": [ 1, 1, 15, 5 ], "texture": "#side" }
+			}
+		},
+		{
+			"from": [ 7, 6.5, 0 ],
+			"to": [ 9, 10.5, 1 ],
+			"faces": {
+				"down": { "uv": [ 4, 4, 6, 5 ], "texture": "#lock" },
+				"up": { "uv": [ 1, 0, 3, 1 ], "texture": "#lock" },
+				"north": { "uv": [ 1, 1, 3, 5 ], "texture": "#lock" },
+				"west": { "uv": [ 0, 1, 1, 5 ], "texture": "#lock" },
+				"east": { "uv": [ 3, 1, 4, 5 ], "texture": "#lock" }
+			}
+		}
+	]
+}

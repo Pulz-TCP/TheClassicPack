@@ -1,0 +1,17 @@
+{
+    "multipart": [
+        {   "apply": { "model": "forestry:arboriculture/fence/balsa_post" }},
+        {   "when": { "north": "true" },
+            "apply": { "model": "forestry:arboriculture/fence/balsa_side_ne" }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "forestry:arboriculture/fence/balsa_side_ne", "y": 90 }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "forestry:arboriculture/fence/balsa_side_sw" }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "forestry:arboriculture/fence/balsa_side_sw", "y": 90 }
+        }
+    ]
+}

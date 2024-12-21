@@ -1,0 +1,37 @@
+{
+	"__comment": "Designed by the resident Inuit with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
+	"parent": "block/block",
+	"textures": {
+		"particle": "blocks/nether_brick",
+		"top": "blocks/bdc_fence_crossbar4",
+		"texture": "blocks/bdc_gate01"
+	},
+	"elements": [
+		{
+			"__comment": "Right-hand post",
+			"from": [ 14, 5, 7 ],
+			"to": [ 16, 16, 9 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 16 ], "texture": "#top" },
+				"up": { "uv": [ 0, 12, 4, 16 ], "texture": "#top" },
+				"north": { "uv": [ 8, 3, 10, 14 ], "texture": "#texture" },
+				"south": { "uv": [ 8, 0, 10, 11 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 1, 10, 12 ], "texture": "#texture", "cullface": "west" },
+				"east": { "uv": [ 8, 5, 10, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Left-hand post",
+			"from": [ 0, 5, 7 ],
+			"to": [ 2, 16, 9 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 16 ], "texture": "#top" },
+				"up": { "uv": [ 0, 12, 4, 16 ], "texture": "#top" },
+				"north": { "uv": [ 8, 0, 10, 11 ], "texture": "#texture" },
+				"south": { "uv": [ 8, 5, 10, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 3.5, 10, 14.5 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 0, 10, 11 ], "texture": "#texture", "cullface": "east" }
+			}
+		}
+	]
+}

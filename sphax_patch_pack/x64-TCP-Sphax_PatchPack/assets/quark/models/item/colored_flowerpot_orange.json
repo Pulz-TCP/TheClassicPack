@@ -1,0 +1,6 @@
+{
+	"parent": "item/flower_pot",
+	"textures": {
+    		"flowerpot":"quark:blocks/flower_pot_stained_orange"
+	}
+}

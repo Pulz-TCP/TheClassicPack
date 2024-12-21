@@ -1,0 +1,37 @@
+{
+	"__comment": "Designed by HanFox with Cubik - http://bdcraft.net",
+	"parent": "block/block",
+	"textures": {
+		"particle": "forestry:blocks/wood/planks.maple",
+		"post": "forestry:blocks/fences/bdc_fence_post_side2",
+		"top": "forestry:blocks/fences/bdc_fence_post_top1"
+	},
+	"elements": [
+		{
+			"__comment": "Left-hand post",
+			"from": [ 7, 2, 0 ],
+			"to": [ 9, 13, 2 ],
+			"faces": {
+				"down": { "uv": [ 12, 12, 16, 16 ], "texture": "#top", "rotation": 270 },
+				"up": { "uv": [ 12, 16, 16, 12 ], "texture": "#top", "rotation": 90 },
+				"north": { "uv": [ 12, 8, 16, 16 ], "texture": "#post", "cullface": "west" },
+				"south": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" },
+				"west": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" },
+				"east": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" }
+			}
+		},
+		{
+			"__comment": "Right-hand post",
+			"from": [ 7, 2, 14 ],
+			"to": [ 9, 13, 16 ],
+			"faces": {
+				"down": { "uv": [ 12, 12, 16, 16 ], "texture": "#top", "rotation": 270 },
+				"up": { "uv": [ 12, 16, 16, 12 ], "texture": "#top", "rotation": 90 },
+				"north": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" },
+				"south": { "uv": [ 12, 8, 16, 16 ], "texture": "#post", "cullface": "east" },
+				"west": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" },
+				"east": { "uv": [ 12, 8, 16, 16 ], "texture": "#post" }
+			}
+		}
+	]
+}
