@@ -7,26 +7,30 @@ on:
       - 'sphax_patch_pack/x64-TCP-Sphax_PatchPack/**'
       - 'sphax_patch_pack/x128-TCP-Sphax_PatchPack/**'
   workflow_dispatch:
-  
+
 jobs:
   zip-folders:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
       - name: Create zip for x32-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip sphax_patch_pack/x32-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip sphax_patch_pack/x32-TCP-Sphax_PatchPack/*
 
       - name: Create zip for x64-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip sphax_patch_pack/x64-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip sphax_patch_pack/x64-TCP-Sphax_PatchPack/*
 
       - name: Create zip for x128-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip sphax_patch_pack/x128-TCP-Sphax_PatchPack
+          zip -r sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip sphax_patch_pack/x128-TCP-Sphax_PatchPack/*
+
+      - name: List files in sphax_patch_pack
+        run: |
+          ls -al sphax_patch_pack/
 
       - name: Upload zip files as artifacts
         uses: actions/upload-artifact@v3
