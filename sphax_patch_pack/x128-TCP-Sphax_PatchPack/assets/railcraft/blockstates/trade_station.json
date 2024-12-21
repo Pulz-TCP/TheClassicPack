@@ -1,0 +1,31 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube",
+    "textures": {
+      "down": "railcraft:blocks/_bdc/trade_station_side",
+      "up": "railcraft:blocks/_bdc/trade_station_side",
+      "north": "railcraft:blocks/_bdc/trade_station_front",
+      "south": "railcraft:blocks/_bdc/trade_station_back",
+      "west": "railcraft:blocks/_bdc/trade_station_side",
+      "east": "railcraft:blocks/_bdc/trade_station_side",
+      "particle": "railcraft:blocks/_bdc/trade_station_side"
+    }
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {
+        "transform": "forge:default-block"
+      }
+    ],
+    "facing": {
+      "north": {},
+      "east": {"y": 90},
+      "south": {"y": 180},
+      "west": {"y": 270}
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+"__comment": "Designed by the resident Inuit - http://bdcraft.net",
+    "variants": {
+        "facing=down_z,powered=false": { "model": "enderio:lever_floor_off", "x": 180, "y": 180 },
+        "facing=down_x,powered=false": { "model": "enderio:lever_floor_off", "x": 180, "y": 90 },
+        "facing=up_z,powered=false": { "model": "enderio:lever_floor_off" },
+        "facing=up_x,powered=false": { "model": "enderio:lever_floor_off", "y": 270 },
+        "facing=east,powered=false": { "model": "enderio:lever_wall_off", "x": 270, "y": 270 },
+        "facing=west,powered=false": { "model": "enderio:lever_wall_off", "x": 270, "y": 90 },
+        "facing=south,powered=false" : { "model": "enderio:lever_wall_off", "x": 270 },
+        "facing=north,powered=false" : { "model": "enderio:lever_wall_off", "x": 270, "y": 180 },
+        "facing=down_z,powered=true" : { "model": "enderio:lever_floor", "x": 180, "y": 180 },
+        "facing=down_x,powered=true" : { "model": "enderio:lever_floor", "x": 180, "y": 90 },
+        "facing=up_z,powered=true": { "model": "enderio:lever_floor" },
+        "facing=up_x,powered=true": { "model": "enderio:lever_floor", "y": 270 },
+        "facing=east,powered=true": { "model": "enderio:lever_wall", "x": 270, "y": 270 },
+        "facing=west,powered=true": { "model": "enderio:lever_wall", "x": 270, "y": 90 },
+        "facing=south,powered=true": { "model": "enderio:lever_wall", "x": 270 },
+        "facing=north,powered=true": { "model": "enderio:lever_wall", "x": 270, "y": 180 }
+    }
+}

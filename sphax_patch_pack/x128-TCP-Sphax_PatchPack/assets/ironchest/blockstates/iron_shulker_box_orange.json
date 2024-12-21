@@ -1,0 +1,91 @@
+{  
+	"forge_marker":1,
+	"defaults": { 
+		"model":"ironchest:iron_shulker_box",
+		"transform":"forge:default-block"
+	},
+	"variants": { 
+		"variant": { 
+			"iron": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/iron_end",
+					"overlay_side": "ironchest:items/shulker/overlay/iron_side"
+				}
+			},
+			"gold": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/gold_end",
+					"overlay_side": "ironchest:items/shulker/overlay/gold_side"
+				}
+			},
+			"diamond": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/diamond_end",
+					"overlay_side": "ironchest:items/shulker/overlay/diamond_side"
+				}
+			},
+			"copper": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/copper_end",
+					"overlay_side": "ironchest:items/shulker/overlay/copper_side"
+				}
+			},
+			"silver": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/silver_end",
+					"overlay_side": "ironchest:items/shulker/overlay/silver_side"
+				}
+			},
+			"crystal": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/crystal/side",
+					"top": "ironchest:items/shulker/crystal/top",
+					"bottom": "ironchest:items/shulker/crystal/bottom",
+					"side": "ironchest:items/shulker/crystal/side",
+					"overlay_end": "ironchest:items/shulker/crystal/overlay_end_orange",
+					"overlay_side": "ironchest:items/shulker/crystal/overlay_side_orange"
+				}
+			},
+			"obsidian": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/overlay/obsidian_end",
+					"overlay_side": "ironchest:items/shulker/overlay/obsidian_side"
+				}
+			},
+			"vanilla": { 
+				"textures": { 
+					"particle": "ironchest:items/shulker/orange_side",
+					"top": "ironchest:items/shulker/orange_top",
+					"bottom": "ironchest:items/shulker/orange_bottom",
+					"side": "ironchest:items/shulker/orange_side",
+					"overlay_end": "ironchest:items/shulker/orange_side",
+					"overlay_side": "ironchest:items/shulker/orange_side"
+				}
+			}
+		}
+	}
+}

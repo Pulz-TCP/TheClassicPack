@@ -1,0 +1,73 @@
+{
+	"__comment": "Designed by HanFox with Cubik",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"post": "biomesoplenty:blocks/bdc_fence_post4",
+		"crossbar": "biomesoplenty:blocks/bdc_fence_crossbar7"
+	},
+	"elements": [
+		{
+			"__comment": "Left post",
+			"from": [ 6, -0.5, 0 ],
+			"to": [ 10, 16, 4 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar", "rotation": 270 },
+				"up": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"north": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"south": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"west": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"east": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" }
+			}
+		},
+		{
+			"__comment": "Right post",
+			"from": [ 6, 0, 12 ],
+			"to": [ 10, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar", "rotation": 270 },
+				"up": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"north": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"south": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"west": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" },
+				"east": { "uv": [ 0, 0, 4, 16 ], "texture": "#post" }
+			}
+		},
+		{
+			"__comment": "Top bar",
+			"from": [ 7, 13, -2 ],
+			"to": [ 9, 15, 18 ],
+			"faces": {
+				"down": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar" },
+				"up": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar" },
+				"north": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"south": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"west": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar", "rotation": 90 },
+				"east": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Lower bar",
+			"from": [ 7, 5, -2 ],
+			"to": [ 9, 7, 18 ],
+			"faces": {
+				"down": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar" },
+				"up": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar" },
+				"north": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"south": { "uv": [ 0, 12, 4, 16 ], "texture": "#crossbar" },
+				"west": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar", "rotation": 90 },
+				"east": { "uv": [ 6, 0, 8, 1 ], "texture": "#crossbar", "rotation": 90 }
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation":  [ 30, 135, 0 ],
+			"scale":  [ 0.625, 0.625, 0.625 ]
+		},
+		"fixed": {
+			"rotation":  [ 0, 90, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

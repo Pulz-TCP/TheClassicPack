@@ -1,0 +1,30 @@
+{
+	"parent": "immersiveengineering:blocks/metal_ladder",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [ 0, 90, 0 ],
+			"translation": [ -4, -1, -1.5 ],
+			"scale": [ 0.6, 0.6, 0.6 ]
+		},
+		"ground": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 3, -2 ],
+			"scale": [ 0.25, 0.25, 0.25 ]
+		},
+		"firstperson_righthand": {
+			"rotation": [ -5, 125, 0 ],
+			"translation": [ 0, 0, -3 ],
+			"scale": [ 0.8, 0.8, 0.8 ]
+		},
+		"gui": {
+			"rotation": [ 30, -135, 0 ],
+			"translation": [ 4, -2, 0 ],
+			"scale": [ 0.8, 0.8, 0.8 ]
+		},
+		"fixed": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 0, -8 ],
+			"scale": [ 1, 1, 1 ]
+		}
+	}
+}

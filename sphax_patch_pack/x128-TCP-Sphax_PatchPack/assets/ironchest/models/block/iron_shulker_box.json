@@ -1,0 +1,36 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"top": "ironchest:items/shulker/purple_top",
+		"bottom": "ironchest:items/shulker/purple_bottom",
+		"side": "ironchest:items/shulker/purple_side",
+		"overlay_end": "ironchest:items/shulker/purple_top",
+		"overlay_side": "ironchest:items/shulker/purple_side"
+	},
+	"elements": [
+		{   
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"up":  { "texture": "#top" },
+				"down":  { "texture": "#bottom" },
+				"north": { "texture": "#side" },
+				"south": { "texture": "#side" },
+				"west": { "texture": "#side" },
+				"east": { "texture": "#side" }
+			}
+		},
+		{   
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"up":  { "texture": "#overlay_end" },
+				"down":  { "texture": "#overlay_end" },
+				"north": { "texture": "#overlay_side" },
+				"south": { "texture": "#overlay_side" },
+				"west": { "texture": "#overlay_side" },
+				"east": { "texture": "#overlay_side" }
+			}
+		}
+	]
+}
