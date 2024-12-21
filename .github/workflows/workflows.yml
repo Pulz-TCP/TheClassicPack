@@ -32,11 +32,12 @@ jobs:
         run: |
           ls -al sphax_patch_pack/
 
-      - name: Upload zip files as artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: zipped-folders
-          path: |
-            sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip
-            sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip
-            sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip
+      - name: Commit and push the .zip files to the repository
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add sphax_patch_pack/*.zip
+          git commit -m "Add .zip files for patched folders"
+          git push origin master  # Make sure this pushes to the correct branch (e.g., `main` or `master`)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
