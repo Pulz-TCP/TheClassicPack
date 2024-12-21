@@ -16,6 +16,11 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
+      - name: Set up Git LFS
+        run: |
+          git lfs install
+          git lfs track "*.zip"  # Track .zip files with Git LFS
+
       - name: Create zip for x32-TCP-Sphax_PatchPack
         run: |
           zip -r sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip sphax_patch_pack/x32-TCP-Sphax_PatchPack/*
@@ -32,7 +37,7 @@ jobs:
         run: |
           ls -al sphax_patch_pack/
 
-      - name: Commit and push the .zip files to the repository
+      - name: Commit and push the .zip files to the repository with Git LFS
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
