@@ -23,30 +23,37 @@ jobs:
 
       - name: Prepare and clean .zip files
         run: |
-          rm -f sphax_patch_pack/*.zip  # Remove any existing .zip files
+          echo "Removing existing .zip files, if any..."
+          rm -f sphax_patch_pack/*.zip || echo "No .zip files to remove."
 
       - name: Debug listing before zipping
         run: |
+          echo "Listing contents of sphax_patch_pack/ before zipping:"
           ls -al sphax_patch_pack/
+          echo "Listing contents of x32-TCP-Sphax_PatchPack:"
           ls -al sphax_patch_pack/x32-TCP-Sphax_PatchPack
 
       - name: Create zip for x32-TCP-Sphax_PatchPack
         run: |
-          cd sphax_patch_pack/x32-TCP-Sphax_PatchPack
-          zip -r ../../x32-TCP-Sphax_PatchPack.zip ./*
+          echo "Creating x32-TCP-Sphax_PatchPack.zip..."
+          cd sphax_patch_pack/x32-TCP-Sphax_PatchPack || exit 1
+          zip -r ../../x32-TCP-Sphax_PatchPack.zip ./* || exit 1
 
       - name: Create zip for x64-TCP-Sphax_PatchPack
         run: |
-          cd sphax_patch_pack/x64-TCP-Sphax_PatchPack
-          zip -r ../../x64-TCP-Sphax_PatchPack.zip ./*
+          echo "Creating x64-TCP-Sphax_PatchPack.zip..."
+          cd sphax_patch_pack/x64-TCP-Sphax_PatchPack || exit 1
+          zip -r ../../x64-TCP-Sphax_PatchPack.zip ./* || exit 1
 
       - name: Create zip for x128-TCP-Sphax_PatchPack
         run: |
-          cd sphax_patch_pack/x128-TCP-Sphax_PatchPack
-          zip -r ../../x128-TCP-Sphax_PatchPack.zip ./*
+          echo "Creating x128-TCP-Sphax_PatchPack.zip..."
+          cd sphax_patch_pack/x128-TCP-Sphax_PatchPack || exit 1
+          zip -r ../../x128-TCP-Sphax_PatchPack.zip ./* || exit 1
 
       - name: Debug listing after zipping
         run: |
+          echo "Listing contents of sphax_patch_pack/ after zipping:"
           ls -al sphax_patch_pack/
 
       - name: Commit and push the .zip files to the repository with Git LFS
