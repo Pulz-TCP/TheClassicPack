@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
-
+        
       - name: Set up Git LFS
         run: |
           git lfs install
@@ -23,15 +23,18 @@ jobs:
 
       - name: Create zip for x32-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x32-TCP-Sphax_PatchPack.zip sphax_patch_pack/x32-TCP-Sphax_PatchPack/*
+          cd sphax_patch_pack/x32-TCP-Sphax_PatchPack
+          zip -r ../x32-TCP-Sphax_PatchPack.zip ./*
 
       - name: Create zip for x64-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x64-TCP-Sphax_PatchPack.zip sphax_patch_pack/x64-TCP-Sphax_PatchPack/*
+          cd sphax_patch_pack/x64-TCP-Sphax_PatchPack
+          zip -r ../x64-TCP-Sphax_PatchPack.zip ./*
 
       - name: Create zip for x128-TCP-Sphax_PatchPack
         run: |
-          zip -r sphax_patch_pack/x128-TCP-Sphax_PatchPack.zip sphax_patch_pack/x128-TCP-Sphax_PatchPack/*
+          cd sphax_patch_pack/x128-TCP-Sphax_PatchPack
+          zip -r ../x128-TCP-Sphax_PatchPack.zip ./*
 
       - name: List files in sphax_patch_pack
         run: |
@@ -43,6 +46,6 @@ jobs:
           git config user.email "actions@github.com"
           git add sphax_patch_pack/*.zip
           git commit -m "Add .zip files for patched folders"
-          git push origin master  # Make sure this pushes to the correct branch (e.g., `main` or `master`)
+          git push origin master  # Adjust branch if necessary (e.g., main)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
